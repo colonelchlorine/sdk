@@ -18,6 +18,14 @@
 .consoleError {
     color: #ff0000;
 }
+.consoleLabel {
+    display: table;
+    border: solid 1px black;
+    clear: both;
+    padding: 3px;
+    background: #0b4b77;
+    color: #fff;
+}
 .data-object-line {
     display: block;
 }

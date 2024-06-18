@@ -145,6 +145,9 @@ export default function ApiRunnerCore() {
                 api.multiCall(data.calls, getSendResponse("success", data.uid), getSendResponse("error", data.uid));
             });
             postMessages.on("log", data => {
+                if (data.apiDataType) {
+                    consoleManager.setApiDataType(data.apiDataType);
+                }
                 consoleManager.log.apply(consoleManager.log, data.data);
             });
             postMessages.on("error", data => {

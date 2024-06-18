@@ -94,7 +94,7 @@
                 };
             })(),
             api = (function() {
-                var
+                var apiDataType = undefined,
                     call = function(method, params, successCallback, errorCallback) {
                         return geotab.promise(function(resolve, reject) {
                             messages.send({
@@ -102,6 +102,9 @@
                                 method: method,
                                 params: params
                             }, function(result) {
+                                if (params.typeName) {
+                                    apiDataType = { typeName: params.typeName };
+                                }
                                 (successCallback || console.log)(result);
                                 resolve(result);
                             }, function(error) {
@@ -166,6 +169,7 @@
                             return function() {
                                 messages.send({
                                     type: "log",
+                                    apiDataType,
                                     data: getConsoleArgs(arguments)
                                 });
                             };

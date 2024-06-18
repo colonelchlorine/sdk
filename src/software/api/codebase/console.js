@@ -218,6 +218,7 @@ var ConsoleManager = (function() {
 
     return function(containerId) {
         var container = document.getElementById(containerId),
+            apiDataType = "",
             render = function() {},
             getConsoleRecord = function(isError = false) {
                 var record = document.createElement("div");
@@ -227,6 +228,12 @@ var ConsoleManager = (function() {
             views = [],
             consoleLog = function() {
                 var record = getConsoleRecord();
+                if (apiDataType) {
+                    var apiDataTypeElement = document.createElement("span");
+                    apiDataTypeElement.className = "consoleItem consoleLabel";
+                    apiDataTypeElement.innerHTML = apiDataType;
+                    record.appendChild(apiDataTypeElement);
+                }
                 [].forEach.call(arguments, function(argument) {
                     var item = document.createElement("span");
                     item.className = "consoleItem";
@@ -268,7 +275,10 @@ var ConsoleManager = (function() {
             process: process,
             log: consoleLog,
             error: consoleError,
-            clear: clear
+            clear: clear,
+            setApiDataType: (dt) => {
+                apiDataType = dt.typeName;
+            }
         };
     };
 })();
