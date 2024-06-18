@@ -7,6 +7,7 @@ export const debounce = (func, timeout = 200) => {
 }
 
 export const toggleButtonStatesKey = 'toggleButtonStatesKey';
+export const toggleButtonStatesNotebookOnlyKey = 'toggleButtonStatesNotebookOnlyKey';
 export const toggleButtonStatesJsOnlyKey = 'toggleButtonStatesJsOnlyKey';
 export const jsOnlyEditorStateKey = 'api-runner-state-js-only';
 export const editorModeKey = 'api-runner-editor-mode';

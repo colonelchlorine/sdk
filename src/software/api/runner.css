@@ -187,11 +187,11 @@ div .MuiSnackbar-anchorOriginBottomCenter {
     justify-content: space-evenly;
 }
 
-#toggle-js-only {
+#toggle-js-only, #toggle-notebook-only {
     background-color: #0176db47;
 }
 
-#toggle-js-only.active {
+#toggle-js-only.active, , #toggle-notebook-only.active {
     background-color: #0275D8;
     color: white;
 }

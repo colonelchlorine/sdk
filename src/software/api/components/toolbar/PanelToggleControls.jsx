@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { debounce, editorModeKey, localStorageUtils, toggleButtonStatesJsOnlyKey, toggleButtonStatesKey } from '../../utils';
 
 export default function PanelToggleControls({ appState }) {
+    const notebookBtn = useRef();
     const jsOnlyBtn = useRef();
     const jsBtn = useRef();
     const cssBtn = useRef();
@@ -11,9 +12,21 @@ export default function PanelToggleControls({ appState }) {
 
     onClick = debounce(onClick, 250);
     onJsOnlyClick = debounce(onJsOnlyClick, 250);
+    onNotebookOnlyClick = debounce(onNotebookOnlyClick, 250);
     return (
         <>
             <div className="btn-group my-2 mr-sm-2" id="toggle">
+                <button
+                    type="button"
+                    id="toggle-notebook-only"
+                    onClick={onNotebookOnlyClick}
+                    data-toggle="button"
+                    aria-pressed="false"
+                    className={"btn" + (appState.notebookOnly ? ' active' : '')}
+                    ref={notebookBtn}
+                >
+                    Notebook
+                </button>
                 <button
                     type="button"
                     id="toggle-js-only"
@@ -93,7 +106,14 @@ export default function PanelToggleControls({ appState }) {
         e.preventDefault();
         appState.jsOnlyRef.current = !appState.jsOnlyRef.current;
         appState.setJsOnly(appState.jsOnlyRef.current);
-        toggleJsOnly(appState.jsOnlyRef.current);
+        toggleNoteBookOrJsOnly(appState.jsOnlyRef.current ? "js-only" : "normal");
+    }
+
+    function onNotebookOnlyClick(e) {
+        e.preventDefault();
+        appState.notebookOnlyRef.current = !appState.notebookOnlyRef.current;
+        appState.setNotebookOnly(appState.notebookOnlyRef.current);
+        toggleNoteBookOrJsOnly(appState.notebookOnlyRef.current ? "notebook-only" : "normal");
     }
 
     function onClick(e) {
@@ -102,16 +122,16 @@ export default function PanelToggleControls({ appState }) {
         setToggleStatesHelper(btn);
     }
 
-    function toggleJsOnly(jsOnlyMode) {
-        localStorage.setItem(editorModeKey, jsOnlyMode ? 'js-only' : 'normal');
+    function toggleNoteBookOrJsOnly(activeAppState) {
+        localStorage.setItem(editorModeKey, activeAppState);
         const { css, html } = appState.editorRef.current;
         if (!css?.setMode || !html?.setMode || !jsBtn.current)
             return;
 
-        if (jsOnlyMode) {
+        if (activeAppState !== "normal") {
             css.setMode('javascript');
             html.setMode('javascript');
-            appState.urlState.restoreState('js-only');
+            appState.urlState.restoreState(activeAppState);
         } else {
             css.setMode('css');
             html.setMode('html');
@@ -121,8 +141,9 @@ export default function PanelToggleControls({ appState }) {
 
     function setToggleStatesHelper(btn) {
         let id = btn.id.replace('toggle-', '');
-        id = id === 'js-only' ? 'jsOnly' : id;
+        id = id === 'js-only' ? 'jsOnly' : "notebook-only" ? "notebookOnly" : id;
         const newStateObj = { ...appState.paneToggleButtonStates };
+        newStateObj.notebookOnly = appState.notebookOnlyRef.current;
         newStateObj.jsOnly = appState.jsOnlyRef.current;
         newStateObj[id] = !appState.paneToggleButtonStates[id];
         appState.setPaneToggleButtonStates(newStateObj);

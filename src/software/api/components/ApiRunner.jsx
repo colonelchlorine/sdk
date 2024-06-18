@@ -41,7 +41,9 @@ const createAppState = () => {
     const [ urlState, setUrlState ] = useState({ saveState: () => {} });
     const [ selectedEditorId, setSelectedEditorId ] = useState('');
     const [ jsOnly, setJsOnly ] = useState('');
+    const [ notebookOnly, setNotebookOnly ] = useState('');
     const jsOnlyRef = useRef(false);
+    const notebookOnlyRef = useRef(false);
     const editorRef = useRef({});
     const paneToggleButtonStatesRef = useRef({});
     const currentNotificationRef = useRef();
@@ -77,6 +79,7 @@ const createAppState = () => {
         editors, setEditors: setHelper(setEditors),
         selectedEditorId, setSelectedEditorId,
         jsOnly, setJsOnly,
+        notebookOnly, setNotebookOnly,
         savedConfigs, setSavedConfigs,
         unsavedEditorChanges, setUnsavedEditorChanges,
         showNotification, setShowNotification,
@@ -86,6 +89,7 @@ const createAppState = () => {
         paneToggleButtonStatesRef: refHelper(paneToggleButtonStatesRef),
         editorRef,
         jsOnlyRef,
+        notebookOnlyRef
     };
 
     function getPreviousToggleButtonState() {
