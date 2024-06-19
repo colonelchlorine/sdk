@@ -47,6 +47,7 @@ export default function ApiRunnerCore() {
                     }
                 });
                 editor.getSession().setMode("ace/mode/" + language);
+                console.log("session mode: " + "ace/mode/" + language);
                 editor.$blockScrolling = Infinity;
                 editor.on("change", debounce(() => {
                         if (!silentMode) {
@@ -64,6 +65,23 @@ export default function ApiRunnerCore() {
                 );
                 appState.setEditors(language, editor);
                 urlState.addEditor(language, self);
+
+                editor.setOptions({
+                    enableBasicAutocompletion: true,
+                    enableSnippets: false
+                });
+                console.log("Create tern server")
+                var langTools = ace.require("ace/ext/language_tools");
+            	var TernServer = ace.require("ace/tern/server").TernServer;
+                var defs = [ternEcma5Def];
+                var ternServer = new TernServer({defs: defs});
+                    
+                // Tern Completion
+                langTools.addCompleter(ternServer);
+
+                // Tern Tooltip
+                var TernTooltip = ace.require("ace/tern/tern_tooltip").TernTooltip;
+                editor.ternTooltip = new TernTooltip(editor, ternServer);
             },
             process = value => {
                 appState = window.appState;
