@@ -138,14 +138,15 @@
                         document.body.appendChild(css);
                     },
                     injectJavaScript = function(jsText) {
-                        var injectMethodName = "___injectScript___",
-                            javascript = "window." + injectMethodName + " = function(api) {\r\n\"use strict\";\r\n" + jsText + " \r\n}",
-                            script = document.createElement("script");
-
+                        //TODO: Just execute the javacsript, don't wrap it in a function so context
+                        // remains in the iframe
+                        // var injectMethodName = "___injectScript___",
+                        //     javascript = "window." + injectMethodName + " = function(api) {\r\n\"use strict\";\r\n" + jsText + " \r\n}",
+                        let script = document.createElement("script");
                         script.setAttribute("type", "text/javascript");
                         script.text = javascript;
                         document.body.appendChild(script);
-                        window[injectMethodName] && window[injectMethodName](window.api);
+                        // window[injectMethodName] && window[injectMethodName](window.api);
                     },
                     abort = function() {
 

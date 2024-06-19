@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
-import { debounce, editorModeKey, localStorageUtils, toggleButtonStatesJsOnlyKey, toggleButtonStatesKey } from '../../utils';
+import { debounce, editorModeKey, localStorageUtils, toggleButtonStatesJsOnlyKey, toggleButtonStatesKey, toggleButtonStatesNotebookOnlyKey } from '../../utils';
 
 export default function PanelToggleControls({ appState }) {
-    const notebookBtn = useRef();
+    const notebookOnlyBtn = useRef();
     const jsOnlyBtn = useRef();
     const jsBtn = useRef();
     const cssBtn = useRef();
@@ -23,9 +23,9 @@ export default function PanelToggleControls({ appState }) {
                     data-toggle="button"
                     aria-pressed="false"
                     className={"btn" + (appState.notebookOnly ? ' active' : '')}
-                    ref={notebookBtn}
+                    ref={notebookOnlyBtn}
                 >
-                    Notebook
+                    Notebook only
                 </button>
                 <button
                     type="button"
@@ -97,8 +97,9 @@ export default function PanelToggleControls({ appState }) {
 
     function saveToggleState(toggleState) {
         const jsMode = appState.jsOnlyRef.current;
+        const notebookMode = appState.notebookOnlyRef.current;
         toggleState = toggleState || appState.paneToggleButtonStates;
-        const toggleStateKey = jsMode ? toggleButtonStatesJsOnlyKey : toggleButtonStatesKey;
+        const toggleStateKey = jsMode ? toggleButtonStatesJsOnlyKey : notebookMode ? toggleButtonStatesNotebookOnlyKey : toggleButtonStatesKey;
         localStorageUtils.setObject(toggleStateKey, toggleState || {});
     }
 

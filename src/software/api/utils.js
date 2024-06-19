@@ -53,19 +53,6 @@ export const localStorageUtils = {
     }
 }
 
-const sampleNameRegexp = /sample:[\w\d-]+/i;
-const getSampleNameFromURL = () => {
-        const hash = window.location.hash.substr(1);
-        if (hash.match(sampleNameRegexp))
-            return hash.replace("sample:", "");
-        else if (hash === 'js-only')
-            return hash;
-        return null;
-    };
-
-export const getJsOnlyEditorMode = () => localStorage.getItem(editorModeKey);
-export const isJsOnlyModeActive = () => localStorage.getItem(editorModeKey) === 'js-only';
-
 export const timeSince = (date) => {
     date = new Date(date);
     const seconds = Math.floor((new Date() - date) / 1000);

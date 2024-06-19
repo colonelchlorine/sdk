@@ -164,6 +164,7 @@ export default function SaveControls({ appState }) {
             name,
             id: new Date().getTime(),
             jsOnly: appState.jsOnlyRef.current || false,
+            notebookOnly: appState.notebookOnlyRef.current || false,
             toggleStates: appState.paneToggleButtonStates,
             editorState
         };

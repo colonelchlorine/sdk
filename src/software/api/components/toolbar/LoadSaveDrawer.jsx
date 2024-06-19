@@ -48,6 +48,8 @@ const LoadSaveDrawer = ({ appState, open, onClose }) => {
         let txt = config.id ? `Created: ${timeSince(config.id)}` : null;
         if (config.jsOnly) {
             return (<span>{txt} <Chip size={'small'} component={'span'} variant={'outlined'} sx={{ fontSize: '0.6rem', height: 20 }} label={'JS Only'}/></span>);
+        } else if (config.notebookOnly) {
+            return (<span>{txt} <Chip size={'small'} component={'span'} variant={'outlined'} sx={{ fontSize: '0.6rem', height: 20 }} label={'Notebook Only'}/></span>);
         }
         return txt;
     }

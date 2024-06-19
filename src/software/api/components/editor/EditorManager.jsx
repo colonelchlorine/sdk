@@ -6,10 +6,12 @@ import { debounce, selectedEditorIdKey } from '../../utils';
 
 export default function EditorManager({ appState }) {
     const togState = appState.paneToggleButtonStates;
+    const notebookRef = useRef();
     const jsRef = useRef();
     const cssRef = useRef();
     const htmlRef = useRef();
     const consoleRef = useRef();
+    const notebookHeaderRef = useRef();
     const jsHeaderRef = useRef();
     const cssHeaderRef = useRef();
     const htmlHeaderRef = useRef();
@@ -55,8 +57,9 @@ export default function EditorManager({ appState }) {
     }
 
     useEffect(() => {
-        if (appState.paneToggleButtonStates.jsOnly)
+        if (appState.paneToggleButtonStates.jsOnly || appState.paneToggleButtonStates.notebookOnly) {
             localStorage.setItem('selectedEditorId', appState.selectedEditorId);
+        }
     }, [ appState.selectedEditorId ]);
 
     function updateVisiblePane(enabled, id, parentId = 'pane-left') {
@@ -119,6 +122,18 @@ export default function EditorManager({ appState }) {
                     cursor="row-resize"
                     onDragEnd={onDragEndHandler('pane-left')}
                 >
+                    <div id="pane-notebook"
+                         ref={notebookRef}
+                         className={`editor pane-item${togState.notebook ? '' : ' hidden'}`}
+                         onFocus={onFocusIn('pane-js')}
+                    >
+                        <small ref={notebookHeaderRef}
+                               className={`pane-header${ appState.notebookOnly && appState.selectedEditorId === 'pane-js' ? ' selected' : ''}`}
+                        >
+                            {appState.notebookOnly ? "Notebook" : 'JS'}
+                        </small>
+                        <div className="pane-content" id="notebook"/>
+                    </div>
                     <div id="pane-js"
                          ref={jsRef}
                          className={`editor pane-item${togState.js ? '' : ' hidden'}`}
@@ -181,7 +196,7 @@ export default function EditorManager({ appState }) {
 
     function onFocusIn(id) {
         return debounce((e) => {
-            if (appState.jsOnlyRef.current && id) {
+            if ((appState.jsOnlyRef.current || appState.notebookOnlyRef.current) && id) {
                 localStorage.setItem(selectedEditorIdKey, id);
                 appState.setSelectedEditorId(id);
             }
@@ -190,7 +205,7 @@ export default function EditorManager({ appState }) {
 
     function getResizeId(id) {
         let sampleId = location.hash ? ('-' + location.hash.substring(1)) : '';
-        return `api-runner-pane-sizes-${id}${sampleId}${appState.jsOnlyRef.current ? '-js-only' : ''}`;
+        return `api-runner-pane-sizes-${id}${sampleId}${appState.jsOnlyRef.current ? '-js-only' : appState.notebookOnlyRef.current ? '-notebook-only' : ''}`;
     }
 
     function onDragEndHandler(containerId, sizes) {

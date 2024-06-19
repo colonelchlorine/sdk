@@ -1,9 +1,9 @@
 import {
-    editorModeKey, getJsOnlyEditorMode, getSaveNameFromHash, isJsOnlyModeActive,
+    getSaveNameFromHash,
     localStorageUtils,
     selectedEditorIdKey,
     toggleButtonStatesJsOnlyKey,
-    toggleButtonStatesKey, unsavedEditorChangesKey
+    toggleButtonStatesKey, toggleButtonStatesNotebookOnlyKey, unsavedEditorChangesKey
 } from './utils';
 
 let shouldAutoLoginDemo = false;
@@ -60,6 +60,8 @@ export default function ApiRunnerCore() {
                     const editorId = window.appState.selectedEditorId.replace('pane-', '');
                     if (language === 'javascript') {
                         switch (editorId) {
+                            case 'notebook':
+                                value[language] = appState.editors.notebook.getValue();
                             case 'js':
                                 value[language] = appState.editors.javascript.getValue();
                                 break;
@@ -127,7 +129,11 @@ export default function ApiRunnerCore() {
             }), "*");
         };
         const process = value => {
-            clear();
+            const IS_NOTEBOOK = true;   //TODO: Rewrite this
+            if (!IS_NOTEBOOK) {
+                clear();
+                
+            }
             iframe = createIframe();
 
             // listen to post messages from iframe
@@ -367,7 +373,10 @@ export default function ApiRunnerCore() {
             },
             process = value => value,
             getValue = () => appState.paneToggleButtonStates,
-            setValue = options => appState.setPaneToggleButtonStates({ ...options }),
+            setValue = options => {
+                debugger;
+                appState.setPaneToggleButtonStates({ ...options })
+            },
             self = {
                 render,
                 process,
@@ -399,6 +408,7 @@ export default function ApiRunnerCore() {
             })(),
             urlState = (() => {
                 const jsOnlyEditorStateKey = 'api-runner-state-js-only';
+                const notebookOnlyEditorStateKey = 'api-runner-state-notebook-only';
                 const editorModeKey = 'api-runner-editor-mode';
                 const editors = {};
                 var sampleNameRegexp = /sample:[\w\d-]+/i,
@@ -497,10 +507,17 @@ export default function ApiRunnerCore() {
 
                             editorMode = editorMode || localStorage.getItem(editorModeKey);
                             const jsOnlyMode = editorMode === 'js-only';
+                            const notebookOnlyMode = editorMode === 'notebook-only';
                             if (jsOnlyMode) {
                                 appState.setJsOnly(jsOnlyMode);
                                 appState.jsOnlyRef.current = jsOnlyMode;
                                 parsedState = localStorage.getItem(jsOnlyEditorStateKey);
+                                parsedState = parseState(parsedState);
+                            }
+                            if (notebookOnlyMode) {
+                                appState.setNotebookOnly(notebookOnlyMode);
+                                appState.notebookOnlyRef.current = notebookOnlyMode;
+                                parsedState = localStorage.getItem(notebookOnlyEditorStateKey);
                                 parsedState = parseState(parsedState);
                             }
 
@@ -528,18 +545,19 @@ export default function ApiRunnerCore() {
                                     }
                                 });
 
-                                const curToggleStateKey = jsOnlyMode ? toggleButtonStatesJsOnlyKey : toggleButtonStatesKey;
+                                const curToggleStateKey = jsOnlyMode ? toggleButtonStatesJsOnlyKey : notebookOnlyMode ? toggleButtonStatesNotebookOnlyKey : toggleButtonStatesKey;
                                 let paneToggleButtonStates = localStorageUtils.getObject(curToggleStateKey);
                                 if (paneToggleButtonStates) {
                                     appState.setPaneToggleButtonStates(paneToggleButtonStates);
                                 }
-                                if (jsOnlyMode) {
+                                if (jsOnlyMode || notebookOnlyMode) {
                                     const selectedEditorId = localStorage.getItem(selectedEditorIdKey);
-                                    if (jsOnlyMode && selectedEditorId) {
+                                    if ((jsOnlyMode || notebookOnlyMode) && selectedEditorId) {
                                         appState.setSelectedEditorId(selectedEditorId);
                                     }
                                 }
                                 appState.jsOnlyRef.current = jsOnlyMode;
+                                appState.notebookOnlyRef.current = notebookOnlyMode;
                             }
                         }
                     },
@@ -574,6 +592,9 @@ export default function ApiRunnerCore() {
                             if (appState.jsOnlyRef.current) {
                                 localStorage.setItem(editorModeKey, 'js-only');
                                 localStorage.setItem(jsOnlyEditorStateKey, state);
+                            } else if (appState.notebookOnly.current) {
+                                localStorage.setItem(editorModeKey, 'notebook-only');
+                                localStorage.setItem(notebookOnlyEditorStateKey, state);
                             } else {
                                 localStorage.setItem(editorModeKey, 'normal');
                                 localStorage.setItem(localStorageSampleName, state);
@@ -609,6 +630,7 @@ export default function ApiRunnerCore() {
                     processors.css.setValue(sources.css);
                     processors.html.setValue(sources.html);
                     processors.js.setValue(sources.js);
+                    // processors.notebook.setValue(sources.notebook);  //no demos available for that yet
                     processors.ui.setValue(sources.options);
                 }, errorHandler);
             },
@@ -747,12 +769,15 @@ export default function ApiRunnerCore() {
 
             showLoginForm();
         };
+        const notebookEditor = EditorManager("notebook", "javascript", urlState);
         const jsEditor = EditorManager("js", "javascript", urlState);
         const cssEditor = EditorManager("css", "css", urlState);
         const htmlEditor = EditorManager("html", "html", urlState);
-        appState.editorRef.current['js'] = jsEditor;
+        appState.editorRef.current['notebook'] = notebookEditor;
+        appState.editorRef.current['js'] = notebookEditor;
         appState.editorRef.current['css'] = cssEditor;
         appState.editorRef.current['html'] = htmlEditor;
+        processors.add("notebook", notebookEditor);
         processors.add("js", jsEditor);
         processors.add("css", cssEditor);
         processors.add("html", htmlEditor);

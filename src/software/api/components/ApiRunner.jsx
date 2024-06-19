@@ -97,7 +97,7 @@ const createAppState = () => {
         const key = mode === 'js-only'
                     ? toggleButtonStatesJsOnlyKey
                     : toggleButtonStatesKey;
-        return localStorageUtils.getObject(key) || { js: true, css: false, html: false, console: true, output: false, jsOnly: false };
+        return localStorageUtils.getObject(key) || { js: true, css: false, html: false, console: true, output: false, jsOnly: false, notebookOnly: false };
     }
 
     function setHelper(setter) {
