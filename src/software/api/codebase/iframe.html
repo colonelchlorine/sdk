@@ -45,6 +45,7 @@
                     };
                 })(),
                 send = function(options, successCallback, errorCallback) {
+                    debugger;
                     var waitResponse = successCallback || errorCallback;
                     if (waitResponse) {
                         options.uid = getUID();
@@ -61,14 +62,6 @@
                             options = null;
                         }
                     };
-                },
-                filterMessages = function (e) {
-                    var origin = e.origin,
-                        localOrigin = location.protocol + "//" + location.host;
-
-                    if (localOrigin === origin) {
-                        gotPostMessage(e);
-                    }
                 },
                 gotPostMessage = function(e) {
                     var data = JSON.parse(e.data), call, type;
@@ -87,7 +80,19 @@
                     }
                 };
 
-                window.addEventListener("message", filterMessages, false);
+                window.addEventListener("message", (e) => {
+                    var origin = e.origin,
+                        localOrigin = location.protocol + "//" + location.host;
+                    debugger;
+                    if (localOrigin !== origin) {
+                        return;
+                    }
+                    if (e.data === "rerun") {
+                        messages.send({ type: "ready" }, api.injectSample, function() {});
+                        return;
+                    }
+                    gotPostMessage(e);
+                }, false);
 
                 return {
                     send: send
@@ -138,14 +143,14 @@
                         document.body.appendChild(css);
                     },
                     injectJavaScript = function(jsText) {
-                        var injectMethodName = "___injectScript___",
-                            javascript = "window." + injectMethodName + " = function(api) {\r\n\"use strict\";\r\n" + jsText + " \r\n}",
-                            script = document.createElement("script");
+                        // var injectMethodName = "___injectScript___",
+                        //     javascript = "window." + injectMethodName + " = function(api) {\r\n\"use strict\";\r\n" + jsText + " \r\n}",
+                         let   script = document.createElement("script");
 
                         script.setAttribute("type", "text/javascript");
-                        script.text = javascript;
+                        script.text = jsText;
                         document.body.appendChild(script);
-                        window[injectMethodName] && window[injectMethodName](window.api);
+                        // window[injectMethodName] && window[injectMethodName](window.api);
                     },
                     abort = function() {
 
@@ -157,6 +162,7 @@
                     };
 
                 window.addEventListener("load", function() {
+                    /// only gets called once
                     messages.send({ type: "ready" }, injectSample, function() {});
                 }, false);
 

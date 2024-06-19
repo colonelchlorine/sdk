@@ -127,11 +127,17 @@ export default function ApiRunnerCore() {
             }), "*");
         };
         const process = value => {
+            if (iframe) {
+                value.iframe = iframe;
+                value.iframe.contentWindow.postMessage("rerun", "*");
+                return value;
+            }
             clear();
             iframe = createIframe();
 
             // listen to post messages from iframe
             postMessages.on("ready", data => {
+                debugger;
                 getSendResponse("success", data.uid)({
                     javascript: value.javascript,
                     html: value.html,
@@ -155,6 +161,7 @@ export default function ApiRunnerCore() {
             return value;
         };
         var clear = () => {
+            debugger;
             postMessages.clear();
             api.abort();
             iframe && iframe.parentNode.removeChild(iframe);
@@ -181,6 +188,7 @@ export default function ApiRunnerCore() {
 
         window.addEventListener("message", e => {
             e.preventDefault();
+            debugger;
             try {
                 if (!e.data || typeof e.data === 'object')
                     return;
