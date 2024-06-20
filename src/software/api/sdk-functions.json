@@ -2825,7 +2825,7 @@
       }
     ],
     "Example": "",
-    "Returns": "A.",
+    "Returns": "A \"System.Threading.Tasks.Task\" .",
     "Score": 351
   },
   {
@@ -2860,7 +2860,7 @@
       }
     ],
     "Example": "",
-    "Returns": "A completed result.",
+    "Returns": "A \"System.Threading.Tasks.Task\" completed result.",
     "Score": 353
   },
   {
@@ -3564,7 +3564,7 @@
     "Summary": "Gets the name of the metric used.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.String\"",
     "Score": 417
   },
   {
@@ -3780,7 +3780,7 @@
       }
     ],
     "Example": "",
-    "Returns": "the associated with the specified timeZoneId, if the conversion succeeded, or null if the conversion failed. The conversion fails if the TimeZoneId is not a valid Timezone id.",
+    "Returns": "the \"Geotab.Checkmate.ObjectModel.TimeZoneInfo\" associated with the specified timeZoneId, if the conversion succeeded, or null if the conversion failed. The conversion fails if the TimeZoneId is not a valid Timezone id.",
     "Score": 436
   },
   {
@@ -4016,7 +4016,7 @@
     "Summary": "Returns an enumerator that will traverse the tree up.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Collections.Generic.List`1\"",
     "Score": 455
   },
   {
@@ -4070,7 +4070,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Collections.Generic.List`1\"",
     "Score": 457
   },
   {
@@ -4081,7 +4081,7 @@
     "Summary": "Returns an enumerator that will traverse the tree. The tree is traversed Depth First.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Collections.Generic.List`1\"",
     "Score": 458
   },
   {
@@ -4345,7 +4345,7 @@
     "Summary": "Returns a \"System.String\" that represents this instance.",
     "Params": [],
     "Example": "",
-    "Returns": "A that represents this instance.",
+    "Returns": "A \"System.String\" that represents this instance.",
     "Score": 482
   },
   {
@@ -4356,7 +4356,7 @@
     "Summary": "Returns a \"System.String\" that represents this instance.",
     "Params": [],
     "Example": "",
-    "Returns": "A that represents this instance.",
+    "Returns": "A \"System.String\" that represents this instance.",
     "Score": 483
   },
   {
@@ -4389,7 +4389,7 @@
     "Summary": "Returns a \"System.String\" that represents the current \"System.Object\" .",
     "Params": [],
     "Example": "",
-    "Returns": "A that represents the current.",
+    "Returns": "A \"System.String\" that represents the current \"System.Object\" .",
     "Score": 486
   },
   {
@@ -4400,7 +4400,7 @@
     "Summary": "Returns a string representation of a. \"Geotab.Checkmate.ObjectModel.DutyStatusLog\"",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.String\"",
     "Score": 487
   },
   {
@@ -4433,7 +4433,7 @@
     "Summary": "Returns a \"System.String\" that represents this instance.",
     "Params": [],
     "Example": "",
-    "Returns": "A that represents this instance.",
+    "Returns": "A \"System.String\" that represents this instance.",
     "Score": 490
   },
   {
@@ -4455,7 +4455,7 @@
     "Summary": "Returns a \"System.String\" that represents this instance.",
     "Params": [],
     "Example": "",
-    "Returns": "A that represents this instance.",
+    "Returns": "A \"System.String\" that represents this instance.",
     "Score": 492
   },
   {
@@ -4466,7 +4466,7 @@
     "Summary": "Returns a \"System.String\" that represents this instance.",
     "Params": [],
     "Example": "",
-    "Returns": "A that represents this instance.",
+    "Returns": "A \"System.String\" that represents this instance.",
     "Score": 493
   },
   {
@@ -4499,7 +4499,7 @@
     "Summary": "Returns a \"System.String\" that represents this instance.",
     "Params": [],
     "Example": "",
-    "Returns": "A that represents this instance.",
+    "Returns": "A \"System.String\" that represents this instance.",
     "Score": 496
   },
   {
@@ -4521,7 +4521,7 @@
     "Summary": "Returns a \"System.String\" that represents this instance.",
     "Params": [],
     "Example": "",
-    "Returns": "A that represents this instance.",
+    "Returns": "A \"System.String\" that represents this instance.",
     "Score": 498
   },
   {
@@ -4532,7 +4532,7 @@
     "Summary": "Returns a \"System.String\" that represents the current \"System.Object\" .",
     "Params": [],
     "Example": "",
-    "Returns": "A that represents the current.",
+    "Returns": "A \"System.String\" that represents the current \"System.Object\" .",
     "Score": 499
   },
   {
@@ -4543,7 +4543,7 @@
     "Summary": "Returns a \"System.String\" that represents the current \"System.Object\" .",
     "Params": [],
     "Example": "",
-    "Returns": "A that represents the current.",
+    "Returns": "A \"System.String\" that represents the current \"System.Object\" .",
     "Score": 500
   },
   {
@@ -4565,7 +4565,7 @@
     "Summary": "Returns a \"System.String\" that represents the current \"System.Object\" .",
     "Params": [],
     "Example": "",
-    "Returns": "A that represents the current.",
+    "Returns": "A \"System.String\" that represents the current \"System.Object\" .",
     "Score": 502
   },
   {
@@ -4587,7 +4587,7 @@
     "Summary": "Returns a \"System.String\" that represents this instance.",
     "Params": [],
     "Example": "",
-    "Returns": "A that represents this instance.",
+    "Returns": "A \"System.String\" that represents this instance.",
     "Score": 504
   },
   {
@@ -4598,7 +4598,7 @@
     "Summary": "Returns a \"System.String\" that represents the current. \"System.Object\"",
     "Params": [],
     "Example": "",
-    "Returns": "A that represents the current.",
+    "Returns": "A \"System.String\" that represents the current. \"System.Object\"",
     "Score": 505
   },
   {
@@ -4609,7 +4609,7 @@
     "Summary": "Returns a \"System.String\" that represents the current \"System.Object\" .",
     "Params": [],
     "Example": "",
-    "Returns": "A that represents the current.",
+    "Returns": "A \"System.String\" that represents the current \"System.Object\" .",
     "Score": 506
   },
   {
@@ -5060,7 +5060,7 @@
     "Summary": "Converts to equivalent \"Geotab.Checkmate.ObjectModel.Geographical.BoundingBox\" object.",
     "Params": [],
     "Example": "",
-    "Returns": ".",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.Geographical.BoundingBox\" .",
     "Score": 547
   },
   {
@@ -5071,7 +5071,7 @@
     "Summary": "Return the int value of the alpha, red, green and blue value of the color.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Int32\"",
     "Score": 548
   },
   {
@@ -5943,7 +5943,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The.",
+    "Returns": "The \"Geotab.Checkmate.ObjectModel.DistributionList\" .",
     "Score": 626
   },
   {
@@ -5961,7 +5961,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.Engine.Controller\"",
     "Score": 627
   },
   {
@@ -5997,7 +5997,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The.",
+    "Returns": "The \"Geotab.Checkmate.ObjectModel.Engine.FaultStatus\" .",
     "Score": 629
   },
   {
@@ -6033,7 +6033,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The.",
+    "Returns": "The \"Geotab.Checkmate.ObjectModel.Engine.Source\" .",
     "Score": 631
   },
   {
@@ -6051,7 +6051,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.Engine.UnitOfMeasure\"",
     "Score": 632
   },
   {
@@ -6087,7 +6087,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.Trailer\"",
     "Score": 634
   },
   {
@@ -6141,7 +6141,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.ZoneType\"",
     "Score": 637
   },
   {
@@ -8868,7 +8868,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The separateds.",
+    "Returns": "The separated \"Geotab.Checkmate.ObjectModel.Engine.IDiagnosticProvider\" s.",
     "Score": 873
   },
   {
@@ -12088,7 +12088,7 @@
     "Summary": "Gets or sets the \"Geotab.Checkmate.ObjectModel.Exceptions.Rule\" that this condition applies to.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.Exceptions.Rule\"",
     "Score": 1164
   },
   {
@@ -12626,7 +12626,7 @@
     "Summary": "Check if use has an authenticationType that requires certificate.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Boolean\"",
     "Score": 1211
   },
   {
@@ -14751,7 +14751,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.ISimpleCoordinate\"",
     "Score": 1400
   },
   {
@@ -15260,7 +15260,7 @@
       }
     ],
     "Example": "",
-    "Returns": "A serial number prefix.",
+    "Returns": "A \"System.String\" serial number prefix.",
     "Score": 1445
   },
   {
@@ -15447,7 +15447,7 @@
     "Summary": "Populate fields with default values.",
     "Params": [],
     "Example": "",
-    "Returns": "This instance.",
+    "Returns": "This \"Geotab.Checkmate.ObjectModel.DeviceShare\" instance.",
     "Score": 1462
   },
   {
@@ -16019,7 +16019,7 @@
     "Summary": "The length of the message payload.",
     "Params": [],
     "Example": "",
-    "Returns": "Payload size.",
+    "Returns": "Payload size \"System.Int32\" .",
     "Score": 1514
   },
   {
@@ -16228,7 +16228,7 @@
     "Summary": "Gets or sets the parent Condition for this Condition. Null for root condition.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.Exceptions.Condition\"",
     "Score": 1533
   },
   {
@@ -16565,7 +16565,7 @@
       }
     ],
     "Example": "The following JavaScript example shows how to optimize a sequence of waypoints. api.call(\"OptimizeWaypoints\", { \"waypoints\" : [{ \"coordinate\" : { \"x\" : -79.78167419433593, \"y\" : 43.51832580566406 }, \"sequence\" : 0, \"description\": \"A\" }, { \"coordinate\" : { \"x\" : -79.8455322265625, \"y\" : 43.51230010986328 }, \"sequence\" : 1, \"description\": \"B\" }, { \"coordinate\" : { \"x\" : -79.968017578125, \"y\" : 43.42531967163086 }, \"sequence\" : 2, \"description\": \"C\" }, { \"coordinate\" : { \"x\" : -79.96439819335937, \"y\" : 43.47275924682617 }, \"sequence\" : 3, \"description\": \"D\" }, { \"coordinate\" : { \"x\" : -79.78167419433593, \"y\" : 43.51832580566406 }, \"sequence\" : 4, \"description\": \"E\" } ] }, function (result) { console.log(\"Done: \", result); }, function (e) { console.error(\"Failed:\", e); });",
-    "Returns": "A set of optimized.",
+    "Returns": "A set of optimized \"Geotab.Checkmate.ObjectModel.Geographical.Waypoint\" .",
     "Score": 1563
   },
   {
@@ -16583,7 +16583,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.Exceptions.Condition\"",
     "Score": 1564
   },
   {
@@ -17518,7 +17518,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The with offset applied.",
+    "Returns": "The \"Geotab.Drawing.RectangleF\" with offset applied.",
     "Score": 1640
   },
   {
@@ -19076,7 +19076,7 @@
       }
     ],
     "Example": "",
-    "Returns": "A list of.",
+    "Returns": "A list of. \"System.Object\"",
     "Score": 1781
   },
   {
@@ -19094,7 +19094,7 @@
       }
     ],
     "Example": "",
-    "Returns": "A list of.",
+    "Returns": "A list of. \"System.Object\"",
     "Score": 1782
   },
   {
@@ -19794,7 +19794,7 @@
       }
     ],
     "Example": "",
-    "Returns": "where T is A double representing kilometers.",
+    "Returns": "\"System.Nullable`1\" where T is \"System.Double\" A double representing kilometers.",
     "Score": 1845
   },
   {
@@ -21435,7 +21435,7 @@
     "Summary": "Gets or sets the Condition that this Condition is a link of.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.Exceptions.Condition\"",
     "Score": 1990
   },
   {
@@ -21959,7 +21959,7 @@
       }
     ],
     "Example": "",
-    "Returns": "where T is A double representing meters.",
+    "Returns": "\"System.Nullable`1\" where T is \"System.Double\" A double representing meters.",
     "Score": 2037
   },
   {
@@ -22420,7 +22420,7 @@
     "Summary": "Determines if the vehicle is already parked and this \"Geotab.Checkmate.ObjectModel.RoutePlanItem\" is the starting point.",
     "Params": [],
     "Example": "",
-    "Returns": "True if VehicleParkedHere option is checked in the UI for this",
+    "Returns": "True if VehicleParkedHere option is checked in the UI for this \"Geotab.Checkmate.ObjectModel.RoutePlanItem\"",
     "Score": 2077
   },
   {
@@ -22602,7 +22602,7 @@
     "Summary": "Checks if this log is an Unassigned Log",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Boolean\"",
     "Score": 2091
   },
   {
@@ -22792,7 +22792,7 @@
     "Summary": "Returns true if this device is definitely an rf device. Device will need to connect once before the product id is available to check. @return. \"System.Boolean\"",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Boolean\"",
     "Score": 2107
   },
   {
@@ -22920,7 +22920,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Boolean\"",
     "Score": 2118
   },
   {
@@ -23002,7 +23002,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Boolean\"",
     "Score": 2123
   },
   {
@@ -23024,7 +23024,7 @@
     "Summary": "Determine if a device is NoGps Device by its productId.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Boolean\"",
     "Score": 2125
   },
   {
@@ -23042,7 +23042,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Boolean\"",
     "Score": 2126
   },
   {
@@ -23157,7 +23157,7 @@
     "Summary": "Checks if the log is a Malfunction log.",
     "Params": [],
     "Example": "",
-    "Returns": "True if it is a malfunction log.",
+    "Returns": "\"System.Boolean\" True if it is a malfunction log.",
     "Score": 2134
   },
   {
@@ -23285,7 +23285,7 @@
     "Summary": "Checks if this log is inactive",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Boolean\"",
     "Score": 2145
   },
   {
@@ -23404,7 +23404,7 @@
     "Summary": "Determines whether garmin is supported on this device.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Boolean\"",
     "Score": 2154
   },
   {
@@ -23741,7 +23741,7 @@
     "Summary": "false Gets whether the route item is a break.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Boolean\"",
     "Score": 2184
   },
   {
@@ -23796,7 +23796,7 @@
     "Summary": "Checks if this log is an Automatic log",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Boolean\"",
     "Score": 2189
   },
   {
@@ -23880,7 +23880,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Boolean\"",
     "Score": 2196
   },
   {
@@ -23904,7 +23904,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Boolean\"",
     "Score": 2197
   },
   {
@@ -23915,7 +23915,7 @@
     "Summary": "Returns [true] the device's active to date is 'max date'. (Active devices use 'max date' as active to).",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Boolean\"",
     "Score": 2198
   },
   {
@@ -25153,7 +25153,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.TimeZoneInfo\"",
     "Score": 2307
   },
   {
@@ -28095,7 +28095,7 @@
       }
     ],
     "Example": "",
-    "Returns": "True if the rule has both and",
+    "Returns": "True if the rule has both \"Geotab.Checkmate.ObjectModel.Exceptions.RuleMonitorType\" and \"Geotab.Checkmate.ObjectModel.Exceptions.MonitorPredicate\"",
     "Score": 2572
   },
   {
@@ -29693,7 +29693,7 @@
     "Summary": "Gets Zone Condition. The zone conditions include both conditions for Zones and ZoneTypes.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Collections.Generic.IList`1\"",
     "Score": 2716
   },
   {
@@ -29704,7 +29704,7 @@
     "Summary": "The version information of the server.",
     "Params": [],
     "Example": "The following JavaScript example shows how to get current version of the server and goTalk. api.call(\"GetVersionInformation\", {});",
-    "Returns": "The.",
+    "Returns": "The \"Geotab.Checkmate.ObjectModel.VersionInformation\" .",
     "Score": 2717
   },
   {
@@ -29737,7 +29737,7 @@
     "Summary": "Gets the user ID string.",
     "Params": [],
     "Example": "",
-    "Returns": "The user ID string. The userId and Password pair are the's checkmate credentials. @return.",
+    "Returns": "The user ID string. The userId and Password pair are the \"Geotab.Checkmate.ObjectModel.User\" 's checkmate credentials. @return. \"System.String\"",
     "Score": 2720
   },
   {
@@ -29755,7 +29755,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.String\"",
     "Score": 2721
   },
   {
@@ -29766,7 +29766,7 @@
     "Summary": "The type of the key.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.DriverChangeType\"",
     "Score": 2722
   },
   {
@@ -29777,7 +29777,7 @@
     "Summary": "The tree Group count.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Int32\"",
     "Score": 2723
   },
   {
@@ -29788,7 +29788,7 @@
     "Summary": "Get a collection of \"Geotab.Checkmate.ObjectModel.TimeZoneInfo\" (Olson time zones).",
     "Params": [],
     "Example": "The following JavaScript example shows how to get all supported time zones. api.call(\"GetTimeZones\", {});",
-    "Returns": "A collection of.",
+    "Returns": "A collection of \"Geotab.Checkmate.ObjectModel.TimeZoneInfo\" .",
     "Score": 2724
   },
   {
@@ -29865,7 +29865,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The new or null if this is not a system group",
+    "Returns": "The new \"Geotab.Checkmate.ObjectModel.Group\" or null if this is not a system group",
     "Score": 2726
   },
   {
@@ -29889,7 +29889,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The.",
+    "Returns": "The \"Geotab.Checkmate.ObjectModel.Engine.FaultState\" .",
     "Score": 2727
   },
   {
@@ -29907,7 +29907,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The new",
+    "Returns": "The new \"Geotab.Checkmate.ObjectModel.Group\"",
     "Score": 2728
   },
   {
@@ -29962,7 +29962,7 @@
     "Summary": "Gets the IsAdd \"System.Boolean\" value in the form of a (-) or nothing, in front of the securityId.",
     "Params": [],
     "Example": "",
-    "Returns": "A of the IsAdd if is false it will add a (-) in front of the securityId.",
+    "Returns": "A \"System.String\" of the IsAdd if \"System.Boolean\" is false it will add a (-) in front of the securityId.",
     "Score": 2733
   },
   {
@@ -30022,7 +30022,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The new",
+    "Returns": "The new \"Geotab.Checkmate.ObjectModel.Group\"",
     "Score": 2734
   },
   {
@@ -30044,7 +30044,7 @@
     "Summary": "Get all reporting groups (excludes security groups).",
     "Params": [],
     "Example": "",
-    "Returns": "A.",
+    "Returns": "A. \"System.Collections.Generic.List`1\"",
     "Score": 2736
   },
   {
@@ -30055,7 +30055,7 @@
     "Summary": "Creates a new object that is a read-only copy of the current instance.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.Audit.AuditReadOnly\"",
     "Score": 2737
   },
   {
@@ -30066,7 +30066,7 @@
     "Summary": "Creates a new object that is a read-only copy of the current instance.",
     "Params": [],
     "Example": "",
-    "Returns": "returns.",
+    "Returns": "returns. \"Geotab.Checkmate.ObjectModel.IEntity\"",
     "Score": 2738
   },
   {
@@ -30077,7 +30077,7 @@
     "Summary": "Creates a new object that is a read-only copy of the current instance.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.IEntity\"",
     "Score": 2739
   },
   {
@@ -30113,7 +30113,7 @@
       }
     ],
     "Example": "The following JavaScript example shows how to get maximum speed limits. var deviceName = prompt(\"Enter device name\"); api.call(\"Get\", { \"typeName\": \"Device\", \"search\": { name: \"%\" + deviceName + \"%\" } }, function(devices) { if (devices.length){ api.call(\"GetPostedRoadSpeedsForDevice\", { \"deviceSearch\": { id: devices[0].id }, \"fromDate\": (new Date((new Date()).getTime() - (1 * 24 * 60 * 60 * 1000))).toISOString(), \"toDate\": (new Date()).toISOString(), \"postedRoadSpeedOptions\": \"NoCommercial,NoEstimates\" }); } else { console.log(\"There are no devices with such name\"); } });",
-    "Returns": "A list of objects.",
+    "Returns": "A list of \"Geotab.Checkmate.ObjectModel.MaxRoadSpeedResult\" objects.",
     "Score": 2740
   },
   {
@@ -30164,7 +30164,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Int32\"",
     "Score": 2744
   },
   {
@@ -30182,7 +30182,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Type\"",
     "Score": 2745
   },
   {
@@ -30211,7 +30211,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.Id\"",
     "Score": 2747
   },
   {
@@ -30229,7 +30229,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The known or original.",
+    "Returns": "The known \"Geotab.Checkmate.ObjectModel.Id\" or original \"Geotab.Checkmate.ObjectModel.Id\" .",
     "Score": 2748
   },
   {
@@ -30247,7 +30247,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The known.",
+    "Returns": "The known. \"Geotab.Checkmate.ObjectModel.Id\"",
     "Score": 2749
   },
   {
@@ -30283,7 +30283,7 @@
       }
     ],
     "Example": "",
-    "Returns": "where T is.",
+    "Returns": "\"System.Nullable`1\" where T is. \"System.Boolean\"",
     "Score": 2751
   },
   {
@@ -30294,7 +30294,7 @@
     "Summary": "Whether or not all the custom data for this log has been read. Incomplete data should be discarded.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Boolean\"",
     "Score": 2752
   },
   {
@@ -30393,7 +30393,7 @@
     "Summary": "Serves as a hash function for a particular type. <see cref=\"M:System.Object.GetHashCode\" is suitable for use in hashing algorithms and data structures like a hash table.",
     "Params": [],
     "Example": "",
-    "Returns": "A hash code for the current.",
+    "Returns": "A hash code for the current \"System.Object\" .",
     "Score": 2761
   },
   {
@@ -30503,7 +30503,7 @@
     "Summary": "false Serves as a hash function for a particular type. GetHashCode is suitable for use in hashing algorithms and data structures like a hash table.",
     "Params": [],
     "Example": "",
-    "Returns": "An integer representing the hash code for the current.",
+    "Returns": "An integer representing the hash code for the current \"System.Object\" .",
     "Score": 2771
   },
   {
@@ -30536,7 +30536,7 @@
     "Summary": "Serves as a hash function for a particular type. <see cref=\"M:System.Object.GetHashCode\" is suitable for use in hashing algorithms and data structures like a hash table.",
     "Params": [],
     "Example": "",
-    "Returns": "A hash code for the current.",
+    "Returns": "A hash code for the current \"System.Object\" .",
     "Score": 2774
   },
   {
@@ -30598,7 +30598,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.Settings.FuelEconomyUnit\"",
     "Score": 2779
   },
   {
@@ -30616,7 +30616,7 @@
       }
     ],
     "Example": "",
-    "Returns": "Returns of all entries that passed the filter.",
+    "Returns": "Returns \"System.Linq.Enumerable\" of all \"Geotab.Checkmate.ObjectModel.Defect\" entries that passed the filter.",
     "Score": 2780
   },
   {
@@ -30687,7 +30687,7 @@
       }
     ],
     "Example": "The following JavaScript example shows how to call GetFeed and return a list of status data. Note that it returns only the first 10 status data and after that another 10. let feed = (() => { let version = \"0000000000000000\"; return { next: success => { api.call(\"GetFeed\", { \"typeName\": \"StatusData\", \"resultsLimit\": 10, \"fromVersion\": version, }, result => { version = result.toVersion; success(result.data); }); } }; })(); feed.next(data => { console.log(\"First part: \", data); setTimeout(() => { feed.next(data => { console.log(\"Second part: \", data); }); }, 1000); });",
-    "Returns": "A containing a list of all available data and the last version in the set returned by this call.",
+    "Returns": "A \"Geotab.Checkmate.ObjectModel.FeedResult`1\" containing a list of all available data and the last version in the set returned by this call.",
     "Score": 2783
   },
   {
@@ -30705,7 +30705,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The Known.",
+    "Returns": "The Known<see cref=\"P:Geotab.Checkmate.ObjectModel.Engine.FaultData.Id\" .",
     "Score": 2784
   },
   {
@@ -30735,7 +30735,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The of containing two bounding boxes.",
+    "Returns": "The \"System.Collections.Generic.IList`1\" of \"System.Collections.Generic.IList`1\" containing two bounding boxes.",
     "Score": 2785
   },
   {
@@ -30753,7 +30753,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The list.",
+    "Returns": "The \"Geotab.Checkmate.ObjectModel.ISimpleCoordinate\" list.",
     "Score": 2786
   },
   {
@@ -30822,7 +30822,7 @@
     "Summary": "The \"Geotab.Checkmate.ObjectModel.Driver\" Id.",
     "Params": [],
     "Example": "",
-    "Returns": ".",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.Id\" .",
     "Score": 2791
   },
   {
@@ -30833,7 +30833,7 @@
     "Summary": "The \"Geotab.Checkmate.ObjectModel.Driver\" Id.",
     "Params": [],
     "Example": "",
-    "Returns": ".",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.Id\" .",
     "Score": 2792
   },
   {
@@ -30851,7 +30851,7 @@
       }
     ],
     "Example": "The following JavaScript example shows how to get directions for a sequence of waypoints. api.call(\"GetDirections\", { \"waypoints\" : [{ \"coordinate\" : { \"x\" : -79.38424129999999, \"y\" : 43.65411539999999 }, \"sequence\" : 0, \"description\": \"A\" }, { \"coordinate\" : { \"x\" : -79.38931020000001, \"y\" : 43.640473 }, \"sequence\" : 1, \"description\": \"B\" }, { \"coordinate\" : { \"x\" : -79.38424129999999, \"y\" : 43.65411539999999 }, \"sequence\" : 2, \"description\": \"C\" } ] }, function (result) { console.log(\"Done: \", result); }, function (e) { console.error(\"Failed:\", e); });",
-    "Returns": "Step-by-step between thes.",
+    "Returns": "Step-by-step \"Geotab.Checkmate.ObjectModel.Geographical.Directions\" between the \"Geotab.Checkmate.ObjectModel.Geographical.Waypoint\" s.",
     "Score": 2793
   },
   {
@@ -30873,7 +30873,7 @@
     "Summary": "Gets the diagnostic.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.Engine.Diagnostic\"",
     "Score": 2795
   },
   {
@@ -30979,7 +30979,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The new",
+    "Returns": "The new \"Geotab.Checkmate.ObjectModel.Group\"",
     "Score": 2798
   },
   {
@@ -31003,7 +31003,7 @@
       }
     ],
     "Example": "The following JavaScript example shows how to get daylight saving rules for the given Timezone. Only rules that end on or after 2000 will be returned. api.call(\"GetDaylightSavingRules\", { \"timeZoneId\": \"America/Toronto\" }); The following JavaScript example uses minYear parameter to get all adjustment rules since 1990, overriding the default value of 2000. api.call(\"GetDaylightSavingRules\", { \"timeZoneId\": \"America/Toronto\", \"minYear\": 1990 });",
-    "Returns": "The resulting collection.",
+    "Returns": "The resulting \"Geotab.Checkmate.ObjectModel.TimeZoneInfoWithRules\" collection.",
     "Score": 2799
   },
   {
@@ -31021,7 +31021,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.String\"",
     "Score": 2800
   },
   {
@@ -31050,7 +31050,7 @@
     "Summary": "Gets the kind of the data source.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.Exceptions.DataSourceKind\"",
     "Score": 2802
   },
   {
@@ -31061,7 +31061,7 @@
     "Summary": "The length of the field.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Int32\"",
     "Score": 2803
   },
   {
@@ -31141,7 +31141,7 @@
       }
     ],
     "Example": "The following JavaScript example shows how to get the Coordinates for a given list of Addresses. api.call(\"GetCoordinates\",{ \"addresses\":[\"New York City, NY, USA\"] });",
-    "Returns": "The array of(s) for the address or null if it cannot be found.",
+    "Returns": "The array of \"Geotab.Checkmate.ObjectModel.Coordinate\" (s) for the address or null if it cannot be found.",
     "Score": 2809
   },
   {
@@ -31159,7 +31159,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.Continent\"",
     "Score": 2810
   },
   {
@@ -31181,7 +31181,7 @@
     "Summary": "Gets or Sets children \"Geotab.Checkmate.ObjectModel.Exceptions.Condition\" (s).",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Collections.Generic.IList`1\"",
     "Score": 2812
   },
   {
@@ -31203,7 +31203,7 @@
     "Summary": "Gets ClientSettings.",
     "Params": [],
     "Example": "",
-    "Returns": "Return of the current .",
+    "Returns": "Return \"Geotab.Checkmate.ObjectModel.ClientSettings\" of the current \"Geotab.Checkmate.ObjectModel.User\" .",
     "Score": 2814
   },
   {
@@ -31225,7 +31225,7 @@
     "Summary": "Gets the date.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.DateTime\"",
     "Score": 2816
   },
   {
@@ -31236,7 +31236,7 @@
     "Summary": "Gets the date.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "<see cref=\"P:Geotab.Checkmate.ObjectModel.Trip.DateTime\"",
     "Score": 2817
   },
   {
@@ -31254,7 +31254,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.ISimpleCoordinate\"",
     "Score": 2818
   },
   {
@@ -31272,7 +31272,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Collections.Generic.List`1\"",
     "Score": 2819
   },
   {
@@ -31355,7 +31355,7 @@
       }
     ],
     "Example": "The following JavaScript example shows how to call Get and return a list of Devices. Note that it returns only the first 10 and the devices have to be active. api.call(\"Get\",{\"typeName\":\"Device\", \"resultsLimit\":10, \"search\":{ \"fromDate\":new Date().toISOString() }, \"propertySelector\": { \"fields\": [\"id\", \"name\"] } });",
-    "Returns": "A of(s).",
+    "Returns": "A \"System.Collections.Generic.IAsyncEnumerable`1\" of \"Geotab.Checkmate.ObjectModel.Entity\" (s).",
     "Score": 2822
   },
   {
@@ -31390,7 +31390,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Int32\"",
     "Score": 2824
   },
   {
@@ -31426,7 +31426,7 @@
       }
     ],
     "Example": "The following JavaScript example shows how to get the Addresses for a given list of coordinates. api.call(\"GetAddresses\",{ \"coordinates\":[{\"x\":\"25.856667\", \"y\":\" -17.924444\"}], \"movingAddresses\":true });",
-    "Returns": "A list of populated(s).",
+    "Returns": "A list of populated \"Geotab.Checkmate.ObjectModel.ReverseGeocodeAddress\" (s).",
     "Score": 2825
   },
   {
@@ -31437,7 +31437,7 @@
     "Summary": "The date when the EULA was accepted.",
     "Params": [],
     "Example": "",
-    "Returns": "The date that the EULA agreement was accepted.",
+    "Returns": "\"System.DateTime\" The date that the EULA agreement was accepted.",
     "Score": 2826
   },
   {
@@ -31503,7 +31503,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The new",
+    "Returns": "The new \"Geotab.Checkmate.ObjectModel.Group\"",
     "Score": 2827
   },
   {
@@ -31533,7 +31533,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The instance.",
+    "Returns": "The \"Geotab.Checkmate.ObjectModel.PropertySelector\" instance.",
     "Score": 2828
   },
   {
@@ -31577,7 +31577,7 @@
     "Summary": "The type of the key.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.DriverChangeType\"",
     "Score": 2832
   },
   {
@@ -31645,7 +31645,7 @@
       }
     ],
     "Example": "",
-    "Returns": "Array of",
+    "Returns": "Array of \"System.Byte\"",
     "Score": 2837
   },
   {
@@ -31675,7 +31675,7 @@
       }
     ],
     "Example": "",
-    "Returns": "Array of",
+    "Returns": "Array of \"System.Byte\"",
     "Score": 2838
   },
   {
@@ -32184,7 +32184,7 @@
       }
     ],
     "Example": "",
-    "Returns": "An instance of a object that corresponds to the serial number provided.",
+    "Returns": "An instance of a \"Geotab.Checkmate.ObjectModel.Device\" object that corresponds to the serial number provided.",
     "Score": 2883
   },
   {
@@ -32202,7 +32202,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.Device\"",
     "Score": 2884
   },
   {
@@ -32238,7 +32238,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The.",
+    "Returns": "The \"Geotab.Drawing.RectangleF\" .",
     "Score": 2885
   },
   {
@@ -32302,7 +32302,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Type\"",
     "Score": 2889
   },
   {
@@ -32993,7 +32993,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Collections.Generic.IList`1\"",
     "Score": 2950
   },
   {
@@ -33017,7 +33017,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.Exceptions.Condition\"",
     "Score": 2951
   },
   {
@@ -34190,7 +34190,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The.",
+    "Returns": "The \"Geotab.Checkmate.ObjectModel.Exceptions.ExceptionEventState\" .",
     "Score": 3057
   },
   {
@@ -34208,7 +34208,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The.",
+    "Returns": "The \"Geotab.Checkmate.ObjectModel.MimeTaskType\" .",
     "Score": 3058
   },
   {
@@ -34677,7 +34677,7 @@
       }
     ],
     "Example": "",
-    "Returns": "true if the specified is equal to this instance; otherwise, false.",
+    "Returns": "true if the specified \"System.Object\" is equal to this instance; otherwise, false.",
     "Score": 3100
   },
   {
@@ -34764,7 +34764,7 @@
       }
     ],
     "Example": "",
-    "Returns": "true if the specified is equal to the current ; otherwise, false.",
+    "Returns": "true if the specified \"System.Object\" is equal to the current \"System.Object\" ; otherwise, false.",
     "Score": 3106
   },
   {
@@ -34782,7 +34782,7 @@
       }
     ],
     "Example": "",
-    "Returns": "true if the specified is equal to this instance; otherwise, false.",
+    "Returns": "true if the specified \"System.Object\" is equal to this instance; otherwise, false.",
     "Score": 3107
   },
   {
@@ -34833,7 +34833,7 @@
       }
     ],
     "Example": "",
-    "Returns": "true if the specified is equal to this instance; otherwise, false.",
+    "Returns": "true if the specified \"System.Object\" is equal to this instance; otherwise, false.",
     "Score": 3111
   },
   {
@@ -34851,7 +34851,7 @@
       }
     ],
     "Example": "",
-    "Returns": "true if the specified is equal to this instance; otherwise, false.",
+    "Returns": "true if the specified \"Geotab.Checkmate.ObjectModel.GroupRelations\" is equal to this instance; otherwise, false.",
     "Score": 3112
   },
   {
@@ -34880,7 +34880,7 @@
       }
     ],
     "Example": "",
-    "Returns": "true if the specified is equal to this instance; otherwise, false.",
+    "Returns": "true if the specified \"System.Object\" is equal to this instance; otherwise, false.",
     "Score": 3114
   },
   {
@@ -34909,7 +34909,7 @@
       }
     ],
     "Example": "",
-    "Returns": "true if the specified is equal to the current ; otherwise, false.",
+    "Returns": "true if the specified \"System.Object\" is equal to the current \"System.Object\" ; otherwise, false.",
     "Score": 3116
   },
   {
@@ -34927,7 +34927,7 @@
       }
     ],
     "Example": "",
-    "Returns": "true if the specified is equal to this instance; otherwise, false.",
+    "Returns": "true if the specified \"System.Object\" is equal to this instance; otherwise, false.",
     "Score": 3117
   },
   {
@@ -34945,7 +34945,7 @@
       }
     ],
     "Example": "",
-    "Returns": "true if the specified is equal to this instance; otherwise, false.",
+    "Returns": "true if the specified \"System.Object\" is equal to this instance; otherwise, false.",
     "Score": 3118
   },
   {
@@ -34963,7 +34963,7 @@
       }
     ],
     "Example": "",
-    "Returns": "true if the specified is equal to the current ; otherwise, false.",
+    "Returns": "true if the specified \"System.Object\" is equal to the current \"System.Object\" ; otherwise, false.",
     "Score": 3119
   },
   {
@@ -34992,7 +34992,7 @@
       }
     ],
     "Example": "",
-    "Returns": "true if the specified is equal to this instance; otherwise, false.",
+    "Returns": "true if the specified \"System.Object\" is equal to this instance; otherwise, false.",
     "Score": 3121
   },
   {
@@ -35010,7 +35010,7 @@
       }
     ],
     "Example": "",
-    "Returns": "true if the specified is equal to this instance; otherwise, false.",
+    "Returns": "true if the specified \"System.Object\" is equal to this instance; otherwise, false.",
     "Score": 3122
   },
   {
@@ -36702,7 +36702,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The.",
+    "Returns": "The \"Geotab.Checkmate.ObjectModel.Driver\" .",
     "Score": 3274
   },
   {
@@ -37109,7 +37109,7 @@
     "Summary": "Gets or sets the <see cref=\"P:Geotab.Checkmate.ObjectModel.Fuel.FillUp.Driver\" associated with the transaction.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "<see cref=\"P:Geotab.Checkmate.ObjectModel.Fuel.FillUp.Driver\"",
     "Score": 3311
   },
   {
@@ -37237,7 +37237,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The file stream of the given content-type.",
+    "Returns": "The file stream of the given \"Geotab.Checkmate.ObjectModel.Files.MediaFile\" content-type.",
     "Score": 3322
   },
   {
@@ -37261,7 +37261,7 @@
       }
     ],
     "Example": "",
-    "Returns": "A completed result.",
+    "Returns": "A \"System.Threading.Tasks.Task\" completed result.",
     "Score": 3323
   },
   {
@@ -37470,7 +37470,7 @@
       }
     ],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Double\"",
     "Score": 3339
   },
   {
@@ -42607,7 +42607,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The.",
+    "Returns": "The. \"Geotab.Checkmate.ObjectModel.DeviceType\"",
     "Score": 3799
   },
   {
@@ -43866,7 +43866,7 @@
       }
     ],
     "Example": "",
-    "Returns": "New instance of",
+    "Returns": "New instance of \"Geotab.Checkmate.ObjectModel.Coordinate\"",
     "Score": 3910
   },
   {
@@ -45596,7 +45596,7 @@
     "Summary": "Create the encoded payload of the message.",
     "Params": [],
     "Example": "",
-    "Returns": "A Array.",
+    "Returns": "A \"System.Byte\" Array.",
     "Score": 4066
   },
   {
@@ -45875,7 +45875,7 @@
       }
     ],
     "Example": "",
-    "Returns": "A new Basic Authentication.",
+    "Returns": "A new Basic Authentication \"Geotab.Checkmate.ObjectModel.User\" .",
     "Score": 4076
   },
   {
@@ -45977,7 +45977,7 @@
       }
     ],
     "Example": "",
-    "Returns": "A new Basic Authentication.",
+    "Returns": "A new Basic Authentication \"Geotab.Checkmate.ObjectModel.User\" .",
     "Score": 4077
   },
   {
@@ -45995,7 +45995,7 @@
       }
     ],
     "Example": "",
-    "Returns": "New instance of",
+    "Returns": "New instance of \"Geotab.Checkmate.ObjectModel.Coordinate\"",
     "Score": 4078
   },
   {
@@ -46013,7 +46013,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The result.",
+    "Returns": "The \"Geotab.Checkmate.ObjectModel.Id\" result.",
     "Score": 4079
   },
   {
@@ -46031,7 +46031,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The result.",
+    "Returns": "The \"Geotab.Checkmate.ObjectModel.Id\" result.",
     "Score": 4080
   },
   {
@@ -46049,7 +46049,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The result.",
+    "Returns": "The \"Geotab.Checkmate.ObjectModel.Id\" result.",
     "Score": 4081
   },
   {
@@ -46210,7 +46210,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The converted StatusData.",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.Engine.StatusData\" The converted StatusData.",
     "Score": 4095
   },
   {
@@ -46228,7 +46228,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The converted double.",
+    "Returns": "\"System.Double\" The converted double.",
     "Score": 4096
   },
   {
@@ -46246,7 +46246,7 @@
       }
     ],
     "Example": "",
-    "Returns": "The converted float.",
+    "Returns": "\"System.Single\" The converted float.",
     "Score": 4097
   },
   {
@@ -48116,7 +48116,7 @@
     "Summary": "false Determines whether the Exception Rule is a Zone or ZoneType based rule.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Boolean\"",
     "Score": 4267
   },
   {
@@ -48914,7 +48914,7 @@
     "Summary": "Create a copy.",
     "Params": [],
     "Example": "",
-    "Returns": "The.",
+    "Returns": "The \"Geotab.Checkmate.ObjectModel.BinaryPayload\" .",
     "Score": 4337
   },
   {
@@ -48947,7 +48947,7 @@
     "Summary": "Creates a new object that is a copy of the current instance.",
     "Params": [],
     "Example": "",
-    "Returns": "A new object that is a copy of this instance.",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.AnnotationLog\" A new object that is a copy of this instance.",
     "Score": 4340
   },
   {
@@ -48991,7 +48991,7 @@
     "Summary": "Clones an existing \"Geotab.Checkmate.ObjectModel.Charging.ChargeEvent\"",
     "Params": [],
     "Example": "",
-    "Returns": "A new with the same properties as the original.",
+    "Returns": "A new \"Geotab.Checkmate.ObjectModel.Charging.ChargeEvent\" with the same properties as the original.",
     "Score": 4344
   },
   {
@@ -49079,7 +49079,7 @@
     "Summary": "Creates a new \"Geotab.Checkmate.ObjectModel.DbUnavailableException\" that is a copy of the current instance.",
     "Params": [],
     "Example": "",
-    "Returns": "A new that is a copy of this instance.",
+    "Returns": "A new \"Geotab.Checkmate.ObjectModel.DbUnavailableException\" that is a copy of this instance.",
     "Score": 4352
   },
   {
@@ -49112,7 +49112,7 @@
     "Summary": "Creates a new object that is a copy of the current instance.",
     "Params": [],
     "Example": "",
-    "Returns": "A new object that is a copy of this instance.",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.DefectRemark\" A new object that is a copy of this instance.",
     "Score": 4355
   },
   {
@@ -49222,7 +49222,7 @@
     "Summary": "Creates a new object that is a copy of the current instance.",
     "Params": [],
     "Example": "",
-    "Returns": "A new object that is a copy of this instance.",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.DutyStatusLog\" A new object that is a copy of this instance.",
     "Score": 4365
   },
   {
@@ -49233,7 +49233,7 @@
     "Summary": "Clone this \"Geotab.Checkmate.ObjectModel.DutyStatusLogSearch\" instance.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.IEntity\"",
     "Score": 4366
   },
   {
@@ -49255,7 +49255,7 @@
     "Summary": "Creates a new object that is a copy of the current instance.",
     "Params": [],
     "Example": "",
-    "Returns": "A new object that is a copy of this instance.",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.DVIRDefect\" A new object that is a copy of this instance.",
     "Score": 4368
   },
   {
@@ -49266,7 +49266,7 @@
     "Summary": "Creates a new object that is a copy of the current instance.",
     "Params": [],
     "Example": "",
-    "Returns": "A new object that is a copy of this instance.",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.DVIRLog\" A new object that is a copy of this instance.",
     "Score": 4369
   },
   {
@@ -49563,7 +49563,7 @@
     "Summary": "Create a copy.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.Communication.IBinaryPayload\"",
     "Score": 4396
   },
   {
@@ -49596,7 +49596,7 @@
     "Summary": "Returns this instance.",
     "Params": [],
     "Example": "",
-    "Returns": "this instance of. No actual cloning is performed.",
+    "Returns": "this instance of \"Geotab.Checkmate.ObjectModel.Id\" . No actual cloning is performed.",
     "Score": 4399
   },
   {
@@ -49651,7 +49651,7 @@
     "Summary": "Create a copy.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.Communication.IBinaryPayload\"",
     "Score": 4404
   },
   {
@@ -49662,7 +49662,7 @@
     "Summary": "Clone this \"Geotab.Checkmate.ObjectModel.PropertySelector\" instance.",
     "Params": [],
     "Example": "",
-    "Returns": "New clone instance of this instance.",
+    "Returns": "New clone instance of this \"Geotab.Checkmate.ObjectModel.PropertySelector\" instance.",
     "Score": 4405
   },
   {
@@ -49706,7 +49706,7 @@
     "Summary": "Clone this \"Geotab.Checkmate.ObjectModel.IEntity\" .",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.IEntity\"",
     "Score": 4409
   },
   {
@@ -49739,7 +49739,7 @@
     "Summary": "Creates a new object that is a copy of the current instance.",
     "Params": [],
     "Example": "",
-    "Returns": "A new that is a copy of this instance.",
+    "Returns": "A new \"Geotab.Checkmate.ObjectModel.ShipmentLog\" that is a copy of this instance.",
     "Score": 4412
   },
   {
@@ -49772,7 +49772,7 @@
     "Summary": "Creates a new object that is a copy of the current instance.",
     "Params": [],
     "Example": "",
-    "Returns": "A new object that is a copy of this instance.",
+    "Returns": "\"Geotab.Checkmate.ObjectModel.Trailer\" A new object that is a copy of this instance.",
     "Score": 4415
   },
   {
@@ -49827,7 +49827,7 @@
     "Summary": "Clones this instance.",
     "Params": [],
     "Example": "",
-    "Returns": "A copy of this.",
+    "Returns": "A copy of this \"Geotab.Checkmate.ObjectModel.VersionInformation\" .",
     "Score": 4420
   },
   {
@@ -52223,7 +52223,7 @@
       }
     ],
     "Example": "The following JavaScript example shows how to call Authenticate. Just fill in your details for each of the parameters. api.call(\"Authenticate\", { \"userName\":\"\", \"database\":\"\", \"password\":\"\" });",
-    "Returns": "A object. It contains the Credentials property that can be used for further API calls. A result of LoginResult.Path = \"ThisServer\" occurs when the user is found on the current server. Otherwise, a server name is returned and the client must redirect to this new server name.",
+    "Returns": "A \"Geotab.Checkmate.ObjectModel.LoginResult\" object. It contains the Credentials property that can be used for further API calls. A result of LoginResult.Path = \"ThisServer\" occurs when the user is found on the current server. Otherwise, a server name is returned and the client must redirect to this new server name.",
     "Score": 4621
   },
   {
@@ -52458,7 +52458,7 @@
     "Summary": "Gets whether there are children.",
     "Params": [],
     "Example": "",
-    "Returns": "",
+    "Returns": "\"System.Boolean\"",
     "Score": 4640
   },
   {
@@ -53699,7 +53699,7 @@
       }
     ],
     "Example": "The following JavaScript example Adds a new Zone with a randomly generated name, such as \"Example zone 123123123\". api.call(\"Add\", {\"typeName\":\"Zone\", \"entity\":{ \"name\":\"Example zone \" + new Date().getTime(), \"mustIdentifyStops\":true, \"displayed\":true, \"activeFrom\":\"1986-01-01T00:00:00.000Z\", \"activeTo\":\"2050-01-01T00:00:00.000Z\", \"zoneTypes\":[\"ZoneTypeOfficeId\"], \"fillColor\":{\"r\":255, \"g\":165, \"b\":0, \"a\":191}, \"points\":[{\"x\": -79.712318, \"y\": 43.438266},{\"x\": -79.711181, \"y\": 43.437461},{\"x\": -79.712677, \"y\": 43.436168},{\"x\": -79.713966, \"y\": 43.437107},{\"x\": -79.712318, \"y\": 43.438266}], \"groups\":[{id:\"GroupCompanyId\"}]} });",
-    "Returns": "The for the newly added.",
+    "Returns": "The \"Geotab.Checkmate.ObjectModel.Id\" for the newly added \"Geotab.Checkmate.ObjectModel.Entity\" .",
     "Score": 4748
   },
   {
