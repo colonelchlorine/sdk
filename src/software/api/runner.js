@@ -126,22 +126,23 @@ export default function ApiRunnerCore() {
                 data: data
             }), "*");
         };
+        let strongerValue;
         const process = value => {
             if (iframe) {
                 value.iframe = iframe;
                 value.iframe.contentWindow.postMessage("rerun", "*");
+                strongerValue = value;
                 return value;
             }
             clear();
             iframe = createIframe();
 
             // listen to post messages from iframe
-            postMessages.on("ready", data => {
-                debugger;
+            postMessages.on("ready", (data) => {
                 getSendResponse("success", data.uid)({
-                    javascript: value.javascript,
-                    html: value.html,
-                    css: value.css
+                    javascript: strongerValue.javascript,
+                    html: strongerValue.html,
+                    css: strongerValue.css
                 });
             });
             postMessages.on("call", data => {
@@ -158,10 +159,10 @@ export default function ApiRunnerCore() {
             });
 
             value.iframe = iframe;
+            strongerValue = value;
             return value;
         };
         var clear = () => {
-            debugger;
             postMessages.clear();
             api.abort();
             iframe && iframe.parentNode.removeChild(iframe);
@@ -188,7 +189,6 @@ export default function ApiRunnerCore() {
 
         window.addEventListener("message", e => {
             e.preventDefault();
-            debugger;
             try {
                 if (!e.data || typeof e.data === 'object')
                     return;

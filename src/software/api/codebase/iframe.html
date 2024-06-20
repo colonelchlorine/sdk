@@ -33,9 +33,9 @@
                             calls[uid] && delete calls[uid];
                         };
                     return {
-                        add: add,
-                        get: get,
-                        remove: remove
+                        add,
+                        get,
+                        remove
                     };
                 })(),
                 getUID = (function() {
@@ -45,7 +45,6 @@
                     };
                 })(),
                 send = function(options, successCallback, errorCallback) {
-                    debugger;
                     var waitResponse = successCallback || errorCallback;
                     if (waitResponse) {
                         options.uid = getUID();
@@ -83,12 +82,13 @@
                 window.addEventListener("message", (e) => {
                     var origin = e.origin,
                         localOrigin = location.protocol + "//" + location.host;
-                    debugger;
+
                     if (localOrigin !== origin) {
                         return;
                     }
                     if (e.data === "rerun") {
-                        messages.send({ type: "ready" }, api.injectSample, function() {});
+                        // Trigger the load event to re-run the widow.onload event
+                        dispatchEvent(new Event('load'));
                         return;
                     }
                     gotPostMessage(e);
@@ -162,7 +162,6 @@
                     };
 
                 window.addEventListener("load", function() {
-                    /// only gets called once
                     messages.send({ type: "ready" }, injectSample, function() {});
                 }, false);
 
