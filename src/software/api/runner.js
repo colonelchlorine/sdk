@@ -82,7 +82,8 @@ export default function ApiRunnerCore() {
                  var htmlSnippets = [
                     { caption: 'document.querySelector()', snippet: `document.querySelector($1)` },
                     { caption: 'JSON.parse()', snippet: 'JSON.parse($1)' },
-                    { caption: 'api.call("get")', snippet: 'await api.call("Get", {\n "typeName": "$1", \n "resultsLimit": 10 \n});', meta: 'SDK Method' }
+                    { caption: 'api.call("get")', snippet: 'await api.call("Get", {\n "typeName": "$1", \n "resultsLimit": 10 \n});', meta: 'SDK Method' },
+                    { caption: 'api.call("set")', snippet: 'await api.call("Set", {\n "typeName": "$1", \n "entity": { $2 } \n});', meta: 'SDK Method' }
                     // Add more snippets as needed
                   ];
 
