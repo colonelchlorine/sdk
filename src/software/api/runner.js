@@ -5,6 +5,7 @@ import {
     toggleButtonStatesJsOnlyKey,
     toggleButtonStatesKey, unsavedEditorChangesKey
 } from './utils';
+import * as monaco from 'monaco-editor';
 
 let shouldAutoLoginDemo = false;
 let demoCredentials = null;
@@ -30,27 +31,41 @@ export default function ApiRunnerCore() {
             silentMode = false,
             render = () => {
                 language = !supportedLanguages[language] ? "javascript" : language;
-                editor = ace.edit(container);
-                editor.setTheme("ace/theme/chrome");
-                if (!window.Worker) {
-                    editor.getSession().setOption("useWorker", false);
-                }
-                editor.getSession().setMode("ace/mode/" + language);
-                editor.$blockScrolling = Infinity;
-                editor.on("change", debounce(() => {
-                        if (!silentMode) {
-                            if (ignoreChanges) {
-                                ignoreChanges = false;
-                                return;
-                            }
-                            appState.setUnsavedEditorChanges(true);
-                            if (window.location.hash.startsWith('#save:')) {
-                                localStorageUtils.setObject(unsavedEditorChangesKey, true);
-                            }
-                            urlState.saveState();
-                        }
-                    }, saveTimeout)
-                );
+                // editor = ace.edit(container);
+                // editor.setTheme("ace/theme/dracula");
+                // if (!window.Worker) {
+                //     editor.getSession().setOption("useWorker", false);
+                // }
+                // editor.session.on('changeMode', function(e, session) {
+                //     if ("ace/mode/javascript" === session.getMode().$id) {
+                //         if (!!session.$worker) {
+                //             session.$worker.send("setOptions", [{
+                //                 "esversion": 9,
+                //                 "esnext": false,
+                //             }]);
+                //         }
+                //     }
+                // });
+                // editor.getSession().setMode("ace/mode/" + language);
+                // editor.$blockScrolling = Infinity;
+                // editor.on("change", debounce(() => {
+                //         if (!silentMode) {
+                //             if (ignoreChanges) {
+                //                 ignoreChanges = false;
+                //                 return;
+                //             }
+                //             appState.setUnsavedEditorChanges(true);
+                //             if (window.location.hash.startsWith('#save:')) {
+                //                 localStorageUtils.setObject(unsavedEditorChangesKey, true);
+                //             }
+                //             urlState.saveState();
+                //         }
+                //     }, saveTimeout)
+                // );
+                monaco.editor.create(document.getElementById(container), {
+                    value: ['function x() {', '\tconsole.log("Hello world!");', '}'].join('\n'),
+                    language: 'javascript'
+                });
                 appState.setEditors(language, editor);
                 urlState.addEditor(language, self);
             },

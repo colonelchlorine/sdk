@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');
 const path = require('path');
 const argv = require('yargs').argv;
 
@@ -27,9 +28,18 @@ const config = {
                         presets: [ '@babel/preset-react', '@babel/preset-env' ]
                     }
                 }
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.ttf$/,
+                type: 'asset/resource'
             }
         ]
-    }
+    },
+    plugins: [new MonacoWebpackPlugin()]
 };
 
 if (argv?.prod || process.env.NODE_ENV === 'production') {
