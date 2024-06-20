@@ -8,31 +8,37 @@
     "Params": [
       {
         "Name": "data",
+        "Type": "",
         "IsRequired": null,
         "Description": "The data to be wrapped."
       },
       {
         "Name": "channel",
+        "Type": "",
         "IsRequired": null,
         "Description": "The channel to send the data to."
       },
       {
         "Name": "componentType",
+        "Type": "",
         "IsRequired": null,
         "Description": "The component type being addressed."
       },
       {
         "Name": "componentIndex",
+        "Type": "",
         "IsRequired": null,
         "Description": "The component type's index, for example, AUX 5 on an auxiliary expansion port."
       },
       {
         "Name": "isAcknowledgeRequired",
+        "Type": "",
         "IsRequired": null,
         "Description": "true if the recipient device must ack the receipt of this message, false otherwise."
       },
       {
         "Name": "isExtended",
+        "Type": "",
         "IsRequired": null,
         "Description": "Flag to indicate message requires two length bytes."
       }
@@ -50,6 +56,7 @@
     "Params": [
       {
         "Name": "details",
+        "Type": "",
         "IsRequired": null,
         "Description": "The details."
       }
@@ -61,34 +68,21 @@
   {
     "FullNameWithParams": "M:CheckmateServer.Web.WebMethods.UploadMediaFileAsync(Microsoft.AspNetCore.Http.HttpContext,CheckmateServer.Web.PostedFormFiles,Geotab.Checkmate.Database.DataStore,Geotab.Checkmate.ObjectModel.Files.MediaFile,System.Threading.CancellationToken)",
     "FullName": "M:CheckmateServer.Web.WebMethods.UploadMediaFileAsync",
-    "Name": "UploadMediaFileAsync",
+    "Name": "UploadMediaFile",
     "Type": "SDK Method",
     "Summary": "Upload a file for the corresponding using multipart/form-data POST request.",
     "Params": [
       {
-        "Name": "context",
-        "IsRequired": null,
-        "Description": "The HttpContext with the web request and response."
-      },
-      {
         "Name": "postedFiles",
+        "Type": "",
         "IsRequired": null,
         "Description": "Files that were uploaded with multiple data."
       },
       {
-        "Name": "dataStore",
-        "IsRequired": null,
-        "Description": "The."
-      },
-      {
         "Name": "mediaFile",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The of which to add the file for."
-      },
-      {
-        "Name": "cancellationToken",
-        "IsRequired": null,
-        "Description": "The."
       }
     ],
     "Example": "",
@@ -98,24 +92,21 @@
   {
     "FullNameWithParams": "M:Geotab.Checkmate.API.UploadAsync(System.IO.Stream,Geotab.Checkmate.ObjectModel.Files.MediaFile,System.Threading.CancellationToken)",
     "FullName": "M:Geotab.Checkmate.API.UploadAsync",
-    "Name": "UploadAsync",
+    "Name": "Upload",
     "Type": "SDK Method",
     "Summary": "Make an API call using generic type method to Upload a stream of data.",
     "Params": [
       {
         "Name": "inputStream",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The of binary data to upload."
       },
       {
         "Name": "mediaFile",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The fully populated corresponding to the file to upload."
-      },
-      {
-        "Name": "cancellationToken",
-        "IsRequired": null,
-        "Description": "The used to single that the request should be canceled."
       }
     ],
     "Example": "",
@@ -131,6 +122,7 @@
     "Params": [
       {
         "Name": "timeZoneId",
+        "Type": "",
         "IsRequired": null,
         "Description": "A containing the Timezone id to convert."
       }
@@ -148,11 +140,13 @@
     "Params": [
       {
         "Name": "other",
+        "Type": "",
         "IsRequired": null,
         "Description": "An object to compare with this instance."
       },
       {
         "Name": "result",
+        "Type": "",
         "IsRequired": null,
         "Description": "The comparison success or failure result."
       }
@@ -170,6 +164,7 @@
     "Params": [
       {
         "Name": "dateTime",
+        "Type": "",
         "IsRequired": null,
         "Description": "The time."
       }
@@ -187,6 +182,7 @@
     "Params": [
       {
         "Name": "dateTime",
+        "Type": "",
         "IsRequired": null,
         "Description": "The time."
       }
@@ -204,11 +200,13 @@
     "Params": [
       {
         "Name": "action",
+        "Type": "",
         "IsRequired": null,
         "Description": "A func where the input is a , output is a ."
       },
       {
         "Name": "optimize",
+        "Type": "",
         "IsRequired": null,
         "Description": "Optimize out empty conditions (slower)."
       }
@@ -226,16 +224,19 @@
     "Params": [
       {
         "Name": "parent",
+        "Type": "",
         "IsRequired": null,
         "Description": "The parent."
       },
       {
         "Name": "children",
+        "Type": "",
         "IsRequired": null,
         "Description": "The children."
       },
       {
         "Name": "optimize",
+        "Type": "",
         "IsRequired": null,
         "Description": "if set to true [optimize]."
       }
@@ -253,6 +254,7 @@
     "Params": [
       {
         "Name": "s",
+        "Type": "",
         "IsRequired": null,
         "Description": "The string representing a system id."
       }
@@ -270,6 +272,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The identifier."
       }
@@ -287,6 +290,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The id."
       }
@@ -304,6 +308,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The id."
       }
@@ -321,6 +326,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The id."
       }
@@ -338,6 +344,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The id."
       }
@@ -355,6 +362,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The id."
       }
@@ -372,6 +380,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The id."
       }
@@ -389,6 +398,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The."
       }
@@ -406,6 +416,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The unique of the trailer."
       }
@@ -423,6 +434,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The id."
       }
@@ -440,6 +452,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The id."
       }
@@ -457,6 +470,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The id."
       }
@@ -474,6 +488,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The id."
       }
@@ -491,6 +506,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The value."
       }
@@ -508,6 +524,7 @@
     "Params": [
       {
         "Name": "comparer",
+        "Type": "",
         "IsRequired": null,
         "Description": "of type"
       }
@@ -519,19 +536,15 @@
   {
     "FullNameWithParams": "M:Geotab.Checkmate.Database.DataStore.SetUserPasswordAsync(System.String,System.Threading.CancellationToken)",
     "FullName": "M:Geotab.Checkmate.Database.DataStore.SetUserPasswordAsync",
-    "Name": "SetUserPasswordAsync",
+    "Name": "SetUserPassword",
     "Type": "SDK Method",
     "Summary": "Set the's password.",
     "Params": [
       {
         "Name": "newPassword",
+        "Type": "",
         "IsRequired": null,
         "Description": "The new password to be set for the current user."
-      },
-      {
-        "Name": "cancellationToken",
-        "IsRequired": null,
-        "Description": "The."
       }
     ],
     "Example": "",
@@ -547,6 +560,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The name value."
       }
@@ -564,11 +578,13 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The value."
       },
       {
         "Name": "keepNameAndUserAuthenticationType",
+        "Type": "",
         "IsRequired": null,
         "Description": "Only set userID and do not update other properties."
       }
@@ -586,6 +602,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The value."
       }
@@ -603,6 +620,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The value."
       }
@@ -620,6 +638,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "Byte array"
       }
@@ -637,6 +656,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The EULA version."
       }
@@ -654,6 +674,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": ""
       }
@@ -671,6 +692,7 @@
     "Params": [
       {
         "Name": "newSettings",
+        "Type": "",
         "IsRequired": null,
         "Description": "The new."
       }
@@ -688,6 +710,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The date."
       }
@@ -705,6 +728,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The EULA revision number."
       }
@@ -722,6 +746,7 @@
     "Params": [
       {
         "Name": "entity",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The to be modified."
       }
@@ -739,11 +764,13 @@
     "Params": [
       {
         "Name": "writer",
+        "Type": "",
         "IsRequired": null,
         "Description": "The to write the json representation of the id to."
       },
       {
         "Name": "asPropertyName",
+        "Type": "",
         "IsRequired": null,
         "Description": "A bool indicating if the is to be a property name or a value. The default is value."
       }
@@ -761,6 +788,7 @@
     "Params": [
       {
         "Name": "collection",
+        "Type": "",
         "IsRequired": null,
         "Description": "The collection."
       }
@@ -778,16 +806,19 @@
     "Params": [
       {
         "Name": "section",
+        "Type": "",
         "IsRequired": null,
         "Description": "The section."
       },
       {
         "Name": "bytes",
+        "Type": "",
         "IsRequired": null,
         "Description": "The bytes."
       },
       {
         "Name": "start",
+        "Type": "",
         "IsRequired": null,
         "Description": "Offset where to start in bytes array."
       }
@@ -805,6 +836,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The distance."
       }
@@ -822,6 +854,7 @@
     "Params": [
       {
         "Name": "dateTime",
+        "Type": "",
         "IsRequired": null,
         "Description": "The given time."
       }
@@ -839,6 +872,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The coordinate."
       }
@@ -856,6 +890,7 @@
     "Params": [
       {
         "Name": "textMessages",
+        "Type": "",
         "IsRequired": null,
         "Description": "The collection of text message."
       }
@@ -873,6 +908,7 @@
     "Params": [
       {
         "Name": "entity",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The to be removed."
       }
@@ -890,6 +926,7 @@
     "Params": [
       {
         "Name": "field",
+        "Type": "",
         "IsRequired": null,
         "Description": "The field."
       }
@@ -907,21 +944,25 @@
     "Params": [
       {
         "Name": "left",
+        "Type": "",
         "IsRequired": null,
         "Description": "The left."
       },
       {
         "Name": "top",
+        "Type": "",
         "IsRequired": null,
         "Description": "The top."
       },
       {
         "Name": "right",
+        "Type": "",
         "IsRequired": null,
         "Description": "The right."
       },
       {
         "Name": "bottom",
+        "Type": "",
         "IsRequired": null,
         "Description": "The bottom."
       }
@@ -939,6 +980,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "Internal product Id for a serial number"
       }
@@ -956,6 +998,7 @@
     "Params": [
       {
         "Name": "productId",
+        "Type": "",
         "IsRequired": null,
         "Description": "Internal product Id for a serial number"
       }
@@ -967,24 +1010,15 @@
   {
     "FullNameWithParams": "M:CheckmateServer.Web.WebMethods.OptimizeWaypointsAsync(Geotab.Checkmate.Database.DataStore,System.Collections.Generic.List{Geotab.Checkmate.ObjectModel.Geographical.Waypoint},System.Threading.CancellationToken)",
     "FullName": "M:CheckmateServer.Web.WebMethods.OptimizeWaypointsAsync",
-    "Name": "OptimizeWaypointsAsync",
+    "Name": "OptimizeWaypoints",
     "Type": "SDK Method",
     "Summary": "Optimizes a set of(s).",
     "Params": [
       {
-        "Name": "dataStore",
-        "IsRequired": null,
-        "Description": "The."
-      },
-      {
         "Name": "waypoints",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The original(s) (Maximum 25)."
-      },
-      {
-        "Name": "cancellationToken",
-        "IsRequired": null,
-        "Description": "The."
       }
     ],
     "Example": "The following JavaScript example shows how to optimize a sequence of waypoints. api.call(\"OptimizeWaypoints\", { \"waypoints\" : [{ \"coordinate\" : { \"x\" : -79.78167419433593, \"y\" : 43.51832580566406 }, \"sequence\" : 0, \"description\": \"A\" }, { \"coordinate\" : { \"x\" : -79.8455322265625, \"y\" : 43.51230010986328 }, \"sequence\" : 1, \"description\": \"B\" }, { \"coordinate\" : { \"x\" : -79.968017578125, \"y\" : 43.42531967163086 }, \"sequence\" : 2, \"description\": \"C\" }, { \"coordinate\" : { \"x\" : -79.96439819335937, \"y\" : 43.47275924682617 }, \"sequence\" : 3, \"description\": \"D\" }, { \"coordinate\" : { \"x\" : -79.78167419433593, \"y\" : 43.51832580566406 }, \"sequence\" : 4, \"description\": \"E\" } ] }, function (result) { console.log(\"Done: \", result); }, function (e) { console.error(\"Failed:\", e); });",
@@ -1000,6 +1034,7 @@
     "Params": [
       {
         "Name": "item",
+        "Type": "",
         "IsRequired": null,
         "Description": "The item."
       }
@@ -1017,11 +1052,13 @@
     "Params": [
       {
         "Name": "id1",
+        "Type": "",
         "IsRequired": null,
         "Description": "The first."
       },
       {
         "Name": "id2",
+        "Type": "",
         "IsRequired": null,
         "Description": "The second."
       }
@@ -1039,11 +1076,13 @@
     "Params": [
       {
         "Name": "id1",
+        "Type": "",
         "IsRequired": null,
         "Description": "The first."
       },
       {
         "Name": "id2",
+        "Type": "",
         "IsRequired": null,
         "Description": "The second."
       }
@@ -1061,11 +1100,13 @@
     "Params": [
       {
         "Name": "identifier1",
+        "Type": "",
         "IsRequired": null,
         "Description": "The first entity."
       },
       {
         "Name": "identifier2",
+        "Type": "",
         "IsRequired": null,
         "Description": "The second entity."
       }
@@ -1083,11 +1124,13 @@
     "Params": [
       {
         "Name": "id1",
+        "Type": "",
         "IsRequired": null,
         "Description": "The first."
       },
       {
         "Name": "id2",
+        "Type": "",
         "IsRequired": null,
         "Description": "The second."
       }
@@ -1105,11 +1148,13 @@
     "Params": [
       {
         "Name": "id1",
+        "Type": "",
         "IsRequired": null,
         "Description": "The first."
       },
       {
         "Name": "id2",
+        "Type": "",
         "IsRequired": null,
         "Description": "The second."
       }
@@ -1127,11 +1172,13 @@
     "Params": [
       {
         "Name": "identifier1",
+        "Type": "",
         "IsRequired": null,
         "Description": "The first entity."
       },
       {
         "Name": "identifier2",
+        "Type": "",
         "IsRequired": null,
         "Description": "The second entity."
       }
@@ -1149,6 +1196,7 @@
     "Params": [
       {
         "Name": "olsonId",
+        "Type": "",
         "IsRequired": null,
         "Description": "The olsonId."
       }
@@ -1166,6 +1214,7 @@
     "Params": [
       {
         "Name": "olsonId",
+        "Type": "",
         "IsRequired": null,
         "Description": "An Olson Timezone ID."
       }
@@ -1183,6 +1232,7 @@
     "Params": [
       {
         "Name": "p",
+        "Type": "",
         "IsRequired": null,
         "Description": "The p."
       }
@@ -1190,23 +1240,6 @@
     "Example": "",
     "Returns": "The with offset applied.",
     "Score": 160
-  },
-  {
-    "FullNameWithParams": "M:Geotab.Checkmate.API.MultiCallAsync(System.Object[])",
-    "FullName": "M:Geotab.Checkmate.API.MultiCallAsync",
-    "Name": "MultiCallAsync",
-    "Type": "SDK Method",
-    "Summary": "Make multiple calls (MultiCall) against the database using a single HTTP request. Each \"call\" must contain the return as the last index. This is an async call.",
-    "Params": [
-      {
-        "Name": "arguments",
-        "IsRequired": null,
-        "Description": "A an array of object arrays contain call arguments and (if not otherwise specified)."
-      }
-    ],
-    "Example": "",
-    "Returns": "A list of.",
-    "Score": 161
   },
   {
     "FullNameWithParams": "M:Geotab.Checkmate.API.MultiCall(System.Object[])",
@@ -1217,6 +1250,25 @@
     "Params": [
       {
         "Name": "arguments",
+        "Type": "",
+        "IsRequired": null,
+        "Description": "A an array of object arrays contain call arguments and (if not otherwise specified)."
+      }
+    ],
+    "Example": "",
+    "Returns": "A list of.",
+    "Score": 161
+  },
+  {
+    "FullNameWithParams": "M:Geotab.Checkmate.API.MultiCallAsync(System.Object[])",
+    "FullName": "M:Geotab.Checkmate.API.MultiCallAsync",
+    "Name": "MultiCall",
+    "Type": "SDK Method",
+    "Summary": "Make multiple calls (MultiCall) against the database using a single HTTP request. Each \"call\" must contain the return as the last index. This is an async call.",
+    "Params": [
+      {
+        "Name": "arguments",
+        "Type": "",
         "IsRequired": null,
         "Description": "A an array of object arrays contain call arguments and (if not otherwise specified)."
       }
@@ -1234,6 +1286,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The value in meters."
       }
@@ -1251,6 +1304,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The value in meters."
       }
@@ -1268,6 +1322,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The value in meters."
       }
@@ -1285,21 +1340,25 @@
     "Params": [
       {
         "Name": "customData",
+        "Type": "",
         "IsRequired": null,
         "Description": "The custom data."
       },
       {
         "Name": "sections",
+        "Type": "",
         "IsRequired": null,
         "Description": "The sections."
       },
       {
         "Name": "data",
+        "Type": "",
         "IsRequired": null,
         "Description": "The data."
       },
       {
         "Name": "isSingleSectionData",
+        "Type": "",
         "IsRequired": null,
         "Description": "if set to true if a single section data."
       }
@@ -1317,6 +1376,7 @@
     "Params": [
       {
         "Name": "machineId",
+        "Type": "",
         "IsRequired": null,
         "Description": "A Machine Timezone ID."
       }
@@ -1334,6 +1394,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The value in meters."
       }
@@ -1351,6 +1412,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The value in meters."
       }
@@ -1368,6 +1430,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The value in meters."
       }
@@ -1385,6 +1448,7 @@
     "Params": [
       {
         "Name": "conditionType",
+        "Type": "",
         "IsRequired": null,
         "Description": "The to check."
       }
@@ -1402,6 +1466,7 @@
     "Params": [
       {
         "Name": "longitude",
+        "Type": "",
         "IsRequired": null,
         "Description": "Longitude value"
       }
@@ -1419,6 +1484,7 @@
     "Params": [
       {
         "Name": "latitude",
+        "Type": "",
         "IsRequired": null,
         "Description": "Latitude value"
       }
@@ -1436,6 +1502,7 @@
     "Params": [
       {
         "Name": "coordinate",
+        "Type": "",
         "IsRequired": null,
         "Description": "The coordinate."
       }
@@ -1453,6 +1520,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The Timezone."
       }
@@ -1470,6 +1538,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The id."
       }
@@ -1487,6 +1556,7 @@
     "Params": [
       {
         "Name": "conditionType",
+        "Type": "",
         "IsRequired": null,
         "Description": "The to check."
       }
@@ -1504,6 +1574,7 @@
     "Params": [
       {
         "Name": "feature",
+        "Type": "",
         "IsRequired": null,
         "Description": "The feature."
       }
@@ -1521,11 +1592,13 @@
     "Params": [
       {
         "Name": "passwordDateTime",
+        "Type": "",
         "IsRequired": null,
         "Description": "When the password was last changed."
       },
       {
         "Name": "lifetime",
+        "Type": "",
         "IsRequired": null,
         "Description": "The lifetime from system settings."
       }
@@ -1543,6 +1616,7 @@
     "Params": [
       {
         "Name": "lifetime",
+        "Type": "",
         "IsRequired": null,
         "Description": "The lifetime from system settings."
       }
@@ -1560,6 +1634,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The Timezone Id."
       }
@@ -1577,6 +1652,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The to check against."
       }
@@ -1594,6 +1670,7 @@
     "Params": [
       {
         "Name": "identifier",
+        "Type": "",
         "IsRequired": null,
         "Description": "The identifier."
       }
@@ -1611,6 +1688,7 @@
     "Params": [
       {
         "Name": "includeSpeedLimitTypes",
+        "Type": "",
         "IsRequired": null,
         "Description": "Treat and related condition types as measurements producing."
       }
@@ -1628,11 +1706,13 @@
     "Params": [
       {
         "Name": "conditionType",
+        "Type": "",
         "IsRequired": null,
         "Description": "The to check."
       },
       {
         "Name": "includeSpeedLimitTypes",
+        "Type": "",
         "IsRequired": null,
         "Description": "Treat and related condition types as measurements producing."
       }
@@ -1650,6 +1730,7 @@
     "Params": [
       {
         "Name": "identifier",
+        "Type": "",
         "IsRequired": null,
         "Description": "The identifier."
       }
@@ -1667,6 +1748,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": ""
       }
@@ -1684,11 +1766,13 @@
     "Params": [
       {
         "Name": "item1",
+        "Type": "",
         "IsRequired": null,
         "Description": "The item1."
       },
       {
         "Name": "item2",
+        "Type": "",
         "IsRequired": null,
         "Description": "The item2."
       }
@@ -1706,6 +1790,7 @@
     "Params": [
       {
         "Name": "group",
+        "Type": "",
         "IsRequired": null,
         "Description": "The group being tested."
       }
@@ -1723,6 +1808,7 @@
     "Params": [
       {
         "Name": "date",
+        "Type": "",
         "IsRequired": null,
         "Description": "The date."
       }
@@ -1740,11 +1826,13 @@
     "Params": [
       {
         "Name": "fromDate",
+        "Type": "",
         "IsRequired": null,
         "Description": "The from date."
       },
       {
         "Name": "toDate",
+        "Type": "",
         "IsRequired": null,
         "Description": "The to date."
       }
@@ -1762,16 +1850,19 @@
     "Params": [
       {
         "Name": "x",
+        "Type": "",
         "IsRequired": null,
         "Description": "The x-coordinate being tested for intersection."
       },
       {
         "Name": "y",
+        "Type": "",
         "IsRequired": null,
         "Description": "The y-coordinate being tested for intersection."
       },
       {
         "Name": "simplePolygon",
+        "Type": "",
         "IsRequired": null,
         "Description": "The list (the polygon) being tested for intersection."
       }
@@ -1789,11 +1880,13 @@
     "Params": [
       {
         "Name": "lon",
+        "Type": "",
         "IsRequired": null,
         "Description": "The longitude."
       },
       {
         "Name": "lat",
+        "Type": "",
         "IsRequired": null,
         "Description": "The latitude."
       }
@@ -1811,6 +1904,7 @@
     "Params": [
       {
         "Name": "olsenId",
+        "Type": "",
         "IsRequired": null,
         "Description": "The olsen identifier."
       }
@@ -1828,6 +1922,7 @@
     "Params": [
       {
         "Name": "field",
+        "Type": "",
         "IsRequired": null,
         "Description": "The field name."
       }
@@ -1845,6 +1940,7 @@
     "Params": [
       {
         "Name": "toDate",
+        "Type": "",
         "IsRequired": null,
         "Description": "The end time."
       }
@@ -1862,11 +1958,13 @@
     "Params": [
       {
         "Name": "monitorType",
+        "Type": "",
         "IsRequired": null,
         "Description": "Rule Monitor Type"
       },
       {
         "Name": "monitorPredicate",
+        "Type": "",
         "IsRequired": null,
         "Description": "Rule Monitor Predicate"
       }
@@ -1884,6 +1982,7 @@
     "Params": [
       {
         "Name": "groups",
+        "Type": "",
         "IsRequired": null,
         "Description": "The list of GroupSearches by ID."
       }
@@ -1901,6 +2000,7 @@
     "Params": [
       {
         "Name": "groupSearches",
+        "Type": "",
         "IsRequired": null,
         "Description": "The list of GroupSearches by ID."
       }
@@ -1918,6 +2018,7 @@
     "Params": [
       {
         "Name": "condition",
+        "Type": "",
         "IsRequired": null,
         "Description": "The condition."
       }
@@ -1935,46 +2036,55 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The identifier."
       },
       {
         "Name": "name",
+        "Type": "",
         "IsRequired": null,
         "Description": "The name."
       },
       {
         "Name": "parent",
+        "Type": "",
         "IsRequired": null,
         "Description": "The parent."
       },
       {
         "Name": "comments",
+        "Type": "",
         "IsRequired": null,
         "Description": "The comments."
       },
       {
         "Name": "reference",
+        "Type": "",
         "IsRequired": null,
         "Description": "The reference."
       },
       {
         "Name": "securityFilters",
+        "Type": "",
         "IsRequired": null,
         "Description": "Security Filter for clearances"
       },
       {
         "Name": "children",
+        "Type": "",
         "IsRequired": null,
         "Description": "The groups children"
       },
       {
         "Name": "path",
+        "Type": "",
         "IsRequired": null,
         "Description": "Ltree path of the group"
       },
       {
         "Name": "embedded",
+        "Type": "",
         "IsRequired": null,
         "Description": "Is the group embedded in another entity. Only id will be populated for embedded groups."
       }
@@ -1992,11 +2102,13 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The id of the FaultStatus."
       },
       {
         "Name": "isLegacy",
+        "Type": "",
         "IsRequired": null,
         "Description": "Whether or not to return legacy FaultStates."
       }
@@ -2014,6 +2126,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The identifier."
       }
@@ -2031,41 +2144,49 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The identifier."
       },
       {
         "Name": "parent",
+        "Type": "",
         "IsRequired": null,
         "Description": "The parent."
       },
       {
         "Name": "name",
+        "Type": "",
         "IsRequired": null,
         "Description": "The name."
       },
       {
         "Name": "comments",
+        "Type": "",
         "IsRequired": null,
         "Description": "The comments."
       },
       {
         "Name": "reference",
+        "Type": "",
         "IsRequired": null,
         "Description": "The reference."
       },
       {
         "Name": "securityFilters",
+        "Type": "",
         "IsRequired": null,
         "Description": "Security Filter for clearances"
       },
       {
         "Name": "children",
+        "Type": "",
         "IsRequired": null,
         "Description": "The groups children"
       },
       {
         "Name": "path",
+        "Type": "",
         "IsRequired": null,
         "Description": "Ltree path of the group"
       }
@@ -2077,39 +2198,33 @@
   {
     "FullNameWithParams": "M:CheckmateServer.Web.WebMethods.GetPostedRoadSpeedsForDeviceAsync(Geotab.Checkmate.Database.DataStore,Geotab.Checkmate.ObjectModel.DeviceSearch,System.Nullable{System.DateTime},System.Nullable{System.DateTime},Geotab.Checkmate.ObjectModel.PostedRoadSpeedOptions,System.Threading.CancellationToken)",
     "FullName": "M:CheckmateServer.Web.WebMethods.GetPostedRoadSpeedsForDeviceAsync",
-    "Name": "GetPostedRoadSpeedsForDeviceAsync",
+    "Name": "GetPostedRoadSpeedsForDevice",
     "Type": "SDK Method",
     "Summary": "Get all posted road speed changes for a device's trips for the given dates. If the from date and to date are in the middle of the trip, the data for the whole trip are included.",
     "Params": [
       {
-        "Name": "dataStore",
-        "IsRequired": null,
-        "Description": "The."
-      },
-      {
         "Name": "deviceSearch",
+        "Type": "",
         "IsRequired": null,
         "Description": "Search for RoadMaxSpeeds with this. Available DeviceSearch options are:. Id"
       },
       {
         "Name": "fromDate",
+        "Type": "",
         "IsRequired": null,
         "Description": "Search for maximum road speed limits that were encountered at this date or after."
       },
       {
         "Name": "toDate",
+        "Type": "",
         "IsRequired": null,
         "Description": "Search for maximum road speed limits that were encountered at this date or before."
       },
       {
         "Name": "postedRoadSpeedOptions",
+        "Type": "",
         "IsRequired": null,
         "Description": "Road data options"
-      },
-      {
-        "Name": "cancellationToken",
-        "IsRequired": null,
-        "Description": "The."
       }
     ],
     "Example": "The following JavaScript example shows how to get maximum speed limits. var deviceName = prompt(\"Enter device name\"); api.call(\"Get\", { \"typeName\": \"Device\", \"search\": { name: \"%\" + deviceName + \"%\" } }, function(devices) { if (devices.length){ api.call(\"GetPostedRoadSpeedsForDevice\", { \"deviceSearch\": { id: devices[0].id }, \"fromDate\": (new Date((new Date()).getTime() - (1 * 24 * 60 * 60 * 1000))).toISOString(), \"toDate\": (new Date()).toISOString(), \"postedRoadSpeedOptions\": \"NoCommercial,NoEstimates\" }); } else { console.log(\"There are no devices with such name\"); } });",
@@ -2125,6 +2240,7 @@
     "Params": [
       {
         "Name": "controllerProtocol",
+        "Type": "",
         "IsRequired": null,
         "Description": "Controller protocol for the refrigeration unit."
       }
@@ -2142,6 +2258,7 @@
     "Params": [
       {
         "Name": "deviceType",
+        "Type": "",
         "IsRequired": null,
         "Description": "Type of the device."
       }
@@ -2159,6 +2276,7 @@
     "Params": [
       {
         "Name": "name",
+        "Type": "",
         "IsRequired": null,
         "Description": "The name."
       }
@@ -2176,6 +2294,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The."
       }
@@ -2193,6 +2312,7 @@
     "Params": [
       {
         "Name": "guid",
+        "Type": "",
         "IsRequired": null,
         "Description": "The unique identifier."
       }
@@ -2210,6 +2330,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The id of the group being converted to a known id"
       }
@@ -2227,6 +2348,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The timezone identifier."
       }
@@ -2244,6 +2366,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The timezone identifier."
       }
@@ -2261,6 +2384,7 @@
     "Params": [
       {
         "Name": "severityFilter",
+        "Type": "",
         "IsRequired": null,
         "Description": "The minimum severity to allow past the filter."
       }
@@ -2278,6 +2402,7 @@
     "Params": [
       {
         "Name": "tachographFileFormat",
+        "Type": "",
         "IsRequired": null,
         "Description": "The file format to get the file name from."
       }
@@ -2295,33 +2420,33 @@
     "Params": [
       {
         "Name": "search",
+        "Type": "",
         "IsRequired": null,
         "Description": "The search object for the type of data to return. The properties of this object will be used to filter returned data. Providing a search parameter can have performance implications similar to using the Get method. See the type related search objects for more details."
       },
       {
         "Name": "fromVersion",
+        "Type": "",
         "IsRequired": null,
         "Description": "Last retrieved version. All new data that has arrived after this version will be returned in this call, up to a maximum of resultsLimit data records. The returned by the feed method will contain the highest version for subsequent calls. When starting a new feed, if this value is not provided, the call will return only the toVersion (last version in the system). The start date can be specified in the search argument."
       },
       {
         "Name": "resultsLimit",
+        "Type": "",
         "IsRequired": null,
         "Description": "The maximum number of records to return. The maximum value is 50,000 unless otherwise stated above, such as for User, Route, etc. If resultsLimit is not specified, the maximum value is used by default."
       },
       {
         "Name": "credentials",
+        "Type": "",
         "IsRequired": null,
         "Description": "The."
       },
       {
         "Name": "propertySelector",
+        "Type": "",
         "IsRequired": null,
         "Description": "The used to limit the properties retrieved from the server. >> Beta: not supported by all types."
-      },
-      {
-        "Name": "cancellationToken",
-        "IsRequired": null,
-        "Description": "The."
       }
     ],
     "Example": "The following JavaScript example shows how to call GetFeed and return a list of status data. Note that it returns only the first 10 status data and after that another 10. let feed = (() => { let version = \"0000000000000000\"; return { next: success => { api.call(\"GetFeed\", { \"typeName\": \"StatusData\", \"resultsLimit\": 10, \"fromVersion\": version, }, result => { version = result.toVersion; success(result.data); }); } }; })(); feed.next(data => { console.log(\"First part: \", data); setTimeout(() => { feed.next(data => { console.log(\"Second part: \", data); }); }, 1000); });",
@@ -2337,6 +2462,7 @@
     "Params": [
       {
         "Name": "faultState",
+        "Type": "",
         "IsRequired": null,
         "Description": "The FaultState."
       }
@@ -2354,16 +2480,19 @@
     "Params": [
       {
         "Name": "firstRecord",
+        "Type": "",
         "IsRequired": null,
         "Description": "The firstRecord."
       },
       {
         "Name": "lastRecord",
+        "Type": "",
         "IsRequired": null,
         "Description": "The lastRecord."
       },
       {
         "Name": "boxSize",
+        "Type": "",
         "IsRequired": null,
         "Description": "The area of the desired bounding boxes in kilometres squared"
       }
@@ -2381,6 +2510,7 @@
     "Params": [
       {
         "Name": "logRecords",
+        "Type": "",
         "IsRequired": null,
         "Description": "The log records."
       }
@@ -2398,6 +2528,7 @@
     "Params": [
       {
         "Name": "exception",
+        "Type": "",
         "IsRequired": null,
         "Description": "The exception."
       }
@@ -2415,6 +2546,7 @@
     "Params": [
       {
         "Name": "exception",
+        "Type": "",
         "IsRequired": null,
         "Description": "The exception."
       }
@@ -2426,24 +2558,15 @@
   {
     "FullNameWithParams": "M:CheckmateServer.Web.WebMethods.GetDirectionsAsync(Geotab.Checkmate.Database.DataStore,System.Collections.Generic.List{Geotab.Checkmate.ObjectModel.Geographical.Waypoint},System.Threading.CancellationToken)",
     "FullName": "M:CheckmateServer.Web.WebMethods.GetDirectionsAsync",
-    "Name": "GetDirectionsAsync",
+    "Name": "GetDirections",
     "Type": "SDK Method",
     "Summary": "Gets step-by-step driving for a sequence ofs including estimate travel time and distances.",
     "Params": [
       {
-        "Name": "dataStore",
-        "IsRequired": null,
-        "Description": "The."
-      },
-      {
         "Name": "waypoints",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The set ofs."
-      },
-      {
-        "Name": "cancellationToken",
-        "IsRequired": null,
-        "Description": "The."
       }
     ],
     "Example": "The following JavaScript example shows how to get directions for a sequence of waypoints. api.call(\"GetDirections\", { \"waypoints\" : [{ \"coordinate\" : { \"x\" : -79.38424129999999, \"y\" : 43.65411539999999 }, \"sequence\" : 0, \"description\": \"A\" }, { \"coordinate\" : { \"x\" : -79.38931020000001, \"y\" : 43.640473 }, \"sequence\" : 1, \"description\": \"B\" }, { \"coordinate\" : { \"x\" : -79.38424129999999, \"y\" : 43.65411539999999 }, \"sequence\" : 2, \"description\": \"C\" } ] }, function (result) { console.log(\"Done: \", result); }, function (e) { console.error(\"Failed:\", e); });",
@@ -2459,61 +2582,73 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The identifier."
       },
       {
         "Name": "parent",
+        "Type": "",
         "IsRequired": null,
         "Description": "The parent."
       },
       {
         "Name": "name",
+        "Type": "",
         "IsRequired": null,
         "Description": "The name."
       },
       {
         "Name": "comments",
+        "Type": "",
         "IsRequired": null,
         "Description": "The comments."
       },
       {
         "Name": "reference",
+        "Type": "",
         "IsRequired": null,
         "Description": "The reference."
       },
       {
         "Name": "severity",
+        "Type": "",
         "IsRequired": null,
         "Description": "Severity for a defect"
       },
       {
         "Name": "assetType",
+        "Type": "",
         "IsRequired": null,
         "Description": "The asset type"
       },
       {
         "Name": "defectGroups",
+        "Type": "",
         "IsRequired": null,
         "Description": "The defect groups"
       },
       {
         "Name": "children",
+        "Type": "",
         "IsRequired": null,
         "Description": "The groups children"
       },
       {
         "Name": "path",
+        "Type": "",
         "IsRequired": null,
         "Description": "Ltree path of the group"
       },
       {
         "Name": "isHidden",
+        "Type": "",
         "IsRequired": null,
         "Description": "If the defect is visible in the UI"
       },
       {
         "Name": "isRequired",
+        "Type": "",
         "IsRequired": null,
         "Description": "If the defect must be signed off in the UI"
       }
@@ -2525,17 +2660,19 @@
   {
     "FullNameWithParams": "M:CheckmateServer.Web.WebMethods.GetDaylightSavingRulesAsync(System.String,System.Nullable{System.Int32})",
     "FullName": "M:CheckmateServer.Web.WebMethods.GetDaylightSavingRulesAsync",
-    "Name": "GetDaylightSavingRulesAsync",
+    "Name": "GetDaylightSavingRules",
     "Type": "SDK Method",
     "Summary": "Get a Timezone's TimeZoneInfoWithRules by the timeZoneId.",
     "Params": [
       {
         "Name": "timeZoneId",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The ID of the."
       },
       {
         "Name": "minYear",
+        "Type": "",
         "IsRequired": null,
         "Description": "Adjustment rules which end before minYear will not be returned. Default is 2000."
       }
@@ -2553,6 +2690,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The timezone identifier."
       }
@@ -2570,6 +2708,7 @@
     "Params": [
       {
         "Name": "hourIndex",
+        "Type": "",
         "IsRequired": null,
         "Description": "The hourly data index."
       }
@@ -2587,13 +2726,9 @@
     "Params": [
       {
         "Name": "search",
+        "Type": "",
         "IsRequired": null,
         "Description": "The search object for the type of data to return the count of. The properties of this object will be used to filter the returned count. Only supported for search types:,,, and."
-      },
-      {
-        "Name": "cancellationToken",
-        "IsRequired": null,
-        "Description": "The."
       }
     ],
     "Example": "The following JavaScript example shows how to get amount of entities of the given type (in this case Zones). api.call(\"GetCountOf\",{ \"typeName\": \"Zone\" });",
@@ -2603,24 +2738,15 @@
   {
     "FullNameWithParams": "M:CheckmateServer.Web.WebMethods.GetCoordinatesAsync(Geotab.Checkmate.Database.DataStore,System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)",
     "FullName": "M:CheckmateServer.Web.WebMethods.GetCoordinatesAsync",
-    "Name": "GetCoordinatesAsync",
+    "Name": "GetCoordinates",
     "Type": "SDK Method",
     "Summary": "Geocodes or looks up the latitude and longitude from a list of addresses.",
     "Params": [
       {
-        "Name": "dataStore",
-        "IsRequired": null,
-        "Description": "The."
-      },
-      {
         "Name": "addresses",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The formatted addresses in an array of (s)."
-      },
-      {
-        "Name": "cancellationToken",
-        "IsRequired": null,
-        "Description": "The."
       }
     ],
     "Example": "The following JavaScript example shows how to get the Coordinates for a given list of Addresses. api.call(\"GetCoordinates\",{ \"addresses\":[\"New York City, NY, USA\"] });",
@@ -2636,6 +2762,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The timezone identifier."
       }
@@ -2653,6 +2780,7 @@
     "Params": [
       {
         "Name": "coordinates",
+        "Type": "",
         "IsRequired": null,
         "Description": "The coordinates."
       }
@@ -2670,6 +2798,7 @@
     "Params": [
       {
         "Name": "features",
+        "Type": "",
         "IsRequired": null,
         "Description": "The features."
       }
@@ -2687,11 +2816,13 @@
     "Params": [
       {
         "Name": "from",
+        "Type": "",
         "IsRequired": null,
         "Description": "The origin coordinates."
       },
       {
         "Name": "to",
+        "Type": "",
         "IsRequired": null,
         "Description": "The destination coordinates."
       }
@@ -2709,38 +2840,39 @@
     "Params": [
       {
         "Name": "search",
+        "Type": "",
         "IsRequired": null,
         "Description": "If null, all(s) are returned. Pass a Search object (ex.) with the Id property set if you need to return a specific entity. Pass a Search with properties set that needs to be searched on. For example, setting the Name property for a object will return only devices that match the name provided."
       },
       {
         "Name": "sort",
+        "Type": "",
         "IsRequired": null,
         "Description": "Sort the result based on the sorting details."
       },
       {
         "Name": "resultsLimit",
+        "Type": "",
         "IsRequired": null,
         "Description": "Limit the number of results that can be returned to this search."
       },
       {
         "Name": "minVersion",
+        "Type": "",
         "IsRequired": null,
         "Description": "Only return entities with a version greater than this version."
       },
       {
         "Name": "maxVersion",
+        "Type": "",
         "IsRequired": null,
         "Description": "Only return entities with a version less than or equal to this version."
       },
       {
         "Name": "propertySelector",
+        "Type": "",
         "IsRequired": null,
         "Description": "The used to limit the properties retrieved from the server. >> Beta: not supported by all types."
-      },
-      {
-        "Name": "cancellationToken",
-        "IsRequired": null,
-        "Description": "The."
       }
     ],
     "Example": "The following JavaScript example shows how to call Get and return a list of Devices. Note that it returns only the first 10 and the devices have to be active. api.call(\"Get\",{\"typeName\":\"Device\", \"resultsLimit\":10, \"search\":{ \"fromDate\":new Date().toISOString() }, \"propertySelector\": { \"fields\": [\"id\", \"name\"] } });",
@@ -2756,11 +2888,13 @@
     "Params": [
       {
         "Name": "faultCode",
+        "Type": "",
         "IsRequired": null,
         "Description": "Fault code to clear on IOX device."
       },
       {
         "Name": "controllerProtocol",
+        "Type": "",
         "IsRequired": null,
         "Description": "Controller protocol for the refrigeration unit."
       }
@@ -2772,39 +2906,33 @@
   {
     "FullNameWithParams": "M:CheckmateServer.Web.WebMethods.GetAddressesAsync(Geotab.Checkmate.Database.DataStore,System.Collections.Generic.IList{Geotab.Checkmate.ObjectModel.Coordinate},System.Boolean,System.Boolean,System.Nullable{System.Boolean},System.Threading.CancellationToken)",
     "FullName": "M:CheckmateServer.Web.WebMethods.GetAddressesAsync",
-    "Name": "GetAddressesAsync",
+    "Name": "GetAddresses",
     "Type": "SDK Method",
     "Summary": "Gets addresses from the list of(s), as well as any s in the system that contain the given coordinates.",
     "Params": [
       {
-        "Name": "dataStore",
-        "IsRequired": null,
-        "Description": "The."
-      },
-      {
         "Name": "coordinates",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The array of(s)."
       },
       {
         "Name": "movingAddresses",
+        "Type": "",
         "IsRequired": null,
         "Description": "The default is false and is used for static/immobile addresses. When set to true, the coordinates are being specified for a moving object. The parameter should be set true if it is known that the object being tracked has a speed."
       },
       {
         "Name": "hosAddresses",
+        "Type": "",
         "IsRequired": null,
         "Description": "The default is false and is used for ELD compliant addresses. When set to true we will return the direction and distance to the nearest city with a population greater than 5000."
       },
       {
         "Name": "isMetric",
+        "Type": "",
         "IsRequired": null,
         "Description": "The default is null and is used when hosAddresses is true. The addresses will be returned with metric distance units if true, and imperial distance units if false. If null, the user's isMetric setting is used."
-      },
-      {
-        "Name": "cancellationToken",
-        "IsRequired": null,
-        "Description": "The."
       }
     ],
     "Example": "The following JavaScript example shows how to get the Addresses for a given list of coordinates. api.call(\"GetAddresses\",{ \"coordinates\":[{\"x\":\"25.856667\", \"y\":\" -17.924444\"}], \"movingAddresses\":true });",
@@ -2820,46 +2948,55 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The identifier."
       },
       {
         "Name": "parent",
+        "Type": "",
         "IsRequired": null,
         "Description": "The parent."
       },
       {
         "Name": "name",
+        "Type": "",
         "IsRequired": null,
         "Description": "The name."
       },
       {
         "Name": "comments",
+        "Type": "",
         "IsRequired": null,
         "Description": "The comments."
       },
       {
         "Name": "reference",
+        "Type": "",
         "IsRequired": null,
         "Description": "The reference."
       },
       {
         "Name": "color",
+        "Type": "",
         "IsRequired": null,
         "Description": "The color."
       },
       {
         "Name": "children",
+        "Type": "",
         "IsRequired": null,
         "Description": "The groups children."
       },
       {
         "Name": "path",
+        "Type": "",
         "IsRequired": null,
         "Description": "Ltree path of the group."
       },
       {
         "Name": "isGlobalReportingGroup",
+        "Type": "",
         "IsRequired": null,
         "Description": "Indicates if the group is global for reporting."
       }
@@ -2877,16 +3014,19 @@
     "Params": [
       {
         "Name": "fields",
+        "Type": "",
         "IsRequired": null,
         "Description": "The field names to include or exclude from the result."
       },
       {
         "Name": "isIncluded",
+        "Type": "",
         "IsRequired": null,
         "Description": "A value indicating whether the are to be included or excluded."
       },
       {
         "Name": "isStaticFields",
+        "Type": "",
         "IsRequired": null,
         "Description": "A value indicating whether the are to be immutable or not."
       }
@@ -2904,11 +3044,13 @@
     "Params": [
       {
         "Name": "faultCode",
+        "Type": "",
         "IsRequired": null,
         "Description": "Fault code to clear on IOX device."
       },
       {
         "Name": "controllerProtocol",
+        "Type": "",
         "IsRequired": null,
         "Description": "Controller protocol for the refrigeration unit."
       }
@@ -2926,16 +3068,19 @@
     "Params": [
       {
         "Name": "temperatureZone",
+        "Type": "",
         "IsRequired": null,
         "Description": "Temperature Zone to adjust setpoint on IOX device."
       },
       {
         "Name": "temperature",
+        "Type": "",
         "IsRequired": null,
         "Description": "The temperature to set the setpoint to."
       },
       {
         "Name": "controllerProtocol",
+        "Type": "",
         "IsRequired": null,
         "Description": "Controller protocol for the refrigeration unit."
       }
@@ -2953,6 +3098,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The globally unique id used to identify the CAPTCHA image returned."
       }
@@ -2970,6 +3116,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The serial number for the device. For example, GV-001-000-0000."
       }
@@ -2987,6 +3134,7 @@
     "Params": [
       {
         "Name": "productId",
+        "Type": "",
         "IsRequired": null,
         "Description": "The product identifier."
       }
@@ -3004,21 +3152,25 @@
     "Params": [
       {
         "Name": "left",
+        "Type": "",
         "IsRequired": null,
         "Description": "The left."
       },
       {
         "Name": "top",
+        "Type": "",
         "IsRequired": null,
         "Description": "The top."
       },
       {
         "Name": "right",
+        "Type": "",
         "IsRequired": null,
         "Description": "The right."
       },
       {
         "Name": "bottom",
+        "Type": "",
         "IsRequired": null,
         "Description": "The bottom."
       }
@@ -3036,11 +3188,13 @@
     "Params": [
       {
         "Name": "exception",
+        "Type": "",
         "IsRequired": null,
         "Description": "The to include in the error."
       },
       {
         "Name": "returnException",
+        "Type": "",
         "IsRequired": null,
         "Description": "Always return the exception"
       }
@@ -3058,6 +3212,7 @@
     "Params": [
       {
         "Name": "deviceType",
+        "Type": "",
         "IsRequired": null,
         "Description": "The deviceType."
       }
@@ -3075,11 +3230,13 @@
     "Params": [
       {
         "Name": "message",
+        "Type": "",
         "IsRequired": null,
         "Description": "The message that describes the error."
       },
       {
         "Name": "assessmentId",
+        "Type": "",
         "IsRequired": null,
         "Description": "The id of the assessment."
       }
@@ -3097,6 +3254,7 @@
     "Params": [
       {
         "Name": "conditionKinds",
+        "Type": "",
         "IsRequired": null,
         "Description": "The condition kinds."
       }
@@ -3114,11 +3272,13 @@
     "Params": [
       {
         "Name": "rootCondition",
+        "Type": "",
         "IsRequired": null,
         "Description": "The rule condition."
       },
       {
         "Name": "conditionType",
+        "Type": "",
         "IsRequired": null,
         "Description": "The condition type being searched."
       }
@@ -3136,6 +3296,7 @@
     "Params": [
       {
         "Name": "key",
+        "Type": "",
         "IsRequired": null,
         "Description": "The key."
       }
@@ -3153,6 +3314,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The id."
       }
@@ -3170,6 +3332,7 @@
     "Params": [
       {
         "Name": "obj",
+        "Type": "",
         "IsRequired": null,
         "Description": "The to compare with this instance."
       }
@@ -3187,6 +3350,7 @@
     "Params": [
       {
         "Name": "obj",
+        "Type": "",
         "IsRequired": null,
         "Description": "The object to compare with the current object."
       }
@@ -3237,6 +3401,7 @@
     "Params": [
       {
         "Name": "obj",
+        "Type": "",
         "IsRequired": null,
         "Description": "Object to compare to."
       }
@@ -3254,6 +3419,7 @@
     "Params": [
       {
         "Name": "obj",
+        "Type": "",
         "IsRequired": null,
         "Description": "The to compare with the current."
       }
@@ -3271,6 +3437,7 @@
     "Params": [
       {
         "Name": "obj",
+        "Type": "",
         "IsRequired": null,
         "Description": "The to compare with this instance."
       }
@@ -3321,6 +3488,7 @@
     "Params": [
       {
         "Name": "obj",
+        "Type": "",
         "IsRequired": null,
         "Description": "The to compare with this instance."
       }
@@ -3338,6 +3506,7 @@
     "Params": [
       {
         "Name": "obj",
+        "Type": "",
         "IsRequired": null,
         "Description": "The to compare with this instance."
       }
@@ -3366,6 +3535,7 @@
     "Params": [
       {
         "Name": "obj",
+        "Type": "",
         "IsRequired": null,
         "Description": "The to compare with this instance."
       }
@@ -3394,6 +3564,7 @@
     "Params": [
       {
         "Name": "obj",
+        "Type": "",
         "IsRequired": null,
         "Description": "The to compare with the current."
       }
@@ -3411,6 +3582,7 @@
     "Params": [
       {
         "Name": "obj",
+        "Type": "",
         "IsRequired": null,
         "Description": "The to compare with this instance."
       }
@@ -3428,6 +3600,7 @@
     "Params": [
       {
         "Name": "obj",
+        "Type": "",
         "IsRequired": null,
         "Description": "The to compare with this instance."
       }
@@ -3445,6 +3618,7 @@
     "Params": [
       {
         "Name": "obj",
+        "Type": "",
         "IsRequired": null,
         "Description": "The to compare with the current."
       }
@@ -3473,6 +3647,7 @@
     "Params": [
       {
         "Name": "obj",
+        "Type": "",
         "IsRequired": null,
         "Description": "The to compare with this instance."
       }
@@ -3490,6 +3665,7 @@
     "Params": [
       {
         "Name": "obj",
+        "Type": "",
         "IsRequired": null,
         "Description": "The to compare with this instance."
       }
@@ -3507,11 +3683,13 @@
     "Params": [
       {
         "Name": "rootCondition1",
+        "Type": "",
         "IsRequired": null,
         "Description": "The first condition."
       },
       {
         "Name": "rootCondition2",
+        "Type": "",
         "IsRequired": null,
         "Description": "The second condition."
       }
@@ -3529,6 +3707,7 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The id."
       }
@@ -3540,29 +3719,15 @@
   {
     "FullNameWithParams": "M:CheckmateServer.Web.WebMethods.DownloadMediaFileAsync(Microsoft.AspNetCore.Http.HttpContext,Geotab.Checkmate.Database.DataStore,Geotab.Checkmate.ObjectModel.Files.MediaFile,System.Threading.CancellationToken)",
     "FullName": "M:CheckmateServer.Web.WebMethods.DownloadMediaFileAsync",
-    "Name": "DownloadMediaFileAsync",
+    "Name": "DownloadMediaFile",
     "Type": "SDK Method",
     "Summary": "Download a file for the given. The Content-Type is determined by the file extension. Range headers are supported.",
     "Params": [
       {
-        "Name": "context",
-        "IsRequired": null,
-        "Description": "The."
-      },
-      {
-        "Name": "dataStore",
-        "IsRequired": null,
-        "Description": "The."
-      },
-      {
         "Name": "mediaFile",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The of which to add the file for."
-      },
-      {
-        "Name": "cancellationToken",
-        "IsRequired": null,
-        "Description": "The."
       }
     ],
     "Example": "",
@@ -3572,24 +3737,21 @@
   {
     "FullNameWithParams": "M:Geotab.Checkmate.API.DownloadAsync(System.IO.Stream,Geotab.Checkmate.ObjectModel.Files.MediaFile,System.Threading.CancellationToken)",
     "FullName": "M:Geotab.Checkmate.API.DownloadAsync",
-    "Name": "DownloadAsync",
+    "Name": "Download",
     "Type": "SDK Method",
     "Summary": "Make an API call using generic type method to Download a stream of data.",
     "Params": [
       {
         "Name": "outputStream",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The to write downloaded binary data to."
       },
       {
         "Name": "mediaFile",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The corresponding to the file to download."
-      },
-      {
-        "Name": "cancellationToken",
-        "IsRequired": null,
-        "Description": "The used to single that the request should be canceled."
       }
     ],
     "Example": "",
@@ -3605,6 +3767,7 @@
     "Params": [
       {
         "Name": "logRecord",
+        "Type": "",
         "IsRequired": null,
         "Description": ""
       }
@@ -3622,6 +3785,7 @@
     "Params": [
       {
         "Name": "coordinate",
+        "Type": "",
         "IsRequired": null,
         "Description": ""
       }
@@ -3639,16 +3803,19 @@
     "Params": [
       {
         "Name": "x",
+        "Type": "",
         "IsRequired": null,
         "Description": "The origin's x-coordinate."
       },
       {
         "Name": "y",
+        "Type": "",
         "IsRequired": null,
         "Description": "The origin's y-coordinate."
       },
       {
         "Name": "simplePolygon",
+        "Type": "",
         "IsRequired": null,
         "Description": "The list represents the polygon."
       }
@@ -3666,6 +3833,7 @@
     "Params": [
       {
         "Name": "coordinate",
+        "Type": "",
         "IsRequired": null,
         "Description": "The being checked for distance."
       }
@@ -3683,11 +3851,13 @@
     "Params": [
       {
         "Name": "lon",
+        "Type": "",
         "IsRequired": null,
         "Description": "The longitude."
       },
       {
         "Name": "lat",
+        "Type": "",
         "IsRequired": null,
         "Description": "The latitude."
       }
@@ -3705,21 +3875,25 @@
     "Params": [
       {
         "Name": "longitudeA",
+        "Type": "",
         "IsRequired": null,
         "Description": "The longitude a."
       },
       {
         "Name": "latitudeA",
+        "Type": "",
         "IsRequired": null,
         "Description": "The latitude a."
       },
       {
         "Name": "longitudeB",
+        "Type": "",
         "IsRequired": null,
         "Description": "The longitude b."
       },
       {
         "Name": "latitudeB",
+        "Type": "",
         "IsRequired": null,
         "Description": "The latitude b."
       }
@@ -3737,21 +3911,25 @@
     "Params": [
       {
         "Name": "x1",
+        "Type": "",
         "IsRequired": null,
         "Description": "The fist x coordinate (longitude)."
       },
       {
         "Name": "y1",
+        "Type": "",
         "IsRequired": null,
         "Description": "The fist y coordinate (latitude)."
       },
       {
         "Name": "x2",
+        "Type": "",
         "IsRequired": null,
         "Description": "The second x coordinate (longitude)."
       },
       {
         "Name": "y2",
+        "Type": "",
         "IsRequired": null,
         "Description": "The second y coordinate (latitude)."
       }
@@ -3769,6 +3947,7 @@
     "Params": [
       {
         "Name": "productId",
+        "Type": "",
         "IsRequired": null,
         "Description": "The device product Id."
       }
@@ -3786,21 +3965,25 @@
     "Params": [
       {
         "Name": "x",
+        "Type": "",
         "IsRequired": null,
         "Description": "The x."
       },
       {
         "Name": "y",
+        "Type": "",
         "IsRequired": null,
         "Description": "The y."
       },
       {
         "Name": "bearing",
+        "Type": "",
         "IsRequired": null,
         "Description": "The bearing."
       },
       {
         "Name": "distance",
+        "Type": "",
         "IsRequired": null,
         "Description": "The distance."
       }
@@ -3818,6 +4001,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The value."
       }
@@ -3835,6 +4019,7 @@
     "Params": [
       {
         "Name": "compressedData",
+        "Type": "",
         "IsRequired": null,
         "Description": "The compressed data."
       }
@@ -3852,6 +4037,7 @@
     "Params": [
       {
         "Name": "fieldName",
+        "Type": "",
         "IsRequired": null,
         "Description": "Name of the instance."
       }
@@ -3869,11 +4055,13 @@
     "Params": [
       {
         "Name": "fieldName",
+        "Type": "",
         "IsRequired": null,
         "Description": "Name of the instance."
       },
       {
         "Name": "key",
+        "Type": "",
         "IsRequired": null,
         "Description": "The key."
       }
@@ -3891,6 +4079,7 @@
     "Params": [
       {
         "Name": "knownId",
+        "Type": "",
         "IsRequired": null,
         "Description": "The referentially unique instance."
       }
@@ -3908,11 +4097,13 @@
     "Params": [
       {
         "Name": "fieldName",
+        "Type": "",
         "IsRequired": null,
         "Description": "Name of the instance."
       },
       {
         "Name": "guid",
+        "Type": "",
         "IsRequired": null,
         "Description": "The Guid."
       }
@@ -3930,6 +4121,7 @@
     "Params": [
       {
         "Name": "companyName",
+        "Type": "",
         "IsRequired": null,
         "Description": "Name of the company."
       }
@@ -3941,47 +4133,43 @@
   {
     "FullNameWithParams": "M:CheckmateServer.Web.WebMethods.CreateDatabaseAsync(Microsoft.AspNetCore.Http.HttpContext,Geotab.Checkmate.ObjectModel.Captcha.CaptchaAnswer,System.String,System.String,System.String,Geotab.Checkmate.ObjectModel.Registration.CompanyDetails,System.Threading.CancellationToken,Geotab.Checkmate.ObjectModel.Demonstration.DemoConfiguration)",
     "FullName": "M:CheckmateServer.Web.WebMethods.CreateDatabaseAsync",
-    "Name": "CreateDatabaseAsync",
+    "Name": "CreateDatabase",
     "Type": "SDK Method",
     "Summary": "Creates new uniquely named database on a server in the federation. Requires either a valid CaptchaAnswer and/or valid MyAdmin user credentials. See https://github.com/Geotab/sample-registration for an example.",
     "Params": [
       {
-        "Name": "context",
-        "IsRequired": null,
-        "Description": "The HttpContext with the web request and response."
-      },
-      {
         "Name": "captchaAnswer",
+        "Type": "",
         "IsRequired": null,
         "Description": "A valid. This includes the Id used to generate a CAPTCHA image and the answer."
       },
       {
         "Name": "database",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The database name (short company name with the demo_ prefix). Spaces and non alphanumeric characters will be converted to the underscore character. Maximum 58 characters."
       },
       {
         "Name": "userName",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The database administrator email address."
       },
       {
         "Name": "password",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The database administrator password."
       },
       {
         "Name": "companyDetails",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The for the database."
       },
       {
-        "Name": "cancellationToken",
-        "IsRequired": null,
-        "Description": "The."
-      },
-      {
         "Name": "demoConfiguration",
+        "Type": "",
         "IsRequired": null,
         "Description": "The."
       }
@@ -3999,71 +4187,85 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The."
       },
       {
         "Name": "login",
+        "Type": "",
         "IsRequired": null,
         "Description": "The login (user email)."
       },
       {
         "Name": "firstName",
+        "Type": "",
         "IsRequired": null,
         "Description": "The first name of the user."
       },
       {
         "Name": "lastName",
+        "Type": "",
         "IsRequired": null,
         "Description": "The last name of the user."
       },
       {
         "Name": "password",
+        "Type": "",
         "IsRequired": null,
         "Description": "The password."
       },
       {
         "Name": "comment",
+        "Type": "",
         "IsRequired": null,
         "Description": "The comment."
       },
       {
         "Name": "designation",
+        "Type": "",
         "IsRequired": null,
         "Description": "The designation."
       },
       {
         "Name": "employeeNo",
+        "Type": "",
         "IsRequired": null,
         "Description": "The employeeNo."
       },
       {
         "Name": "activeFrom",
+        "Type": "",
         "IsRequired": null,
         "Description": "The from when the User is valid."
       },
       {
         "Name": "activeTo",
+        "Type": "",
         "IsRequired": null,
         "Description": "The to when the User is valid."
       },
       {
         "Name": "organizationNodes",
+        "Type": "",
         "IsRequired": null,
         "Description": "collection this user belongs to."
       },
       {
         "Name": "reportNodes",
+        "Type": "",
         "IsRequired": null,
         "Description": "collection this user belongs to with only report access."
       },
       {
         "Name": "securityNodes",
+        "Type": "",
         "IsRequired": null,
         "Description": "collection that defines what parts of the system the user has access to. The(s) are located under the system ."
       },
       {
         "Name": "clientSettings",
+        "Type": "",
         "IsRequired": null,
         "Description": "The for this . When adding the newly created, ClientSettings can be null and the default settings will be applied."
       }
@@ -4081,76 +4283,91 @@
     "Params": [
       {
         "Name": "id",
+        "Type": "",
         "IsRequired": null,
         "Description": "The."
       },
       {
         "Name": "version",
+        "Type": "",
         "IsRequired": null,
         "Description": "The version."
       },
       {
         "Name": "login",
+        "Type": "",
         "IsRequired": null,
         "Description": "The login (user email)."
       },
       {
         "Name": "firstName",
+        "Type": "",
         "IsRequired": null,
         "Description": "The first name of the user."
       },
       {
         "Name": "lastName",
+        "Type": "",
         "IsRequired": null,
         "Description": "The last name of the user."
       },
       {
         "Name": "password",
+        "Type": "",
         "IsRequired": null,
         "Description": "The password."
       },
       {
         "Name": "comment",
+        "Type": "",
         "IsRequired": null,
         "Description": "The comment."
       },
       {
         "Name": "designation",
+        "Type": "",
         "IsRequired": null,
         "Description": "The designation."
       },
       {
         "Name": "employeeNo",
+        "Type": "",
         "IsRequired": null,
         "Description": "The employeeNo."
       },
       {
         "Name": "activeFrom",
+        "Type": "",
         "IsRequired": null,
         "Description": "The from when the User is valid."
       },
       {
         "Name": "activeTo",
+        "Type": "",
         "IsRequired": null,
         "Description": "The to when the User is valid."
       },
       {
         "Name": "organizationNodes",
+        "Type": "",
         "IsRequired": null,
         "Description": "collection this user belongs to."
       },
       {
         "Name": "reportNodes",
+        "Type": "",
         "IsRequired": null,
         "Description": "collection this user belongs to with only report access."
       },
       {
         "Name": "securityNodes",
+        "Type": "",
         "IsRequired": null,
         "Description": "collection that defines what parts of the system the user has access to. The(s) are located under the system ."
       },
       {
         "Name": "clientSettings",
+        "Type": "",
         "IsRequired": null,
         "Description": "The for this . When adding the newly created, ClientSettings can be null and the default settings will be applied."
       }
@@ -4168,6 +4385,7 @@
     "Params": [
       {
         "Name": "point",
+        "Type": "",
         "IsRequired": null,
         "Description": "The."
       }
@@ -4185,6 +4403,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The value."
       }
@@ -4202,6 +4421,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The value."
       }
@@ -4219,6 +4439,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The value."
       }
@@ -4236,6 +4457,7 @@
     "Params": [
       {
         "Name": "statusData",
+        "Type": "",
         "IsRequired": null,
         "Description": "The to use when converting measurement units."
       }
@@ -4253,6 +4475,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The value to be converted."
       }
@@ -4270,6 +4493,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The value to be converted."
       }
@@ -4287,6 +4511,7 @@
     "Params": [
       {
         "Name": "conditionKinds",
+        "Type": "",
         "IsRequired": null,
         "Description": "The condition kinds."
       }
@@ -4304,6 +4529,7 @@
     "Params": [
       {
         "Name": "uncompressedData",
+        "Type": "",
         "IsRequired": null,
         "Description": "The uncompressed data."
       }
@@ -4321,6 +4547,7 @@
     "Params": [
       {
         "Name": "obj",
+        "Type": "",
         "IsRequired": null,
         "Description": "An object to compare with this instance."
       }
@@ -4349,6 +4576,7 @@
     "Params": [
       {
         "Name": "obj",
+        "Type": "",
         "IsRequired": null,
         "Description": "An object to compare with this instance."
       }
@@ -4366,6 +4594,7 @@
     "Params": [
       {
         "Name": "includeConditionTree",
+        "Type": "",
         "IsRequired": null,
         "Description": ""
       }
@@ -4383,6 +4612,7 @@
     "Params": [
       {
         "Name": "includeConditionTree",
+        "Type": "",
         "IsRequired": null,
         "Description": "if set to true [include condition tree]."
       }
@@ -4400,11 +4630,13 @@
     "Params": [
       {
         "Name": "w1",
+        "Type": "",
         "IsRequired": null,
         "Description": "The first"
       },
       {
         "Name": "w2",
+        "Type": "",
         "IsRequired": null,
         "Description": "The second"
       }
@@ -4422,6 +4654,7 @@
     "Params": [
       {
         "Name": "newMimeType",
+        "Type": "",
         "IsRequired": null,
         "Description": "New value being set"
       }
@@ -4439,6 +4672,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The id to check."
       }
@@ -4456,6 +4690,7 @@
     "Params": [
       {
         "Name": "shortArray",
+        "Type": "",
         "IsRequired": null,
         "Description": "The short array."
       }
@@ -4473,6 +4708,7 @@
     "Params": [
       {
         "Name": "booleanArray",
+        "Type": "",
         "IsRequired": null,
         "Description": "The boolean array."
       }
@@ -4490,6 +4726,7 @@
     "Params": [
       {
         "Name": "boolArray",
+        "Type": "",
         "IsRequired": null,
         "Description": "The bool array."
       }
@@ -4507,6 +4744,7 @@
     "Params": [
       {
         "Name": "doubleArray",
+        "Type": "",
         "IsRequired": null,
         "Description": "The double array."
       }
@@ -4524,18 +4762,15 @@
     "Params": [
       {
         "Name": "method",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The method name to call."
       },
       {
         "Name": "parameters",
+        "Type": "",
         "IsRequired": null,
         "Description": "An anonymous object containing properties (param name) with values (param value). Property name must match that of the method parameter."
-      },
-      {
-        "Name": "cancellationToken",
-        "IsRequired": null,
-        "Description": "The used to single that the request should be canceled."
       }
     ],
     "Example": "",
@@ -4551,23 +4786,21 @@
     "Params": [
       {
         "Name": "method",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The method name to call."
       },
       {
         "Name": "type",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The use in the generic api call."
       },
       {
         "Name": "parameters",
+        "Type": "",
         "IsRequired": null,
         "Description": "An anonymous object containing properties (param name) with values (param value). Property name must match that of the method parameter."
-      },
-      {
-        "Name": "cancellationToken",
-        "IsRequired": null,
-        "Description": "The used to single that the request should be canceled."
       }
     ],
     "Example": "",
@@ -4583,16 +4816,19 @@
     "Params": [
       {
         "Name": "method",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The method name to call."
       },
       {
         "Name": "type",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The use in the generic call."
       },
       {
         "Name": "parameters",
+        "Type": "",
         "IsRequired": null,
         "Description": "An anonymous object containing properties (param name) with values (param value). Property name must match that of the method parameter."
       }
@@ -4610,11 +4846,13 @@
     "Params": [
       {
         "Name": "method",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The method name to call."
       },
       {
         "Name": "parameters",
+        "Type": "",
         "IsRequired": null,
         "Description": "An anonymous object containing properties (param name) with values (param value). Property name must match that of the method parameter."
       }
@@ -4632,6 +4870,7 @@
     "Params": [
       {
         "Name": "points",
+        "Type": "",
         "IsRequired": null,
         "Description": "The n+1 coordinates of the n-polygon."
       }
@@ -4649,6 +4888,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The value."
       }
@@ -4666,6 +4906,7 @@
     "Params": [
       {
         "Name": "value",
+        "Type": "",
         "IsRequired": null,
         "Description": "The value."
       }
@@ -4677,44 +4918,39 @@
   {
     "FullNameWithParams": "M:CheckmateServer.Web.WebMethods.AuthenticateAsync(Microsoft.AspNetCore.Http.HttpContext,System.String,System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken@)",
     "FullName": "M:CheckmateServer.Web.WebMethods.AuthenticateAsync",
-    "Name": "AuthenticateAsync",
+    "Name": "Authenticate",
     "Type": "SDK Method",
     "Summary": "Authenticates a user and provides a if successful. The authentication pattern is documented in the Concepts sections of the SDK. Throws:",
     "Params": [
       {
-        "Name": "context",
-        "IsRequired": null,
-        "Description": "The HttpContext with web request and response."
-      },
-      {
         "Name": "database",
+        "Type": "",
         "IsRequired": null,
         "Description": "The database to authenticate against. If the user is registered on only one database; the user will be automatically authenticated against the correct database and this parameter can be omitted (the database name is returned in the object). If the user is registered in multiple databases; the database value for the particular database you are trying to authenticate against must be provided."
       },
       {
         "Name": "userName",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The user name (typically an email address) that identifies the user being authenticated."
       },
       {
         "Name": "userLogin",
+        "Type": "",
         "IsRequired": null,
         "Description": "The user name (typically and email address) that identifies the user being authenticated."
       },
       {
         "Name": "password",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The user's Geotab password."
       },
       {
         "Name": "global",
+        "Type": "",
         "IsRequired": null,
         "Description": "If true, try log into any server in the federation."
-      },
-      {
-        "Name": "cancellationToken",
-        "IsRequired": null,
-        "Description": "The used to signal that the request should be cancelled."
       }
     ],
     "Example": "The following JavaScript example shows how to call Authenticate. Just fill in your details for each of the parameters. api.call(\"Authenticate\", { \"userName\":\"\", \"database\":\"\", \"password\":\"\" });",
@@ -4724,16 +4960,10 @@
   {
     "FullNameWithParams": "M:Geotab.Checkmate.API.AuthenticateAsync(System.Threading.CancellationToken)",
     "FullName": "M:Geotab.Checkmate.API.AuthenticateAsync",
-    "Name": "AuthenticateAsync",
+    "Name": "Authenticate",
     "Type": "SDK Method",
     "Summary": "Authenticate the user in an async call.",
-    "Params": [
-      {
-        "Name": "cancellationToken",
-        "IsRequired": null,
-        "Description": "The used to single that the request should be cancelled."
-      }
-    ],
+    "Params": [],
     "Example": "",
     "Returns": "A Task which is a result of calling AuthenticateImplAsync.",
     "Score": 326
@@ -4747,11 +4977,13 @@
     "Params": [
       {
         "Name": "detail1",
+        "Type": "",
         "IsRequired": null,
         "Description": "The first detail."
       },
       {
         "Name": "detail2",
+        "Type": "",
         "IsRequired": null,
         "Description": "The second detail."
       }
@@ -4769,11 +5001,13 @@
     "Params": [
       {
         "Name": "detail1",
+        "Type": "",
         "IsRequired": null,
         "Description": "The first detail."
       },
       {
         "Name": "detail2",
+        "Type": "",
         "IsRequired": null,
         "Description": "The second detail."
       }
@@ -4791,11 +5025,13 @@
     "Params": [
       {
         "Name": "detail1",
+        "Type": "",
         "IsRequired": null,
         "Description": "The first detail."
       },
       {
         "Name": "detail2",
+        "Type": "",
         "IsRequired": null,
         "Description": "The second detail."
       }
@@ -4813,6 +5049,7 @@
     "Params": [
       {
         "Name": "field",
+        "Type": "",
         "IsRequired": null,
         "Description": "The field."
       }
@@ -4830,11 +5067,13 @@
     "Params": [
       {
         "Name": "list",
+        "Type": "",
         "IsRequired": null,
         "Description": "The list."
       },
       {
         "Name": "result",
+        "Type": "",
         "IsRequired": null,
         "Description": "The result."
       }
@@ -4852,11 +5091,13 @@
     "Params": [
       {
         "Name": "newChildren",
+        "Type": "",
         "IsRequired": null,
         "Description": "The children."
       },
       {
         "Name": "clone",
+        "Type": "",
         "IsRequired": null,
         "Description": "if set to true [clone]."
       }
@@ -4874,6 +5115,7 @@
     "Params": [
       {
         "Name": "entity",
+        "Type": "",
         "IsRequired": "required",
         "Description": "The new to add to the database."
       }
