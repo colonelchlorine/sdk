@@ -1,0 +1,1400 @@
+[
+  {
+    "FullNameWithParams": "T:CheckmateServer.Web.WebMethods",
+    "FullName": "T:CheckmateServer.Web.WebMethods",
+    "Name": "WebMethods",
+    "Summary": "A web DataStore used for JavaScript clients communicating through to a DataStore. A web DataStore used for JavaScript clients communicating through to a DataStore. A web DataStore used for JavaScript clients communicating through to a DataStore. A web DataStore used for JavaScript clients communicating through to a DataStore. A web DataStore used for JavaScript clients communicating through to a DataStore. Partial class of for Data Permission (aka Consent Platform) methods. A web DataStore used for JavaScript clients communicating through to a DataStore. Partial class of for Fuel and Energy public APIs. Partial class of for Data and Analytics public APIs. Partial class of for Drive app web methods. Partial class of for Fuel and Energy public APIs. Partial class of for Calculating Hos Odometer. A web DataStore used for JavaScript clients communicating through to a DataStore. Partial class of for internal tests, such as the scalability test. Partial class of for IoxAddOnServer web methods. Partial class of for map server public APIs. Partial class of for media file methods. Partial class of for proxy to MyAdmin methods. Partial class of for OEM public APIs. Partial class of for OTAU methods. Partial class of for getting the estimated run time of a report, in seconds, based on the report inputs. Partial class of for excel report and dashboard methods. Partial class of for Route import methods. Partial class of for Service Group removal. Partial class of for creating a shareable link. Partial class of for web methods related to Max Road Speed Limits. Partial class of for tachograph file methods. Partial class of for database transfer methods.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 100
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.Version",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.Version",
+    "Name": "Version",
+    "Summary": "Gets or sets the Add-In application version.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 101
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AnnotationLogSearch.Version",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AnnotationLogSearch.Version",
+    "Name": "Version",
+    "Summary": "Gets or sets the row version of the AnnotationLog search criteria.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 102
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AnnotationLogSearch.UserSearch",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AnnotationLogSearch.UserSearch",
+    "Name": "UserSearch",
+    "Summary": "Gets or sets search for AnnotationLogs with this Id. Available UserSearch options are:. Id",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 103
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.Audit.UserName",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.Audit.UserName",
+    "Name": "UserName",
+    "Summary": "Gets or sets the name of the user associated with the audit entry. Specifies the non-empty, validated myg user name for display in MyGeotab reports. Defaults to the authenticated account if null or blank.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 104
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddIn.Url",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddIn.Url",
+    "Name": "Url",
+    "Summary": "Gets or sets the marketplace Add-In Url.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 105
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.MapScript.Url",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.MapScript.Url",
+    "Name": "Url",
+    "Summary": "Gets or sets the HTML file reference for this Add-In.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 106
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.Menu.Url",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.Menu.Url",
+    "Name": "Url",
+    "Summary": "Gets or Sets the URL to the HTML page to load when clicking on this menu item.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 107
+  },
+  {
+    "FullNameWithParams": "M:CheckmateServer.Web.WebMethods.UploadMediaFileAsync(Microsoft.AspNetCore.Http.HttpContext,CheckmateServer.Web.PostedFormFiles,Geotab.Checkmate.Database.DataStore,Geotab.Checkmate.ObjectModel.Files.MediaFile,System.Threading.CancellationToken)",
+    "FullName": "M:CheckmateServer.Web.WebMethods.UploadMediaFileAsync",
+    "Name": "UploadMediaFileAsync",
+    "Summary": "Upload a file for the corresponding using multipart/form-data POST request.",
+    "Params": [
+      {
+        "Name": "context",
+        "IsRequired": null,
+        "Description": "The HttpContext with the web request and response."
+      },
+      {
+        "Name": "postedFiles",
+        "IsRequired": null,
+        "Description": "Files that were uploaded with multiple data."
+      },
+      {
+        "Name": "dataStore",
+        "IsRequired": null,
+        "Description": "The."
+      },
+      {
+        "Name": "mediaFile",
+        "IsRequired": "required",
+        "Description": "The of which to add the file for."
+      },
+      {
+        "Name": "cancellationToken",
+        "IsRequired": null,
+        "Description": "The."
+      }
+    ],
+    "Example": "",
+    "Returns": "A.",
+    "Score": 108
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddIn.UpdateTime",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddIn.UpdateTime",
+    "Name": "UpdateTime",
+    "Summary": "Gets or sets the timestamp when Add-In is changed.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 109
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.UninstallCallbackUrl",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.UninstallCallbackUrl",
+    "Name": "UninstallCallbackUrl",
+    "Summary": "Gets or sets the uninstall callback URL.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 110
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.CustomSecurityId.Translations",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.CustomSecurityId.Translations",
+    "Name": "Translations",
+    "Summary": "Gets or sets the translations of the custom security ID.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 111
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.ItemName.Translations",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.ItemName.Translations",
+    "Name": "Translations",
+    "Summary": "Gets or sets the language translations for the Item name.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 112
+  },
+  {
+    "FullNameWithParams": "M:Geotab.Checkmate.ObjectModel.AnnotationLog.ToString",
+    "FullName": "M:Geotab.Checkmate.ObjectModel.AnnotationLog.ToString",
+    "Name": "ToString",
+    "Summary": "Returns a that represents this instance.",
+    "Params": [],
+    "Example": "",
+    "Returns": "A that represents this instance.",
+    "Score": 113
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AnnotationLogSearch.ToDate",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AnnotationLogSearch.ToDate",
+    "Name": "ToDate",
+    "Summary": "Gets or sets search for AnnotationLogs that were recorded at this date or before.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 114
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.Map.TitleString",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.Map.TitleString",
+    "Name": "TitleString",
+    "Summary": "Gets or sets the heading displayed at the top of the panel when there are multiple Map Add-ins installed.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 115
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.Map.Title",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.Map.Title",
+    "Name": "Title",
+    "Summary": "Gets or sets the heading displayed at the top of the panel when there are multiple Map Add-ins installed and title is listed in multiple languages.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 116
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.Button.SvgIcon",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.Button.SvgIcon",
+    "Name": "SvgIcon",
+    "Summary": "Gets or Sets a URL to the svg image for placing it in the button label.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 117
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.Menu.SvgIcon",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.Menu.SvgIcon",
+    "Name": "SvgIcon",
+    "Summary": "Gets or Sets a URL to the svg image that is placed in front of the menu item.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 118
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.SupportEmail",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.SupportEmail",
+    "Name": "SupportEmail",
+    "Summary": "Gets or sets the email address for support related to this Add-In.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 119
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfigurationSearch.SupportEmail",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfigurationSearch.SupportEmail",
+    "Name": "SupportEmail",
+    "Summary": "Gets or sets the email address for support related to this Add-In.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 120
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.MapScript.Style",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.MapScript.Style",
+    "Name": "Style",
+    "Summary": "Gets or sets the CSS file reference for this Add-In.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 121
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddIn.Status",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddIn.Status",
+    "Name": "Status",
+    "Summary": "Gets or sets the Add-In status.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 122
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.DeviceCommunicationStatusCount.State",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.DeviceCommunicationStatusCount.State",
+    "Name": "State",
+    "Summary": "The.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 123
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.MapScript.Src",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.MapScript.Src",
+    "Name": "Src",
+    "Summary": "Gets or sets the JavaScript file reference for the Add-in.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 124
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddIn.SolutionId",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddIn.SolutionId",
+    "Name": "SolutionId",
+    "Summary": "Gets or sets the Add-In solution Id.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 125
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.SolutionId",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.SolutionId",
+    "Name": "SolutionId",
+    "Summary": "Gets or sets the Add-In solution Id.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 126
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfigurationSearch.SolutionId",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfigurationSearch.SolutionId",
+    "Name": "SolutionId",
+    "Summary": "Gets or sets the solution id related to this Add-In.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 127
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInSearch.SolutionId",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInSearch.SolutionId",
+    "Name": "SolutionId",
+    "Summary": "Gets or sets the solution id related to this Add-In.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 128
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.Signature",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.Signature",
+    "Name": "Signature",
+    "Summary": "Gets or sets the digital signature of the Add-In.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 129
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.SecurityIds",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.SecurityIds",
+    "Name": "SecurityIds",
+    "Summary": "Gets or sets an array of that are added to the list of features available when editing clearances.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 130
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.MapScript.Script",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.MapScript.Script",
+    "Name": "Script",
+    "Summary": "Gets or sets the JavaScript code for the Add-in.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 131
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.Menu.Path",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.Menu.Path",
+    "Name": "Path",
+    "Summary": "Gets or Sets where in the menu hierarchy this menu item should reside.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 132
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.Button.Page",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.Button.Page",
+    "Name": "Page",
+    "Summary": "Gets or sets the built-in page to place the button on.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 133
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.Map.Page",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.Map.Page",
+    "Name": "Page",
+    "Summary": "Gets or sets the page the Map Add-in will reside within.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 134
+  },
+  {
+    "FullNameWithParams": "M:CheckmateServer.Web.WebMethods.OptimizeWaypointsAsync(Geotab.Checkmate.Database.DataStore,System.Collections.Generic.List{Geotab.Checkmate.ObjectModel.Geographical.Waypoint},System.Threading.CancellationToken)",
+    "FullName": "M:CheckmateServer.Web.WebMethods.OptimizeWaypointsAsync",
+    "Name": "OptimizeWaypointsAsync",
+    "Summary": "Optimizes a set of(s).",
+    "Params": [
+      {
+        "Name": "dataStore",
+        "IsRequired": null,
+        "Description": "The."
+      },
+      {
+        "Name": "waypoints",
+        "IsRequired": "required",
+        "Description": "The original(s) (Maximum 25)."
+      },
+      {
+        "Name": "cancellationToken",
+        "IsRequired": null,
+        "Description": "The."
+      }
+    ],
+    "Example": "The following JavaScript example shows how to optimize a sequence of waypoints. api.call(\"OptimizeWaypoints\", { \"waypoints\" : [{ \"coordinate\" : { \"x\" : -79.78167419433593, \"y\" : 43.51832580566406 }, \"sequence\" : 0, \"description\": \"A\" }, { \"coordinate\" : { \"x\" : -79.8455322265625, \"y\" : 43.51230010986328 }, \"sequence\" : 1, \"description\": \"B\" }, { \"coordinate\" : { \"x\" : -79.968017578125, \"y\" : 43.42531967163086 }, \"sequence\" : 2, \"description\": \"C\" }, { \"coordinate\" : { \"x\" : -79.96439819335937, \"y\" : 43.47275924682617 }, \"sequence\" : 3, \"description\": \"D\" }, { \"coordinate\" : { \"x\" : -79.78167419433593, \"y\" : 43.51832580566406 }, \"sequence\" : 4, \"description\": \"E\" } ] }, function (result) { console.log(\"Done: \", result); }, function (e) { console.error(\"Failed:\", e); });",
+    "Returns": "A set of optimized.",
+    "Score": 135
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.OnStartup",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.OnStartup",
+    "Name": "OnStartup",
+    "Summary": "Gets or sets a value indicating whether Add-In is executed initially on start up within the Drive App.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 136
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.OnShutdown",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.OnShutdown",
+    "Name": "OnShutdown",
+    "Summary": "Gets or sets a value indicating whether Add-In is executed upon log out within the Drive App.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 137
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.Map.NoView",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.Map.NoView",
+    "Name": "NoView",
+    "Summary": "Gets or sets a value indicating whether the add-in will be displayed in the right-side panel.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 138
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.Name",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.Name",
+    "Name": "Name",
+    "Summary": "Gets or sets the name of this Add-In.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 139
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfigurationSearch.Name",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfigurationSearch.Name",
+    "Name": "Name",
+    "Summary": "Gets or sets the name of this Add-In.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 140
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.CustomSecurityId.Name",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.CustomSecurityId.Name",
+    "Name": "Name",
+    "Summary": "Gets or sets the name of the custom security ID.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 141
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.Menu.MenuNameString",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.Menu.MenuNameString",
+    "Name": "MenuNameString",
+    "Summary": "Gets or Sets the menu name.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 142
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.Menu.MenuName",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.Menu.MenuName",
+    "Name": "MenuName",
+    "Summary": "Gets or Sets.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 143
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.Menu.MenuId",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.Menu.MenuId",
+    "Name": "MenuId",
+    "Summary": "Gets or Sets a unique identifier for this menu.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 144
+  },
+  {
+    "FullNameWithParams": "T:Geotab.Checkmate.ObjectModel.AddIns.Menu",
+    "FullName": "T:Geotab.Checkmate.ObjectModel.AddIns.Menu",
+    "Name": "Menu",
+    "Summary": "Represents the Add-In Menu item.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 145
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AnnotationLogSearch.MaxVersion",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AnnotationLogSearch.MaxVersion",
+    "Name": "MaxVersion",
+    "Summary": "Gets or sets search fors with a maximum of this version.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 146
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.Map.MapScript",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.Map.MapScript",
+    "Name": "MapScript",
+    "Summary": "Gets or sets the.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 147
+  },
+  {
+    "FullNameWithParams": "T:Geotab.Checkmate.ObjectModel.AddIns.MapScript",
+    "FullName": "T:Geotab.Checkmate.ObjectModel.AddIns.MapScript",
+    "Name": "MapScript",
+    "Summary": "Represents the MapScript for Map item.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 148
+  },
+  {
+    "FullNameWithParams": "T:Geotab.Checkmate.ObjectModel.AddIns.Map",
+    "FullName": "T:Geotab.Checkmate.ObjectModel.AddIns.Map",
+    "Name": "Map",
+    "Summary": "Represents the Map Add-in item.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 149
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.Key",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.Key",
+    "Name": "Key",
+    "Summary": "Gets or sets the unique MyGeotab Marketplace Add-In key assigned by Geotab. If there’s no plan to get your Add-In to the Marketplace, you can leave out the key/value pair from the configuration.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 150
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.Items",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.Items",
+    "Name": "Items",
+    "Summary": "Gets or sets an array of custom pages and/or buttons (External references).",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 151
+  },
+  {
+    "FullNameWithParams": "T:Geotab.Checkmate.ObjectModel.AddIns.ItemName",
+    "FullName": "T:Geotab.Checkmate.ObjectModel.AddIns.ItemName",
+    "Name": "ItemName",
+    "Summary": "An object containing key value pairs for the text that appears on the item. The key is the language and the value is the text, for example: {\"EN\", \"New item\"}.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 152
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.IsSigned",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.IsSigned",
+    "Name": "IsSigned",
+    "Summary": "Gets or sets a value indicating whether the Add-In is signed.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 153
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddIn.IsInactive",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddIn.IsInactive",
+    "Name": "IsInactive",
+    "Summary": "Gets or sets whether the Add-In is inactive.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 154
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.InstallCallbackUrl",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.InstallCallbackUrl",
+    "Name": "InstallCallbackUrl",
+    "Summary": "Gets or sets the install callback URL.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 155
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.Button.Icon",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.Button.Icon",
+    "Name": "Icon",
+    "Summary": "Gets or Sets a URL to the image for placing it in the button label.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 156
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.Menu.Icon",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.Menu.Icon",
+    "Name": "Icon",
+    "Summary": "Gets or Sets a URL to the image for placing it in the Menu label.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 157
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddInData.Groups",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddInData.Groups",
+    "Name": "Groups",
+    "Summary": "Gets or sets the list of(s) the belongs to.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 158
+  },
+  {
+    "FullNameWithParams": "M:CheckmateServer.Web.WebMethods.GetVersionInformation",
+    "FullName": "M:CheckmateServer.Web.WebMethods.GetVersionInformation",
+    "Name": "GetVersionInformation",
+    "Summary": "The version information of the server.",
+    "Params": [],
+    "Example": "The following JavaScript example shows how to get current version of the server and goTalk. api.call(\"GetVersionInformation\", {});",
+    "Returns": "The.",
+    "Score": 159
+  },
+  {
+    "FullNameWithParams": "M:CheckmateServer.Web.WebMethods.GetVersion",
+    "FullName": "M:CheckmateServer.Web.WebMethods.GetVersion",
+    "Name": "GetVersion",
+    "Summary": "The version of the server.",
+    "Params": [],
+    "Example": "The following JavaScript example shows how to get current version of the system. api.call(\"GetVersion\", {});",
+    "Returns": "A string with the current version of MyGeotab running on the server.",
+    "Score": 160
+  },
+  {
+    "FullNameWithParams": "M:CheckmateServer.Web.WebMethods.GetTimeZones",
+    "FullName": "M:CheckmateServer.Web.WebMethods.GetTimeZones",
+    "Name": "GetTimeZones",
+    "Summary": "Get a collection of (Olson time zones).",
+    "Params": [],
+    "Example": "The following JavaScript example shows how to get all supported time zones. api.call(\"GetTimeZones\", {});",
+    "Returns": "A collection of.",
+    "Score": 161
+  },
+  {
+    "FullNameWithParams": "M:CheckmateServer.Web.WebMethods.GetPostedRoadSpeedsForDeviceAsync(Geotab.Checkmate.Database.DataStore,Geotab.Checkmate.ObjectModel.DeviceSearch,System.Nullable{System.DateTime},System.Nullable{System.DateTime},Geotab.Checkmate.ObjectModel.PostedRoadSpeedOptions,System.Threading.CancellationToken)",
+    "FullName": "M:CheckmateServer.Web.WebMethods.GetPostedRoadSpeedsForDeviceAsync",
+    "Name": "GetPostedRoadSpeedsForDeviceAsync",
+    "Summary": "Get all posted road speed changes for a device's trips for the given dates. If the from date and to date are in the middle of the trip, the data for the whole trip are included.",
+    "Params": [
+      {
+        "Name": "dataStore",
+        "IsRequired": null,
+        "Description": "The."
+      },
+      {
+        "Name": "deviceSearch",
+        "IsRequired": null,
+        "Description": "Search for RoadMaxSpeeds with this. Available DeviceSearch options are:. Id"
+      },
+      {
+        "Name": "fromDate",
+        "IsRequired": null,
+        "Description": "Search for maximum road speed limits that were encountered at this date or after."
+      },
+      {
+        "Name": "toDate",
+        "IsRequired": null,
+        "Description": "Search for maximum road speed limits that were encountered at this date or before."
+      },
+      {
+        "Name": "postedRoadSpeedOptions",
+        "IsRequired": null,
+        "Description": "Road data options"
+      },
+      {
+        "Name": "cancellationToken",
+        "IsRequired": null,
+        "Description": "The."
+      }
+    ],
+    "Example": "The following JavaScript example shows how to get maximum speed limits. var deviceName = prompt(\"Enter device name\"); api.call(\"Get\", { \"typeName\": \"Device\", \"search\": { name: \"%\" + deviceName + \"%\" } }, function(devices) { if (devices.length){ api.call(\"GetPostedRoadSpeedsForDevice\", { \"deviceSearch\": { id: devices[0].id }, \"fromDate\": (new Date((new Date()).getTime() - (1 * 24 * 60 * 60 * 1000))).toISOString(), \"toDate\": (new Date()).toISOString(), \"postedRoadSpeedOptions\": \"NoCommercial,NoEstimates\" }); } else { console.log(\"There are no devices with such name\"); } });",
+    "Returns": "A list of objects.",
+    "Score": 162
+  },
+  {
+    "FullNameWithParams": "M:Geotab.Checkmate.ObjectModel.ApplicationVersionInformation.GetHashCode",
+    "FullName": "M:Geotab.Checkmate.ObjectModel.ApplicationVersionInformation.GetHashCode",
+    "Name": "GetHashCode",
+    "Summary": "Returns a hash code for this instance.",
+    "Params": [],
+    "Example": "",
+    "Returns": "A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.",
+    "Score": 163
+  },
+  {
+    "FullNameWithParams": "M:CheckmateServer.Web.WebMethods.GetDirectionsAsync(Geotab.Checkmate.Database.DataStore,System.Collections.Generic.List{Geotab.Checkmate.ObjectModel.Geographical.Waypoint},System.Threading.CancellationToken)",
+    "FullName": "M:CheckmateServer.Web.WebMethods.GetDirectionsAsync",
+    "Name": "GetDirectionsAsync",
+    "Summary": "Gets step-by-step driving for a sequence ofs including estimate travel time and distances.",
+    "Params": [
+      {
+        "Name": "dataStore",
+        "IsRequired": null,
+        "Description": "The."
+      },
+      {
+        "Name": "waypoints",
+        "IsRequired": "required",
+        "Description": "The set ofs."
+      },
+      {
+        "Name": "cancellationToken",
+        "IsRequired": null,
+        "Description": "The."
+      }
+    ],
+    "Example": "The following JavaScript example shows how to get directions for a sequence of waypoints. api.call(\"GetDirections\", { \"waypoints\" : [{ \"coordinate\" : { \"x\" : -79.38424129999999, \"y\" : 43.65411539999999 }, \"sequence\" : 0, \"description\": \"A\" }, { \"coordinate\" : { \"x\" : -79.38931020000001, \"y\" : 43.640473 }, \"sequence\" : 1, \"description\": \"B\" }, { \"coordinate\" : { \"x\" : -79.38424129999999, \"y\" : 43.65411539999999 }, \"sequence\" : 2, \"description\": \"C\" } ] }, function (result) { console.log(\"Done: \", result); }, function (e) { console.error(\"Failed:\", e); });",
+    "Returns": "Step-by-step between thes.",
+    "Score": 164
+  },
+  {
+    "FullNameWithParams": "M:CheckmateServer.Web.WebMethods.GetDaylightSavingRulesAsync(System.String,System.Nullable{System.Int32})",
+    "FullName": "M:CheckmateServer.Web.WebMethods.GetDaylightSavingRulesAsync",
+    "Name": "GetDaylightSavingRulesAsync",
+    "Summary": "Get a Timezone's TimeZoneInfoWithRules by the timeZoneId.",
+    "Params": [
+      {
+        "Name": "timeZoneId",
+        "IsRequired": "required",
+        "Description": "The ID of the."
+      },
+      {
+        "Name": "minYear",
+        "IsRequired": null,
+        "Description": "Adjustment rules which end before minYear will not be returned. Default is 2000."
+      }
+    ],
+    "Example": "The following JavaScript example shows how to get daylight saving rules for the given Timezone. Only rules that end on or after 2000 will be returned. api.call(\"GetDaylightSavingRules\", { \"timeZoneId\": \"America/Toronto\" }); The following JavaScript example uses minYear parameter to get all adjustment rules since 1990, overriding the default value of 2000. api.call(\"GetDaylightSavingRules\", { \"timeZoneId\": \"America/Toronto\", \"minYear\": 1990 });",
+    "Returns": "The resulting collection.",
+    "Score": 165
+  },
+  {
+    "FullNameWithParams": "M:CheckmateServer.Web.WebMethods.GetCoordinatesAsync(Geotab.Checkmate.Database.DataStore,System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)",
+    "FullName": "M:CheckmateServer.Web.WebMethods.GetCoordinatesAsync",
+    "Name": "GetCoordinatesAsync",
+    "Summary": "Geocodes or looks up the latitude and longitude from a list of addresses.",
+    "Params": [
+      {
+        "Name": "dataStore",
+        "IsRequired": null,
+        "Description": "The."
+      },
+      {
+        "Name": "addresses",
+        "IsRequired": "required",
+        "Description": "The formatted addresses in an array of (s)."
+      },
+      {
+        "Name": "cancellationToken",
+        "IsRequired": null,
+        "Description": "The."
+      }
+    ],
+    "Example": "The following JavaScript example shows how to get the Coordinates for a given list of Addresses. api.call(\"GetCoordinates\",{ \"addresses\":[\"New York City, NY, USA\"] });",
+    "Returns": "The array of(s) for the address or null if it cannot be found.",
+    "Score": 166
+  },
+  {
+    "FullNameWithParams": "M:CheckmateServer.Web.WebMethods.GetAddressesAsync(Geotab.Checkmate.Database.DataStore,System.Collections.Generic.IList{Geotab.Checkmate.ObjectModel.Coordinate},System.Boolean,System.Boolean,System.Nullable{System.Boolean},System.Threading.CancellationToken)",
+    "FullName": "M:CheckmateServer.Web.WebMethods.GetAddressesAsync",
+    "Name": "GetAddressesAsync",
+    "Summary": "Gets addresses from the list of(s), as well as any s in the system that contain the given coordinates.",
+    "Params": [
+      {
+        "Name": "dataStore",
+        "IsRequired": null,
+        "Description": "The."
+      },
+      {
+        "Name": "coordinates",
+        "IsRequired": "required",
+        "Description": "The array of(s)."
+      },
+      {
+        "Name": "movingAddresses",
+        "IsRequired": null,
+        "Description": "The default is false and is used for static/immobile addresses. When set to true, the coordinates are being specified for a moving object. The parameter should be set true if it is known that the object being tracked has a speed."
+      },
+      {
+        "Name": "hosAddresses",
+        "IsRequired": null,
+        "Description": "The default is false and is used for ELD compliant addresses. When set to true we will return the direction and distance to the nearest city with a population greater than 5000."
+      },
+      {
+        "Name": "isMetric",
+        "IsRequired": null,
+        "Description": "The default is null and is used when hosAddresses is true. The addresses will be returned with metric distance units if true, and imperial distance units if false. If null, the user's isMetric setting is used."
+      },
+      {
+        "Name": "cancellationToken",
+        "IsRequired": null,
+        "Description": "The."
+      }
+    ],
+    "Example": "The following JavaScript example shows how to get the Addresses for a given list of coordinates. api.call(\"GetAddresses\",{ \"coordinates\":[{\"x\":\"25.856667\", \"y\":\" -17.924444\"}], \"movingAddresses\":true });",
+    "Returns": "A list of populated(s).",
+    "Score": 167
+  },
+  {
+    "FullNameWithParams": "M:CheckmateServer.Web.WebMethods.GenerateCaptcha(System.Guid)",
+    "FullName": "M:CheckmateServer.Web.WebMethods.GenerateCaptcha",
+    "Name": "GenerateCaptcha",
+    "Summary": "Generates a single use CAPTCHA image for the given key and serves the result as \"image/png\" content.",
+    "Params": [
+      {
+        "Name": "id",
+        "IsRequired": "required",
+        "Description": "The globally unique id used to identify the CAPTCHA image returned."
+      }
+    ],
+    "Example": "The following JavaScript example shows how to generate a new CAPTCHA. var generateGUID = function(){ return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) { var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8); return v.toString(16); }); }; var captcha = new Image(); captcha.src = \"/apiv1/GenerateCaptcha?id=\" + generateGUID(); document.body.appendChild(captcha);",
+    "Returns": "Serves a jpeg CAPTCHA image with content type \"image/png\". If they key is not unique, returns HTTP status code 409 (Conflict).",
+    "Score": 168
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.ApplicationVersionInformation.Full",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.ApplicationVersionInformation.Full",
+    "Name": "Full",
+    "Summary": "Gets the build and commit together.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 169
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AnnotationLogSearch.FromDate",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AnnotationLogSearch.FromDate",
+    "Name": "FromDate",
+    "Summary": "Gets or sets search for AnnotationLogs that were recorded at this date or after.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 170
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.Files",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.Files",
+    "Name": "Files",
+    "Summary": "Gets or sets custom pages and/or buttons (Embedded code).",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 171
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddIn.ErrorMessage",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddIn.ErrorMessage",
+    "Name": "ErrorMessage",
+    "Summary": "Gets or sets the error message if there was an issue with Add-In.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 172
+  },
+  {
+    "FullNameWithParams": "M:Geotab.Checkmate.ObjectModel.ApplicationVersionInformation.Equals(System.Object)",
+    "FullName": "M:Geotab.Checkmate.ObjectModel.ApplicationVersionInformation.Equals",
+    "Name": "Equals",
+    "Summary": "Determines whether the specified, is equal to this instance.",
+    "Params": [
+      {
+        "Name": "obj",
+        "IsRequired": null,
+        "Description": "The to compare with this instance."
+      }
+    ],
+    "Example": "",
+    "Returns": "true if the specified is equal to this instance; otherwise, false.",
+    "Score": 173
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.EnableViewSecurityId",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.EnableViewSecurityId",
+    "Name": "EnableViewSecurityId",
+    "Summary": "Gets or sets a value indicating whether Add-In is going to setup the securityIds for viewing support.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 174
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AnnotationLog.DutyStatusLog",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AnnotationLog.DutyStatusLog",
+    "Name": "DutyStatusLog",
+    "Summary": "Gets or sets the which this log belongs to.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 175
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AnnotationLog.Driver",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AnnotationLog.Driver",
+    "Name": "Driver",
+    "Summary": "Gets or sets the who created the log.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 176
+  },
+  {
+    "FullNameWithParams": "M:CheckmateServer.Web.WebMethods.DownloadMediaFileAsync(Microsoft.AspNetCore.Http.HttpContext,Geotab.Checkmate.Database.DataStore,Geotab.Checkmate.ObjectModel.Files.MediaFile,System.Threading.CancellationToken)",
+    "FullName": "M:CheckmateServer.Web.WebMethods.DownloadMediaFileAsync",
+    "Name": "DownloadMediaFileAsync",
+    "Summary": "Download a file for the given. The Content-Type is determined by the file extension. Range headers are supported.",
+    "Params": [
+      {
+        "Name": "context",
+        "IsRequired": null,
+        "Description": "The."
+      },
+      {
+        "Name": "dataStore",
+        "IsRequired": null,
+        "Description": "The."
+      },
+      {
+        "Name": "mediaFile",
+        "IsRequired": "required",
+        "Description": "The of which to add the file for."
+      },
+      {
+        "Name": "cancellationToken",
+        "IsRequired": null,
+        "Description": "The."
+      }
+    ],
+    "Example": "",
+    "Returns": "The file stream of the given content-type.",
+    "Score": 177
+  },
+  {
+    "FullNameWithParams": "T:Geotab.Checkmate.ObjectModel.DeviceCommunicationStatusCount",
+    "FullName": "T:Geotab.Checkmate.ObjectModel.DeviceCommunicationStatusCount",
+    "Name": "DeviceCommunicationStatusCount",
+    "Summary": "Represents a record that holds the count of devices for a specific communication status.",
+    "Params": [
+      {
+        "Name": "State",
+        "IsRequired": null,
+        "Description": "The."
+      },
+      {
+        "Name": "Count",
+        "IsRequired": null,
+        "Description": "The number of devices in the specified state."
+      }
+    ],
+    "Example": "",
+    "Returns": "",
+    "Score": 178
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddInData.Details",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddInData.Details",
+    "Name": "Details",
+    "Summary": "Gets or sets the Details string as a serialized JSON object.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 179
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AnnotationLog.DateTime",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AnnotationLog.DateTime",
+    "Name": "DateTime",
+    "Summary": "Gets or sets the date and time the log was created.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 180
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.DataPermissions",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.DataPermissions",
+    "Name": "DataPermissions",
+    "Summary": "Gets or sets the Data Permissions (i.e. collection of authorizations and consents) if exists.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 181
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.CustomSecurityIds",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration.CustomSecurityIds",
+    "Name": "CustomSecurityIds",
+    "Summary": "Gets or sets an array of that are added to the list of features available when editing clearances.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 182
+  },
+  {
+    "FullNameWithParams": "T:Geotab.Checkmate.ObjectModel.AddIns.CustomSecurityId",
+    "FullName": "T:Geotab.Checkmate.ObjectModel.AddIns.CustomSecurityId",
+    "Name": "CustomSecurityId",
+    "Summary": "A custom security ID which can be used to control access to custom Add-Ins.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 183
+  },
+  {
+    "FullNameWithParams": "M:CheckmateServer.Web.WebMethods.CreateDatabaseAsync(Microsoft.AspNetCore.Http.HttpContext,Geotab.Checkmate.ObjectModel.Captcha.CaptchaAnswer,System.String,System.String,System.String,Geotab.Checkmate.ObjectModel.Registration.CompanyDetails,System.Threading.CancellationToken,Geotab.Checkmate.ObjectModel.Demonstration.DemoConfiguration)",
+    "FullName": "M:CheckmateServer.Web.WebMethods.CreateDatabaseAsync",
+    "Name": "CreateDatabaseAsync",
+    "Summary": "Creates new uniquely named database on a server in the federation. Requires either a valid CaptchaAnswer and/or valid MyAdmin user credentials. See https://github.com/Geotab/sample-registration for an example.",
+    "Params": [
+      {
+        "Name": "context",
+        "IsRequired": null,
+        "Description": "The HttpContext with the web request and response."
+      },
+      {
+        "Name": "captchaAnswer",
+        "IsRequired": null,
+        "Description": "A valid. This includes the Id used to generate a CAPTCHA image and the answer."
+      },
+      {
+        "Name": "database",
+        "IsRequired": "required",
+        "Description": "The database name (short company name with the demo_ prefix). Spaces and non alphanumeric characters will be converted to the underscore character. Maximum 58 characters."
+      },
+      {
+        "Name": "userName",
+        "IsRequired": "required",
+        "Description": "The database administrator email address."
+      },
+      {
+        "Name": "password",
+        "IsRequired": "required",
+        "Description": "The database administrator password."
+      },
+      {
+        "Name": "companyDetails",
+        "IsRequired": "required",
+        "Description": "The for the database."
+      },
+      {
+        "Name": "cancellationToken",
+        "IsRequired": null,
+        "Description": "The."
+      },
+      {
+        "Name": "demoConfiguration",
+        "IsRequired": null,
+        "Description": "The."
+      }
+    ],
+    "Example": "",
+    "Returns": "A string with the direct server the database was created on and database name. Ex. \"my0.geotab.com/abc_company\".",
+    "Score": 184
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.DeviceCommunicationStatusCount.Count",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.DeviceCommunicationStatusCount.Count",
+    "Name": "Count",
+    "Summary": "The number of devices in the specified state.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 185
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddIn.Configuration",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddIn.Configuration",
+    "Name": "Configuration",
+    "Summary": "Gets or sets the.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 186
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInSearch.Configuration",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.AddInSearch.Configuration",
+    "Name": "Configuration",
+    "Summary": "Gets or sets the.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 187
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.ApplicationVersionInformation.Commit",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.ApplicationVersionInformation.Commit",
+    "Name": "Commit",
+    "Summary": "Gets the commit.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 188
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AnnotationLog.Comment",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AnnotationLog.Comment",
+    "Name": "Comment",
+    "Summary": "Gets or sets the annotation text associated with the log.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 189
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AnnotationLogSearch.Comment",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AnnotationLogSearch.Comment",
+    "Name": "Comment",
+    "Summary": "Gets or sets search for AnnotationLogs which have a comment that contains this. Wildcard can be used by prepending/appending \"%\" to string.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 190
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.Audit.Comment",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.Audit.Comment",
+    "Name": "Comment",
+    "Summary": "Gets or sets free text field where any user information can be stored and referenced for this entity.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 191
+  },
+  {
+    "FullNameWithParams": "M:Geotab.Checkmate.ObjectModel.AddInData.Clone",
+    "FullName": "M:Geotab.Checkmate.ObjectModel.AddInData.Clone",
+    "Name": "Clone",
+    "Summary": "",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 192
+  },
+  {
+    "FullNameWithParams": "M:Geotab.Checkmate.ObjectModel.AddIns.AddIn.Clone",
+    "FullName": "M:Geotab.Checkmate.ObjectModel.AddIns.AddIn.Clone",
+    "Name": "Clone",
+    "Summary": "Clones the AddIn.",
+    "Params": [],
+    "Example": "",
+    "Returns": "An Add-In.",
+    "Score": 193
+  },
+  {
+    "FullNameWithParams": "M:Geotab.Checkmate.ObjectModel.AnnotationLog.Clone",
+    "FullName": "M:Geotab.Checkmate.ObjectModel.AnnotationLog.Clone",
+    "Name": "Clone",
+    "Summary": "Creates a new object that is a copy of the current instance.",
+    "Params": [],
+    "Example": "",
+    "Returns": "A new object that is a copy of this instance.",
+    "Score": 194
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.Button.Click",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.Button.Click",
+    "Name": "Click",
+    "Summary": "Gets or sets a URL to a JavaScript file which is executed when the button is clicked.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 195
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.Menu.Category",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.Menu.Category",
+    "Name": "Category",
+    "Summary": "Gets or Sets where in the new navigation bar this menu item should reside.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 196
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.Button.ButtonNameString",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.Button.ButtonNameString",
+    "Name": "ButtonNameString",
+    "Summary": "Gets or Sets the button name.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 197
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddIns.Button.ButtonName",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddIns.Button.ButtonName",
+    "Name": "ButtonName",
+    "Summary": "Gets or Sets.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 198
+  },
+  {
+    "FullNameWithParams": "T:Geotab.Checkmate.ObjectModel.AddIns.Button",
+    "FullName": "T:Geotab.Checkmate.ObjectModel.AddIns.Button",
+    "Name": "Button",
+    "Summary": "Represents the Add-In Button item.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 199
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.ApplicationVersionInformation.Build",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.ApplicationVersionInformation.Build",
+    "Name": "Build",
+    "Summary": "Gets the build.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 200
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.ApplicationVersionInformation.Branch",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.ApplicationVersionInformation.Branch",
+    "Name": "Branch",
+    "Summary": "Gets the branch.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 201
+  },
+  {
+    "FullNameWithParams": "M:CheckmateServer.Web.WebMethods.AuthenticateAsync(Microsoft.AspNetCore.Http.HttpContext,System.String,System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken@)",
+    "FullName": "M:CheckmateServer.Web.WebMethods.AuthenticateAsync",
+    "Name": "AuthenticateAsync",
+    "Summary": "Authenticates a user and provides a if successful. The authentication pattern is documented in the Concepts sections of the SDK. Throws:",
+    "Params": [
+      {
+        "Name": "context",
+        "IsRequired": null,
+        "Description": "The HttpContext with web request and response."
+      },
+      {
+        "Name": "database",
+        "IsRequired": null,
+        "Description": "The database to authenticate against. If the user is registered on only one database; the user will be automatically authenticated against the correct database and this parameter can be omitted (the database name is returned in the object). If the user is registered in multiple databases; the database value for the particular database you are trying to authenticate against must be provided."
+      },
+      {
+        "Name": "userName",
+        "IsRequired": "required",
+        "Description": "The user name (typically an email address) that identifies the user being authenticated."
+      },
+      {
+        "Name": "userLogin",
+        "IsRequired": null,
+        "Description": "The user name (typically and email address) that identifies the user being authenticated."
+      },
+      {
+        "Name": "password",
+        "IsRequired": "required",
+        "Description": "The user's Geotab password."
+      },
+      {
+        "Name": "global",
+        "IsRequired": null,
+        "Description": "If true, try log into any server in the federation."
+      },
+      {
+        "Name": "cancellationToken",
+        "IsRequired": null,
+        "Description": "The used to signal that the request should be cancelled."
+      }
+    ],
+    "Example": "The following JavaScript example shows how to call Authenticate. Just fill in your details for each of the parameters. api.call(\"Authenticate\", { \"userName\":\"\", \"database\":\"\", \"password\":\"\" });",
+    "Returns": "A object. It contains the Credentials property that can be used for further API calls. A result of LoginResult.Path = \"ThisServer\" occurs when the user is found on the current server. Otherwise, a server name is returned and the client must redirect to this new server name.",
+    "Score": 202
+  },
+  {
+    "FullNameWithParams": "T:Geotab.Checkmate.ObjectModel.Audit",
+    "FullName": "T:Geotab.Checkmate.ObjectModel.Audit",
+    "Name": "Audit",
+    "Summary": "Entry of events, operations and issues for tracking purposes. Entries can be added and read but cannot be edited.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 203
+  },
+  {
+    "FullNameWithParams": "T:Geotab.Checkmate.ObjectModel.ApplicationVersionInformation",
+    "FullName": "T:Geotab.Checkmate.ObjectModel.ApplicationVersionInformation",
+    "Name": "ApplicationVersionInformation",
+    "Summary": "The inner object for the ApplicationInformation information in VersionInformation.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 204
+  },
+  {
+    "FullNameWithParams": "T:Geotab.Checkmate.ObjectModel.AnnotationLogSearch",
+    "FullName": "T:Geotab.Checkmate.ObjectModel.AnnotationLogSearch",
+    "Name": "AnnotationLogSearch",
+    "Summary": "The object used to specify the arguments when searching for(s).",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 205
+  },
+  {
+    "FullNameWithParams": "T:Geotab.Checkmate.ObjectModel.AnnotationLog",
+    "FullName": "T:Geotab.Checkmate.ObjectModel.AnnotationLog",
+    "Name": "AnnotationLog",
+    "Summary": "An AnnotationLog is a comment that can be associated with a. The is the author of the AnnotationLog.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 206
+  },
+  {
+    "FullNameWithParams": "T:Geotab.Checkmate.ObjectModel.AddIns.AddInSearch",
+    "FullName": "T:Geotab.Checkmate.ObjectModel.AddIns.AddInSearch",
+    "Name": "AddInSearch",
+    "Summary": "The object used to specify the arguments when searching for.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 207
+  },
+  {
+    "FullNameWithParams": "P:Geotab.Checkmate.ObjectModel.AddInData.AddInId",
+    "FullName": "P:Geotab.Checkmate.ObjectModel.AddInData.AddInId",
+    "Name": "AddInId",
+    "Summary": "Gets or sets the add-in identifier.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 208
+  },
+  {
+    "FullNameWithParams": "T:Geotab.Checkmate.ObjectModel.AddInData",
+    "FullName": "T:Geotab.Checkmate.ObjectModel.AddInData",
+    "Name": "AddInData",
+    "Summary": "A class that holds data stored by an add-in.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 209
+  },
+  {
+    "FullNameWithParams": "T:Geotab.Checkmate.ObjectModel.AddIns.AddInConfigurationSearch",
+    "FullName": "T:Geotab.Checkmate.ObjectModel.AddIns.AddInConfigurationSearch",
+    "Name": "AddInConfigurationSearch",
+    "Summary": "The object used to specify the arguments when searching for.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 210
+  },
+  {
+    "FullNameWithParams": "T:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration",
+    "FullName": "T:Geotab.Checkmate.ObjectModel.AddIns.AddInConfiguration",
+    "Name": "AddInConfiguration",
+    "Summary": "Represents populated Add-In with configuration.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 211
+  },
+  {
+    "FullNameWithParams": "T:Geotab.Checkmate.ObjectModel.AddIns.AddIn",
+    "FullName": "T:Geotab.Checkmate.ObjectModel.AddIns.AddIn",
+    "Name": "AddIn",
+    "Summary": "Add-Ins are used to extend the functionality provided by MyGeotab and Geotab Drive. An Add-In is JavaScript, HTML and CSS loaded into the MyGeotab or Geotab Drive portal and resides directly inside the user interface. This allows third-parties to create a seamless user experience and provide solutions that would otherwise require the user to visit a different website altogether. More information on developing Add-Ins.",
+    "Params": [],
+    "Example": "",
+    "Returns": "",
+    "Score": 212
+  }
+]
