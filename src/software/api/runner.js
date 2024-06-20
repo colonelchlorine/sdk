@@ -13,7 +13,7 @@ let loginFormHasBeenShown = false;
 
 // add function to read sdk-functions.json and return array
 function getSdkFunctions() {
-    const sdkFunctions = require('./sdk-functions.json').filter(f => f.Name.includes("GetCoordinates"));
+    const sdkFunctions = require('./sdk-functions.json');
     return sdkFunctions;
 }
 
