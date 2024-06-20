@@ -11,6 +11,12 @@ let shouldAutoLoginDemo = false;
 let demoCredentials = null;
 let loginFormHasBeenShown = false;
 
+// add function to read sdk-functions.json and return array
+function getSdkFunctions() {
+    const sdkFunctions = require('./sdk-functions.json');
+    return sdkFunctions;
+}
+
 export default function ApiRunnerCore() {
 
     const htmlEscape = str => String(str || "")
@@ -47,23 +53,88 @@ export default function ApiRunnerCore() {
                     }
                 });
                 editor.getSession().setMode("ace/mode/" + language);
+                console.log("session mode: " + "ace/mode/" + language);
                 editor.$blockScrolling = Infinity;
                 editor.on("change", debounce(() => {
-                        if (!silentMode) {
-                            if (ignoreChanges) {
-                                ignoreChanges = false;
-                                return;
-                            }
-                            appState.setUnsavedEditorChanges(true);
-                            if (window.location.hash.startsWith('#save:')) {
-                                localStorageUtils.setObject(unsavedEditorChangesKey, true);
-                            }
-                            urlState.saveState();
+                    if (!silentMode) {
+                        if (ignoreChanges) {
+                            ignoreChanges = false;
+                            return;
                         }
-                    }, saveTimeout)
+                        appState.setUnsavedEditorChanges(true);
+                        if (window.location.hash.startsWith('#save:')) {
+                            localStorageUtils.setObject(unsavedEditorChangesKey, true);
+                        }
+                        urlState.saveState();
+                    }
+                }, saveTimeout)
                 );
                 appState.setEditors(language, editor);
                 urlState.addEditor(language, self);
+
+                editor.setOptions({
+                    enableBasicAutocompletion: true,
+                    enableSnippets: true,
+                    enableLiveAutocompletion: true
+                });
+
+                 // add snippet manager
+                 var htmlSnippets = [
+                    { caption: 'document.querySelector()', snippet: `document.querySelector($1)` },
+                    { caption: 'JSON.parse()', snippet: 'JSON.parse($1)' },
+                    { caption: 'api.call("get")', snippet: 'api.call("Get", { "typeName": "Device", "resultsLimit": 10 }' }
+                    // Add more snippets as needed
+                  ];
+
+                var snippetManager = ace.require("ace/snippets").snippetManager;
+                var activeScopes = snippetManager.getActiveScopes(editor);
+                if (activeScopes.includes("javascript")) {
+                    callback(null, htmlSnippets);
+                }
+
+                var langTools = ace.require("ace/ext/language_tools");
+                var sdkFunctionsCompleter = {
+                    getCompletions: function (editor, session, pos, prefix, callback) {
+                        if (prefix.length === 0) { callback(null, []); return }
+
+                        var activeScopes = snippetManager.getActiveScopes(editor); // <<<<<<<<<<  get active scopes
+        
+                        if(activeScopes.includes("javascript")){ // <<<<<<<<<<<<<<<<<< check if active scope is javascript
+                             console.log("js code ...");
+                             // if so pass snippets
+                            callback(null, htmlSnippets);
+                         }
+
+                        callback(null, getSdkFunctions().map(function (func) {
+                            return {
+                                name: func.Name,
+                                caption: func.Name,
+                                value: func.Name,
+                                score: func.Score,
+                                meta: func.Type,
+                                docHTML: formatSdkMemberInfo(func),
+                            };
+                        }
+                        ));
+                    }
+                }
+
+                langTools.addCompleter(sdkFunctionsCompleter);
+
+
+               
+                // console.log("Create tern server")
+                // var langTools = ace.require("ace/ext/language_tools");
+                // var TernServer = ace.require("ace/tern/server").TernServer;
+                // var defs = [ternEcma5Def, ternSdkDef];
+                // var ternServer = new TernServer({defs: defs});
+
+                // // Tern Completion
+                // langTools.addCompleter(ternServer);
+
+                // // Tern Tooltip
+                // var TernTooltip = ace.require("ace/tern/tern_tooltip").TernTooltip;
+                // editor.ternTooltip = new TernTooltip(editor, ternServer);
             },
             process = value => {
                 appState = window.appState;
@@ -117,6 +188,28 @@ export default function ApiRunnerCore() {
 
         return self;
     };
+
+    const formatSdkMemberInfo = (func) => {
+        let formattedMemberInfo = "";
+
+        formattedMemberInfo += func.Summary;
+
+        if (func.Params.length > 0) {
+            // join all the params and their descriptions
+            formattedMemberInfo += "<br /><br /><b>Parameters:</b><br />" + func.Params.map(p => p.Name + ": " + p.Description).join("<br /><br />")
+        }
+
+        if (func.Returns) {
+            formattedMemberInfo += "<br /><br /><b>Returns:</b><br />" + func.Returns;
+        }
+
+        if (func.Example) {
+            formattedMemberInfo += "<br /><br /><b>Example:</b><br /><i>" + func.Example + "</i>";
+        }
+
+        return formattedMemberInfo;
+    };
+
     const ExecuteManager = (containerId, apiManager, api, postMessages, consoleManager) => {
         let iframe;
         const container = document.getElementById(containerId);
@@ -207,11 +300,11 @@ export default function ApiRunnerCore() {
     const PostMessagesManager = () => {
         let handlers = {};
         const on = (type, callback) => {
-                if (!handlers[type]) {
-                    handlers[type] = [];
-                }
-                handlers[type].push(callback);
-            },
+            if (!handlers[type]) {
+                handlers[type] = [];
+            }
+            handlers[type].push(callback);
+        },
             clear = () => {
                 handlers = {};
             };
@@ -417,23 +510,23 @@ export default function ApiRunnerCore() {
     };
     const APIRunner = () => {
         let processors = (() => {
-                var processors = [],
-                    add = (name, processor) => {
-                        self[name] = processor;
-                        processors.push(processor);
+            var processors = [],
+                add = (name, processor) => {
+                    self[name] = processor;
+                    processors.push(processor);
+                },
+                self = {
+                    add: add,
+                    forEach: callback => {
+                        processors.forEach(callback);
                     },
-                    self = {
-                        add: add,
-                        forEach: callback => {
-                            processors.forEach(callback);
-                        },
-                        reduce: (callback, value) => {
-                            processors.reduce(callback, value);
-                        }
-                    };
+                    reduce: (callback, value) => {
+                        processors.reduce(callback, value);
+                    }
+                };
 
-                return self;
-            })(),
+            return self;
+        })(),
             urlState = (() => {
                 const jsOnlyEditorStateKey = 'api-runner-state-js-only';
                 const editorModeKey = 'api-runner-editor-mode';
@@ -476,7 +569,7 @@ export default function ApiRunnerCore() {
                             appState.setCurrentConfigName(name);
                             const filteredConfigs = configs.filter(c => c.name === name);
                             if (filteredConfigs.length === 1) {
-                                const [ config ] = filteredConfigs;
+                                const [config] = filteredConfigs;
                                 appState.setPaneToggleButtonStates(config.toggleStates);
                                 appState.jsOnlyRef.current = config.jsOnly;
                                 appState.setJsOnly(config.jsOnly);
@@ -686,11 +779,11 @@ export default function ApiRunnerCore() {
             loginSpinner = document.getElementById("loginSpinner");
 
         const setLoginForm = (server = '', database = '', user = '', password = '') => {
-                serverInput.value = server;
-                databaseInput.value = database;
-                userInput.value = user;
-                passwordInput.value = password;
-            },
+            serverInput.value = server;
+            databaseInput.value = database;
+            userInput.value = user;
+            passwordInput.value = password;
+        },
             showLoginForm = () => {
                 loginForm.style.display = "block";
                 loginError.style.display = "none";
@@ -813,7 +906,7 @@ export default function ApiRunnerCore() {
 
                     const urlParams = new URLSearchParams(decodedSearchString);
 
-                    const requiredParams = [ 'database', 'username', 'server', 'password' ];
+                    const requiredParams = ['database', 'username', 'server', 'password'];
                     const hasRequiredKeys = requiredParams.reduce((result, param) => result && urlParams.has(param));
 
                     console.log('hasRequiredKeys ' + hasRequiredKeys);
