@@ -90,11 +90,8 @@ export default function ApiRunnerCore() {
                                 caption: func.Name,
                                 value: func.Name,
                                 score: func.Score,
-                                meta: "SDK Function",
-                                docHTML: func.Summary
-                                    + "<br><br><b>Parameters:</b><br />" + func.Params.map(p => p.Name + ": <i>" + p.Description + "</i>").join("<br /><br />") 
-                                    + "<br /><br /><b>Returns:</b><br />" + func.Returns 
-                                    + "<br /><br /><b>Example:</b><br />" + func.Example,
+                                meta:  func.Type,
+                                docHTML: formatSdkMemberInfo(func),
                             };
                         }
                         ));
@@ -168,6 +165,28 @@ export default function ApiRunnerCore() {
 
         return self;
     };
+
+    const formatSdkMemberInfo = (func) => {
+        let formattedMemberInfo = "";
+
+        formattedMemberInfo += func.Summary;
+
+        if (func.Params.length > 0) {
+            // join all the params and their descriptions
+            formattedMemberInfo += "<br /><br /><b>Parameters:</b><br />" + func.Params.map(p => p.Name + ": " + p.Description).join("<br /><br />")
+        }
+
+        if (func.Returns) {
+            formattedMemberInfo += "<br /><br /><b>Returns:</b><br />" + func.Returns;
+        }
+
+        if (func.Example) {
+            formattedMemberInfo += "<br /><br /><b>Example:</b><br /><i>" + func.Example + "</i>";
+        }
+
+        return formattedMemberInfo;
+    };
+
     const ExecuteManager = (containerId, apiManager, api, postMessages, consoleManager) => {
         let iframe;
         const container = document.getElementById(containerId);
