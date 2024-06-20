@@ -78,11 +78,32 @@ export default function ApiRunnerCore() {
                     enableLiveAutocompletion: true
                 });
 
-                var langTools = ace.require("ace/ext/language_tools");
+                 // add snippet manager
+                 var htmlSnippets = [
+                    { caption: 'document.querySelector()', snippet: `document.querySelector($1)` },
+                    { caption: 'JSON.parse()', snippet: 'JSON.parse($1)' },
+                    { caption: 'api.call("get")', snippet: 'api.call("Get", { "typeName": "Device", "resultsLimit": 10 }' }
+                    // Add more snippets as needed
+                  ];
 
+                var snippetManager = ace.require("ace/snippets").snippetManager;
+                var activeScopes = snippetManager.getActiveScopes(editor);
+                if (activeScopes.includes("javascript")) {
+                    callback(null, htmlSnippets);
+                }
+
+                var langTools = ace.require("ace/ext/language_tools");
                 var sdkFunctionsCompleter = {
                     getCompletions: function (editor, session, pos, prefix, callback) {
                         if (prefix.length === 0) { callback(null, []); return }
+
+                        var activeScopes = snippetManager.getActiveScopes(editor); // <<<<<<<<<<  get active scopes
+        
+                        if(activeScopes.includes("javascript")){ // <<<<<<<<<<<<<<<<<< check if active scope is javascript
+                             console.log("js code ...");
+                             // if so pass snippets
+                            callback(null, htmlSnippets);
+                         }
 
                         callback(null, getSdkFunctions().map(function (func) {
                             return {
@@ -90,7 +111,7 @@ export default function ApiRunnerCore() {
                                 caption: func.Name,
                                 value: func.Name,
                                 score: func.Score,
-                                meta:  func.Type,
+                                meta: func.Type,
                                 docHTML: formatSdkMemberInfo(func),
                             };
                         }
@@ -100,6 +121,8 @@ export default function ApiRunnerCore() {
 
                 langTools.addCompleter(sdkFunctionsCompleter);
 
+
+               
                 // console.log("Create tern server")
                 // var langTools = ace.require("ace/ext/language_tools");
                 // var TernServer = ace.require("ace/tern/server").TernServer;
