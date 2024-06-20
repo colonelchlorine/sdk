@@ -191,6 +191,10 @@ export default function ApiRunnerCore() {
     };
 
     const formatSnippet = (method) => {
+        if (method.Type === "SDK Type") {
+            return "";
+        }
+
         let snippet = "api.call(\"" + method.Name + "\", {\n";
         snippet += method.Params
             .map((p, index) => "    \"" + p.Name + "\": [$" + (index + 1) + "]").join(",\n");
