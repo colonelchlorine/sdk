@@ -13,7 +13,7 @@ let loginFormHasBeenShown = false;
 
 // add function to read sdk-functions.json and return array
 function getSdkFunctions() {
-    const sdkFunctions = require('./sdk-functions.json').filter(f => f.Name.includes("GetCoordinatesAsync"));
+    const sdkFunctions = require('./sdk-functions.json').filter(f => f.Name.includes("GetCoordinates"));
     return sdkFunctions;
 }
 
@@ -193,7 +193,6 @@ export default function ApiRunnerCore() {
     const formatSnippet = (method) => {
         let snippet = "api.call(\"" + method.Name + "\", {\n";
         snippet += method.Params
-            .filter(p => p.Name !== "dataStore" && p.Name !== "cancellationToken")
             .map((p, index) => "    \"" + p.Name + "\": [$" + (index + 1) + "]").join(",\n");
         
         snippet += "\n});";
