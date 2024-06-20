@@ -127,10 +127,13 @@ export default function ApiRunnerCore() {
             }), "*");
         };
         let strongerValue;
+        let reRunMessage = debounce((iframe) => {
+            iframe.contentWindow.postMessage("rerun", "*");
+        }, 200);
         const process = value => {
             if (iframe) {
                 value.iframe = iframe;
-                value.iframe.contentWindow.postMessage("rerun", "*");
+                reRunMessage(value.iframe);
                 strongerValue = value;
                 return value;
             }
@@ -189,6 +192,7 @@ export default function ApiRunnerCore() {
 
         window.addEventListener("message", e => {
             e.preventDefault();
+            console.warn(`top message event`, e.data);
             try {
                 if (!e.data || typeof e.data === 'object')
                     return;
