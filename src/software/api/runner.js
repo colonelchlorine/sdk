@@ -1,3 +1,4 @@
+import { ConfirmationNumberSharp } from '@mui/icons-material';
 import {
     editorModeKey, getJsOnlyEditorMode, getSaveNameFromHash, isJsOnlyModeActive,
     localStorageUtils,
@@ -151,9 +152,31 @@ export default function ApiRunnerCore() {
                 });
             });
             postMessages.on("call", data => {
+                let confirmed = true;
+                if (data.method === "Add" || data.method === "Set" || data.method === "Remove") {
+                    confirmed = confirm("WARNING: Do you want to proceed with " + data.method + " method. Do you want to proceed?");
+                }
+                if (!confirmed) {
+                    return;
+                }
                 api.call(data.method, data.params, getSendResponse("success", data.uid), getSendResponse("error", data.uid));
             });
             postMessages.on("multiCall", data => {
+                let writeAttempt = false;
+                data.calls.forEach(call => {
+                    if (writeAttempt || call.method === "Add" || call.method === "Set" || call.method === "Remove") {
+                        writeAttempt = true;
+                        return;
+                    }
+                });
+                let confirmed = true;
+                if (writeAttempt) { 
+                    confirmed = confirm("WARNING: Do you want to proceed with " + data.method + " method. Do you want to proceed?");
+                    return;
+                }
+                if (!confirmed) {
+                    return;
+                }
                 api.multiCall(data.calls, getSendResponse("success", data.uid), getSendResponse("error", data.uid));
             });
             postMessages.on("log", data => {
