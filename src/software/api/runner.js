@@ -13,7 +13,7 @@ let loginFormHasBeenShown = false;
 
 // add function to read sdk-functions.json and return array
 function getSdkFunctions() {
-    const sdkFunctions = require('./sdk-functions.json');
+    const sdkFunctions = require('./sdk-functions.json').filter(f => f.Name.includes("GetCoordinates"));
     return sdkFunctions;
 }
 
@@ -82,7 +82,7 @@ export default function ApiRunnerCore() {
                  var htmlSnippets = [
                     { caption: 'document.querySelector()', snippet: `document.querySelector($1)` },
                     { caption: 'JSON.parse()', snippet: 'JSON.parse($1)' },
-                    { caption: 'api.call("get")', snippet: 'api.call("Get", { "typeName": "Device", "resultsLimit": 10 }' }
+                    { caption: 'api.call("get")', snippet: 'await api.call("Get", {\n "typeName": "$1", \n "resultsLimit": 10 \n});', meta: 'SDK Method' }
                     // Add more snippets as needed
                   ];
 
@@ -105,14 +105,15 @@ export default function ApiRunnerCore() {
                             callback(null, htmlSnippets);
                          }
 
-                        callback(null, getSdkFunctions().map(function (func) {
+                        callback(null, getSdkFunctions().map(function (method) {
                             return {
-                                name: func.Name,
-                                caption: func.Name,
-                                value: func.Name,
-                                score: func.Score,
-                                meta: func.Type,
-                                docHTML: formatSdkMemberInfo(func),
+                                name: method.Name,
+                                caption: method.Name,
+                                value: method.Name,
+                                score: method.Score,
+                                meta: method.Type,
+                                docHTML: formatSdkMemberInfo(method),
+                                snippet: formatSnippet(method),
                             };
                         }
                         ));
@@ -187,6 +188,16 @@ export default function ApiRunnerCore() {
             };
 
         return self;
+    };
+
+    const formatSnippet = (method) => {
+        let snippet = "api.call(\"" + method.Name + "\", {\n";
+        snippet += method.Params
+            .map((p, index) => "    \"" + p.Name + "\": [$" + (index + 1) + "]").join(",\n");
+        
+        snippet += "\n});";
+        console.log(snippet);
+        return snippet;
     };
 
     const formatSdkMemberInfo = (func) => {
